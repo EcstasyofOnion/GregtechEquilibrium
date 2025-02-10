@@ -4,15 +4,9 @@ ServerEvents.recipes(event => {
 	event.remove({ id: 'gtceu:assembler/vacuum_tube_red_alloy_annealed' })
     event.remove({ id: 'gtceu:assembler/coil_cupronickel' })
     event.remove({ id: 'gtceu:electric_blast_furnace/sphalerite_metallurgy' })
-    event.remove({ id: 'gtceu:electrolyzer/water_electrolysis' })
-    event.remove({ id: 'gtceu:chemical_reactor/indium_concentrate_seperation' })
-    event.remove({ id: 'gtceu:chemical_reactor/indium_concentrate_seperation_4x' })
-    event.remove({ id: 'gtceu:chemical_bath/tungstic_acid_from_tungstate' })
 })
 
 ServerEvents.recipes(event => {
- 	//Greg Recipes
-
     //Vacuum Chamber
     event.recipes.gtceu.vacuum_ejection('gtceu:impure_bromine_gas')
         .inputFluids(
@@ -1063,20 +1057,6 @@ ServerEvents.recipes(event => {
         .outputFluids(
             Fluid.of('gtceu:bromine', 1000)  
         )
-        .duration(120)
-        .EUt(120)
-
-    //Centrifuge
-    event.recipes.gtceu.electrolyzer('gtceu:water_electrolysis')
-        .inputFluids(
-            Fluid.of('minecraft:water', 1000)
-        )
-        .outputFluids(
-            Fluid.of('gtceu:hydrogen', 2000),
-            Fluid.of('gtceu:oxygen', 1000) 
-        )
-        .notConsumable('gtceu:iron_rod')
-        .notConsumable('gtceu:nickel_rod')
         .duration(120)
         .EUt(120)
 })

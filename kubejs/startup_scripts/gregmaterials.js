@@ -625,13 +625,24 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('fuel_oil')
         .liquid()
-        .color(0x702b08)   
+        .color(0x968354)   
 
     event.create('severely_hydro_cracked_gasoline')
         .liquid()
         .color(0x756a34)      
 
+    event.create('hexane')
+        .liquid()
+        .color(0x8f8c7c)      
 
+    event.create('pentane')
+        .liquid()
+        .color(0xb0ad9b)  
+
+    event.create('liquid_natural_gas')
+        .liquid()
+        .color(0xe6e1d5)      
+        .temperature(110)
 
 
 //olefin
