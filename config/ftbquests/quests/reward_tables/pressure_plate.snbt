@@ -1,0 +1,11 @@
+{
+	id: "1CD3FD33E4A3F99E"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ count: 4, item: "minecraft:oak_pressure_plate" }
+		{ count: 8, item: "minecraft:oak_button" }
+		{ item: "minecraft:oak_door" }
+	]
+	title: "pressure plate"
+}

@@ -1,0 +1,374 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "veins"
+	group: "2D9841B29E904733"
+	id: "07A2F87E12C66811"
+	order_index: 0
+	quest_links: [{
+		id: "1C5449306DAFC32E"
+		linked_quest: "237C7A461FDA7191"
+		x: -4.0d
+		y: -1.5d
+	}]
+	quests: [
+		{
+			icon: "gtceu:chalcopyrite_ore"
+			id: "0BD1B4EED91702EB"
+			rewards: [{
+				id: "19F0040410159A34"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [
+				{
+					count: 64L
+					id: "075E8AB1915A0605"
+					item: "gtceu:raw_chalcopyrite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "35397D9592F0CA8F"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "37D662126DB35F39"
+					item: "gtceu:raw_pyrite"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "437DFB2D3A879E09"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+			]
+			title: "Chalcopyrite Vein"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			icon: "gtceu:cassiterite_ore"
+			id: "0E6D21618D3BB608"
+			rewards: [{
+				id: "76E0245C401BD203"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [
+				{
+					count: 64L
+					id: "5AA5F78AE729761F"
+					item: { Count: 64, id: "gtceu:raw_tin" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3CEFBB3FEFD61649"
+					item: "gtceu:raw_cassiterite"
+					type: "item"
+				}
+			]
+			title: "Cassiterite Vein"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			icon: "gtceu:basaltic_mineral_sand_ore"
+			id: "509A5237EB91DD95"
+			rewards: [{
+				id: "30B17DB06E9FF2BC"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [
+				{
+					count: 64L
+					id: "545ABE3F4D4C297B"
+					item: "gtceu:raw_basaltic_mineral_sand"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "19F38027EF284DD3"
+					item: { Count: 16, id: "gtceu:raw_gypsum" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4E9B641ED9C653AC"
+					item: { Count: 16, id: "minecraft:sand" }
+					type: "item"
+				}
+			]
+			title: "Mineral Sand Vein"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			icon: "gtceu:coal_ore"
+			id: "2278C358675F5FE6"
+			rewards: [{
+				id: "60256345E2505846"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				count: 64L
+				id: "45DDB50CC8B11BF4"
+				item: { Count: 64, id: "gtceu:raw_coal" }
+				type: "item"
+			}]
+			title: "Coal Vein"
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			icon: "gtceu:galena_ore"
+			id: "333ECE5362923994"
+			rewards: [{
+				id: "04067CEFF806D14C"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [
+				{
+					count: 64L
+					id: "76D185312B285BD5"
+					item: "gtceu:raw_galena"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2DF2359882E714C5"
+					item: "gtceu:raw_lead"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0D4B21ED748C9B3B"
+					item: "gtceu:raw_silver"
+					type: "item"
+				}
+			]
+			title: "Galena Vein"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1F2719253A460852"]
+			description: [
+				"You can find Calcite in a lapis vein."
+				""
+				"Alternatively you can look for an amethyst geode and mine the calcite surrounding it, and then macerate it to get the dust."
+			]
+			icon: "gtceu:lapis_ore"
+			id: "4229BA548F7578DA"
+			rewards: [{
+				id: "1FB46580EA4E7ED2"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "steam_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [
+				{
+					count: 32L
+					id: "55CE83B26D7590D1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ores/lazurite"
+						}
+					}
+					title: "Any #forge:ores/lazurite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1969D3AAABB76430"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ores/sodalite"
+						}
+					}
+					title: "Any #forge:ores/sodalite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "111460AD26FD79D1"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ores/lapis)"
+						}
+					}
+					title: "Any #forge:ores/lapis"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "38D5EB616C349150"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ores/calcite"
+						}
+					}
+					title: "Any #forge:ores/calcite"
+					type: "item"
+				}
+			]
+			title: "Lapis Vein"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1F2719253A460852"]
+			description: ["Gypsum is found in mineral sand veins. "]
+			icon: "gtceu:basaltic_mineral_sand_ore"
+			id: "5482D7F83851305C"
+			rewards: [{
+				id: "7FB8675F568EE93B"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "steam_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [
+				{
+					count: 32L
+					id: "1B0C44354DECC46A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ores/basaltic_mineral_sand"
+						}
+					}
+					title: "Any #forge:ores/basaltic_mineral_sand"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "137E5DF6CB9E8136"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ores/granitic_mineral_sand"
+						}
+					}
+					title: "Any #forge:ores/granitic_mineral_sand"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3AEBDB908B18CF13"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ores/fullers_earth"
+						}
+					}
+					title: "Any #forge:ores/fullers_earth"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "46A6FD01D8625502"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ores/gypsum"
+						}
+					}
+					title: "Any #forge:ores/gypsum"
+					type: "item"
+				}
+			]
+			title: "Mineral Sand Vein"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			icon: "gtceu:netherrack_smithsonite_ore"
+			id: "43EA06BD769C6069"
+			shape: "octagon"
+			tasks: [
+				{
+					count: 64L
+					id: "52BE5B6531EA2609"
+					item: "gtceu:raw_smithsonite"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5FC26F71DCB065CA"
+					item: "gtceu:raw_sphalerite"
+					type: "item"
+				}
+			]
+			title: "Smithsonite Vein"
+			x: -6.0d
+			y: 3.5d
+		}
+	]
+	title: "Veins"
+}

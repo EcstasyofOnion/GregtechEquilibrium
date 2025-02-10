@@ -1,0 +1,173 @@
+{
+	id: "5ED02DF98F5AE9DE"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "stone_age"
+	}
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 16, item: "minecraft:white_dye" }
+		{ count: 16, item: "minecraft:light_gray_dye" }
+		{ count: 16, item: "minecraft:gray_dye" }
+		{ count: 16, item: "minecraft:black_dye" }
+		{ count: 16, item: "minecraft:brown_dye" }
+		{ count: 16, item: "minecraft:red_dye" }
+		{ count: 16, item: "minecraft:orange_dye" }
+		{ count: 16, item: "minecraft:yellow_dye" }
+		{ count: 16, item: "minecraft:lime_dye" }
+		{ count: 16, item: "minecraft:green_dye" }
+		{ count: 16, item: "minecraft:cyan_dye" }
+		{ count: 16, item: "minecraft:light_blue_dye" }
+		{ count: 16, item: "minecraft:blue_dye" }
+		{ count: 16, item: "minecraft:purple_dye" }
+		{ count: 16, item: "minecraft:magenta_dye" }
+		{ count: 16, item: "minecraft:pink_dye" }
+		{
+			item: {
+				Count: 1
+				id: "minecraft:leather_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:leather_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:leather_leggings"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 8, item: "minecraft:chest" }
+		{ count: 32, item: "minecraft:flint" }
+		{ count: 64, item: "minecraft:oak_log" }
+		{
+			count: 4
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:long_night_vision"
+				}
+			}
+		}
+		{
+			count: 4
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:long_water_breathing"
+				}
+			}
+		}
+		{ item: "ironchest:copper_chest" }
+		{ item: "ironchest:wood_to_copper_chest_upgrade" }
+		{ count: 16, item: "minecraft:clay_ball" }
+		{ count: 16, item: "minecraft:sugar_cane" }
+		{ count: 8, item: "pamhc2foodextended:juniperberrysmoothieitem" }
+		{ count: 8, item: "pamhc2foodextended:blueberrysmoothieitem" }
+		{ count: 8, item: "pamhc2foodextended:bananasmoothieitem" }
+		{ count: 8, item: "pamhc2foodextended:lemonsmoothieitem" }
+		{ count: 8, item: "pamhc2foodextended:kiwismoothieitem" }
+		{ count: 8, item: "pamhc2foodextended:peachsmoothieitem" }
+		{ count: 8, item: "pamhc2foodextended:walnutbutteritem" }
+		{ count: 8, item: "pamhc2foodextended:hazelnutbutteritem" }
+		{ count: 8, item: "pamhc2foodextended:celeryandpeanutbutteritem" }
+		{ count: 8, item: "minecraft:potato" }
+		{ count: 16, item: "minecraft:poisonous_potato" }
+		{ count: 16, item: "minecraft:carrot" }
+		{ count: 2, item: "minecraft:golden_carrot" }
+		{ item: "minecraft:golden_apple" }
+		{ count: 8, item: "pamhc2foodcore:chocolaterollitem" }
+		{ count: 8, item: "farmersdelight:cooked_bacon" }
+		{ count: 8, item: "minecraft:slime_ball" }
+		{ item: "minecraft:gold_block" }
+		{ item: "minecraft:redstone_block" }
+		{ item: "minecraft:lapis_block" }
+		{ count: 32, item: "minecraft:sand" }
+		{ count: 32, item: "minecraft:red_sand" }
+		{ count: 4, item: "minecraft:leather" }
+		{ count: 8, item: "minecraft:wheat" }
+		{ count: 4, item: "minecraft:pufferfish" }
+		{ item: "minecraft:tropical_fish" }
+		{ count: 8, item: "minecraft:lever" }
+		{ count: 16, item: "minecraft:arrow" }
+		{ count: 8, item: "minecraft:string" }
+		{ item: "minecraft:oak_sapling" }
+		{ item: "minecraft:spruce_sapling" }
+		{ item: "minecraft:birch_sapling" }
+		{ item: "minecraft:jungle_sapling" }
+		{ item: "minecraft:acacia_sapling" }
+		{ item: "minecraft:dark_oak_sapling" }
+		{ item: "minecraft:cherry_sapling" }
+		{ item: "minecraft:mangrove_propagule" }
+		{ item: "minecraft:ender_pearl" }
+		{ item: "minecraft:cactus" }
+		{ item: "minecraft:light_weighted_pressure_plate" }
+		{ item: "minecraft:heavy_weighted_pressure_plate" }
+		{ count: 8, item: "minecraft:bone" }
+		{ item: "minecraft:enchanted_golden_apple" }
+		{ count: 8, item: "minecraft:charcoal" }
+		{ count: 16, item: "minecraft:baked_potato" }
+		{ count: 4, item: "minecraft:stone_pressure_plate" }
+		{ count: 4, item: "minecraft:oak_pressure_plate" }
+		{ count: 4, item: "minecraft:cherry_pressure_plate" }
+		{ count: 8, item: "minecraft:wheat_seeds" }
+		{ count: 16, item: "minecraft:glass_pane" }
+		{ count: 8, item: "minecraft:obsidian" }
+		{ count: 4, item: "minecraft:bread" }
+		{ count: 16, item: "minecraft:cooked_chicken" }
+		{ count: 16, item: "minecraft:cooked_beef" }
+		{ count: 16, item: "minecraft:cooked_porkchop" }
+		{ count: 16, item: "minecraft:cooked_mutton" }
+		{ count: 2, item: "pamhc2foodextended:shepardspieitem" }
+		{ count: 64, item: "gtceu:wood_screw" }
+		{ count: 64, item: "gtceu:stone_dust" }
+		{ count: 2, item: "pamhc2foodextended:grapejellysandwichitem" }
+		{ item: "gtceu:gold_dust" }
+		{ item: "minecraft:glowstone_dust" }
+		{ item: "minecraft:diamond" }
+		{ count: 8, item: "minecraft:apple" }
+		{ count: 16, item: "minecraft:feather" }
+		{ item: "minecraft:bucket" }
+		{ count: 16, item: "minecraft:redstone_torch" }
+		{ item: "minecraft:paper" }
+		{ count: 4, item: "minecraft:gunpowder" }
+		{ item: "minecraft:glowstone" }
+		{ item: "minecraft:book" }
+		{ item: "minecraft:wet_sponge" }
+		{ count: 32, item: "minecraft:smooth_stone" }
+		{ count: 4, item: "minecraft:iron_bars" }
+		{ count: 32, item: "quark:spruce_ladder" }
+		{ count: 8, item: "minecraft:oak_fence" }
+		{ count: 16, item: "minecraft:torch" }
+	]
+	title: "Stone Age"
+}

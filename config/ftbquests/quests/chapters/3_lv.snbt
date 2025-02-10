@@ -1,0 +1,1500 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3_lv"
+	group: "4E01422849EACB02"
+	icon: "gtceu:lv_steam_turbine"
+	id: "17B4E34835A3EDBF"
+	order_index: 3
+	quest_links: [{
+		id: "26F98D39E2BD354C"
+		linked_quest: "550D768BAF5FE57D"
+		shape: "square"
+		size: 1.5d
+		x: 6.0d
+		y: -3.0d
+	}]
+	quests: [
+		{
+			dependencies: ["108D790A8D4680DF"]
+			id: "13B95A0A69AA90BF"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "4F3642F7BDF68839"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["108D790A8D4680DF"]
+			description: ["The lathe provies 1:1 ingot to rod ratio, plus 2 extra small dust. The extruder is better but recipes for extruding are a tier higher than their lathe counterpart. The extruder will provide 2:1 ratio. For now enjoy no more manual microcrafting!"]
+			id: "4869F7B906B5900B"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Cheaper Rods"
+			tasks: [{
+				id: "14D5EA2436C13107"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -5.25d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "5E69AA758B7B6027"
+			shape: "square"
+			tasks: [{
+				id: "3AFB5E698BE470C6"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "2651B0E14602C340"
+			shape: "square"
+			subtitle: "Smelt with Electricity!"
+			tasks: [{
+				id: "63301B98B6636F35"
+				item: "gtceu:lv_electric_furnace"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "1121768CD1BCAAA5"
+			shape: "square"
+			tasks: [{
+				id: "031B8C38AEB10BB0"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1B6394E85F029921"]
+			id: "42CF27F45CAF2D65"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "205EF076B50936EE"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.25d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			id: "51186213D68B6988"
+			shape: "square"
+			tasks: [{
+				id: "1DFC82DD28569E9F"
+				item: "gtceu:lv_autoclave"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["108D790A8D4680DF"]
+			description: [
+				"The bender is the cheapest way to make plates (tied with extruder, but that requires a mold.)"
+				""
+				"It is also the only way to make springs besides by hand."
+			]
+			id: "083E548F8B3A9E3F"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Cheaper Plates and Springs"
+			tasks: [{
+				id: "269B7D5A0511AF6F"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -5.25d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			id: "0BBA6015C86BF3AC"
+			shape: "square"
+			tasks: [{
+				id: "053B037036F03940"
+				item: "gtceu:lv_brewery"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			id: "10E94E2D7AD5B2A8"
+			shape: "square"
+			tasks: [{
+				id: "0CB1880BE499DDB3"
+				item: "gtceu:lv_canner"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "42439FAABF9CF0E4"
+			shape: "square"
+			tasks: [{
+				id: "6949C623BA3DC240"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"49CE6D33BE9BE224"
+				"4BDE79623F9D03CC"
+			]
+			id: "7D49AD6D6DC3C38E"
+			shape: "square"
+			tasks: [{
+				id: "2A1BDA45CAA8E364"
+				item: "gtceu:lv_chemical_bath"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "46C58EABBEDEAE02"
+			shape: "square"
+			tasks: [{
+				id: "7832D1427F8C3162"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["108D790A8D4680DF"]
+			id: "7A23CD2CCC59020D"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "12403C4068C38763"
+				item: "gtceu:lv_compressor"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["4BDE79623F9D03CC"]
+			description: ["The cutter will turn a rod into 4 bolts. It can also turn screws back into bolts. It requires a lubricant to function however, for now you can use water, but I recommend making lubricant production, it speeds things up a lot."]
+			id: "147C1C45DF392C30"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Cheaper Bolts and Screws"
+			tasks: [{
+				id: "53FA737B35F561D0"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			id: "2EBFA0B83208AE95"
+			shape: "square"
+			tasks: [{
+				id: "5E3B24D7D749FE98"
+				item: "gtceu:lv_distillery"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "04CBEACF154A83DF"
+			shape: "square"
+			tasks: [{
+				id: "6575094717BBC4C1"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4BDE79623F9D03CC"]
+			id: "477D63678607515F"
+			shape: "square"
+			tasks: [{
+				id: "4F2CA47B28CE34D9"
+				item: "gtceu:lv_electromagnetic_separator"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"108D790A8D4680DF"
+				"49CE6D33BE9BE224"
+			]
+			id: "03E232FC82FA302F"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "0855171C0DCD48BA"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["108D790A8D4680DF"]
+			description: ["The extruder can do what most the other metal working machines can do but better. The main issue is the additonal power consumption. A lot of recipes you can do now with the other machines you can't do until MV with extruders."]
+			id: "7E52F5F372CA95D2"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Universal Metalworker"
+			tasks: [{
+				id: "28B8DFC77D7DDFD1"
+				item: "gtceu:lv_extruder"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			id: "3E76A467859E9A1C"
+			shape: "square"
+			tasks: [{
+				id: "78854F566F009AC9"
+				item: "gtceu:lv_fermenter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			id: "6BD59F9448950AB0"
+			shape: "square"
+			tasks: [{
+				id: "1827001D0EC02C50"
+				item: "gtceu:lv_fluid_heater"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			id: "1226AF3320C9808C"
+			shape: "square"
+			tasks: [{
+				id: "59E21080B13B0E2A"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["108D790A8D4680DF"]
+			id: "595F6C82FE39A800"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "7A0EAE0C9506A113"
+				item: "gtceu:lv_forge_hammer"
+				type: "item"
+			}]
+			x: 2.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["108D790A8D4680DF"]
+			description: ["In this tier basically only useful for glass and glass tubes."]
+			id: "0623CFC114618D3F"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "2BF69619A20CE1DC"
+				item: "gtceu:lv_forming_press"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"176F33F822B537BC"
+				"2F2F55DDC82B9828"
+			]
+			id: "50747180E52F63DD"
+			shape: "square"
+			tasks: [{
+				id: "1B61A5608630EE43"
+				item: "gtceu:lv_scanner"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "2CF9DF88CA7998AE"
+			shape: "square"
+			tasks: [{
+				id: "597E08F6160F1C75"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			id: "02090038BBD7A873"
+			tasks: [{
+				id: "72C71D1DEB5B185C"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B6394E85F029921"]
+			id: "72E5154B7F5D76E4"
+			optional: true
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1D91AB2D8997BA3E"
+				item: "gtceu:lv_packer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "1EA70EB85BDC429C"
+			shape: "square"
+			subtitle: "Free Magnetization"
+			tasks: [{
+				id: "29527399B42D5BAD"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["108D790A8D4680DF"]
+			id: "24A2BAB74FF4B0E7"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "6AC311C0E7D13408"
+				item: "gtceu:lv_sifter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "4E950A6C43FCC5B9"
+			shape: "square"
+			tasks: [{
+				id: "60536123AD608B40"
+				item: "gtceu:lv_thermal_centrifuge"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "4FB0C08E2EBF39BC"
+			shape: "square"
+			subtitle: "Cheaper Wires"
+			tasks: [{
+				id: "3067BF0AE55F1037"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B6394E85F029921"]
+			description: ["You don't NEED to make this technically but I am going to force you too. It is worth it I promise."]
+			hide_dependent_lines: true
+			id: "22C8AAEF2257B41C"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "7CD247A4EAE0FE0B"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -7.5d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			hide_dependency_lines: true
+			id: "712AF8381F6A7BA7"
+			shape: "square"
+			tasks: [{
+				id: "77E7619F1A96CDFB"
+				item: "gtceu:lv_gas_collector"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -13.0d
+		}
+		{
+			id: "129BB043ED2E4E66"
+			tasks: [{
+				id: "2CA0BA7ED704F1E9"
+				item: "gtceu:lv_rock_crusher"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -7.0d
+		}
+		{
+			id: "2F9A09EF535D1418"
+			tasks: [{
+				id: "1851B464D52FD4CD"
+				item: "gtceu:lv_air_scrubber"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.5d
+		}
+		{
+			id: "3816027C9900EF06"
+			tasks: [{
+				id: "1C194CBC0C51089F"
+				item: "gtceu:lv_fisher"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -6.5d
+		}
+		{
+			id: "560208A1E8CEA9D1"
+			tasks: [{
+				id: "5A53EDBB5CE9D06E"
+				item: "gtceu:lv_block_breaker"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			id: "18B75CF01F43DDBE"
+			tasks: [{
+				id: "6A07A970965CEB44"
+				item: "gtceu:lv_miner"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["39F18C3487970874"]
+			id: "3BF0663C36F6C082"
+			optional: true
+			tasks: [{
+				id: "6DCCD958FE19706D"
+				item: "gtceu:lv_world_accelerator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -13.0d
+		}
+		{
+			id: "7AB353D79092B994"
+			tasks: [{
+				id: "01F1D10B6B08AA1B"
+				item: "gtceu:lv_item_collector"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2593B821A9F9F8B6"
+				"2F2F55DDC82B9828"
+				"176F33F822B537BC"
+			]
+			id: "50306B37210E761A"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "3AE9F66127345BA2"
+				item: "gtceu:prospector.lv"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "108D790A8D4680DF"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "25C6F9009969F590"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "49CE6D33BE9BE224"
+			shape: "square"
+			tasks: [{
+				id: "358689AAF4F96D7B"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["108D790A8D4680DF"]
+			id: "1B6394E85F029921"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "65D175E8F85B2F14"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "176F33F822B537BC"
+			shape: "square"
+			tasks: [{
+				id: "0E21E9109F67CFEB"
+				item: "gtceu:lv_sensor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "2F2F55DDC82B9828"
+			shape: "square"
+			tasks: [{
+				id: "6B337766D0D61411"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["42CF27F45CAF2D65"]
+			id: "2593B821A9F9F8B6"
+			shape: "square"
+			tasks: [{
+				id: "621B08B79F4B7B45"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:batteries/lv"
+					}
+				}
+				title: "Any #gtceu:batteries/lv"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			id: "4BDE79623F9D03CC"
+			shape: "square"
+			tasks: [{
+				id: "100D7A068560FC8E"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3040FFB478E34433"
+				"1AF2C7718102C855"
+			]
+			id: "039AA3DB61561F31"
+			shape: "square"
+			tasks: [{
+				id: "4BE07447CD5CBBF8"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7E7C70BDF5CA6020"
+				"327619972DA3EEBF"
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "34C8E466BEE6BFED"
+			shape: "square"
+			size: 1.5d
+			tasks: [
+				{
+					id: "399B596E75ADC7A9"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "6DD1B18A299AC629"
+					item: "gtceu:heatproof_machine_casing"
+					type: "item"
+				}
+				{
+					id: "1B68BBB80FB46388"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "4033B632CD542684"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "3ED6B99808745E20"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "04A383DAA1FD276B"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "3729E6F19C08C8A0"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "5000DFAF644985D6"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5D7C94325B1A9F7D"
+					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"76D7130CDF6C9260"
+				"332395B1CAFFA558"
+			]
+			hide_dependency_lines: false
+			id: "7E7C70BDF5CA6020"
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "2324DEFF5905CA74"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			title: "Cupronickel Coil"
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			description: ["You can use an Alloy Smelter or a Mixer to make Cupronickel."]
+			hide_dependency_lines: true
+			id: "76D7130CDF6C9260"
+			shape: "square"
+			tasks: [{
+				id: "7B03ED6C88D57264"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			description: ["You can use an Alloy Smelter or a mixer to make Invar."]
+			hide_dependency_lines: true
+			id: "327619972DA3EEBF"
+			shape: "square"
+			tasks: [{
+				id: "3DD818400D946F55"
+				item: "gtceu:invar_ingot"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1EA70EB85BDC429C"]
+			id: "1F5C630D510F9F58"
+			shape: "square"
+			tasks: [{
+				id: "6BBE7F0C6533AC4C"
+				item: "gtceu:magnetic_steel_rod"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["354C2FEA47CE5370"]
+			description: ["Eletrical tools will make things a lot easier! Just make sure to keep them charged, unpowered tools are damaged at a much faster rate."]
+			id: "37E78B704DBA2405"
+			shape: "square"
+			tasks: [
+				{
+					id: "513B08B08AB7997D"
+					item: {
+						Count: 1
+						id: "gtceu:lv_steel_drill"
+						tag: {
+							Charge: 0L
+							DisallowContainerItem: 0
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 1535
+								ToolSpeed: 9.0f
+							}
+							HideFlags: 2
+							MaxCharge: 100000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68F969DED09FDEF5"
+					item: {
+						Count: 1
+						id: "gtceu:steel_buzzsaw"
+						tag: {
+							Charge: 0L
+							DisallowContainerItem: 0
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 511
+							}
+							HideFlags: 2
+							MaxCharge: 100000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D547ADA504F95F9"
+					item: {
+						Count: 1
+						id: "gtceu:lv_steel_screwdriver"
+						tag: {
+							Charge: 0L
+							DisallowContainerItem: 0
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 511
+							}
+							HideFlags: 2
+							MaxCharge: 100000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63B9DF6ED4296E48"
+					item: {
+						Count: 1
+						id: "gtceu:lv_steel_wrench"
+						tag: {
+							Charge: 0L
+							DisallowContainerItem: 0
+							GT.Behaviours: {
+								Mode: 2
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 511
+								ToolSpeed: 14.0f
+							}
+							HideFlags: 2
+							MaxCharge: 100000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67D5824C50F87C29"
+					item: {
+						Count: 1
+						id: "gtceu:lv_steel_chainsaw"
+						tag: {
+							Charge: 0L
+							DisallowContainerItem: 0
+							GT.Behaviours: {
+								DisableShields: 1
+								HarvestIce: 1
+								TreeFelling: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 511
+								ToolSpeed: 14.0f
+							}
+							HideFlags: 2
+							MaxCharge: 100000L
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Electrical Tools"
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2593B821A9F9F8B6"]
+			id: "354C2FEA47CE5370"
+			shape: "square"
+			tasks: [{
+				id: "61294494662C1647"
+				item: "gtceu:lv_power_unit"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6785F1D7DE9A1F74"
+				"0185802F9AA385F4"
+				"6D1D0DB45DC02EB1"
+			]
+			id: "2B077557A957FD1B"
+			shape: "square"
+			tasks: [{
+				id: "5B3A5CD5F767BF7B"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["039AA3DB61561F31"]
+			id: "6785F1D7DE9A1F74"
+			shape: "square"
+			tasks: [{
+				id: "782E5E23ADCFD59D"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["039AA3DB61561F31"]
+			id: "35684B70A0617881"
+			shape: "square"
+			tasks: [{
+				id: "5ADADAF6BC6A9303"
+				item: "gtceu:mv_machine_casing"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35684B70A0617881"]
+			id: "0185802F9AA385F4"
+			shape: "square"
+			tasks: [{
+				id: "15F7AAA2CBE79A5F"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6515523C075DF128"
+				"75E05DDE22678184"
+				"22C8AAEF2257B41C"
+			]
+			id: "6D1D0DB45DC02EB1"
+			shape: "square"
+			tasks: [{
+				id: "723BC4037F81BE41"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"42CF27F45CAF2D65"
+				"5320750372A2FAE4"
+			]
+			id: "6515523C075DF128"
+			shape: "square"
+			tasks: [{
+				id: "076733578B35EBEB"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"42CF27F45CAF2D65"
+				"7C376E571C2A1C04"
+				"70705456E857F052"
+			]
+			id: "75E05DDE22678184"
+			shape: "square"
+			tasks: [{
+				id: "52E02F511F646E2F"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["42439FAABF9CF0E4"]
+			id: "7C376E571C2A1C04"
+			shape: "square"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:glue"
+				id: "72BA72F239AEA798"
+				type: "fluid"
+			}]
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			id: "488EC0E541455ABF"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:oil_medium"
+				id: "4568992984139B8D"
+				type: "fluid"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49CE6D33BE9BE224"]
+			id: "6C67B82FA335F42C"
+			shape: "square"
+			tasks: [{
+				id: "163CFCF5755FD2FB"
+				item: "gtceu:lv_pump"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2E38F46F310EB927"]
+			id: "323A384B2D60FD07"
+			shape: "square"
+			tasks: [{
+				id: "6F88ED3C50ABA06A"
+				item: "gtceu:quartzite_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["323A384B2D60FD07"]
+			id: "5320750372A2FAE4"
+			shape: "square"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:glass"
+				id: "4D3D5A3F42B4B65A"
+				type: "fluid"
+			}]
+			x: 8.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			hide_dependency_lines: true
+			id: "2E38F46F310EB927"
+			shape: "square"
+			tasks: [{
+				id: "0E890619C059B549"
+				item: "gtceu:raw_quartzite"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5E69AA758B7B6027"]
+			id: "40D91BA3F97086E6"
+			shape: "square"
+			tasks: [{
+				id: "396DA1903E3F62A6"
+				item: "gtceu:annealed_copper_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3E76A467859E9A1C"
+				"144F65AAD5EC9E7C"
+			]
+			id: "20B66ACB1C88541B"
+			shape: "square"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:fermented_biomass"
+				id: "17C9F1A2EE2898D5"
+				type: "fluid"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0BBA6015C86BF3AC"]
+			id: "144F65AAD5EC9E7C"
+			shape: "square"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:biomass"
+				id: "6171775F4CAAF87B"
+				type: "fluid"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			description: ["The combustion generator is an option if you have a lot of lava sitting around. Maybe from the nether?"]
+			id: "5C801164B23480F5"
+			tasks: [{
+				id: "69B426EF9E6C8FD7"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["34C8E466BEE6BFED"]
+			id: "39F18C3487970874"
+			optional: true
+			tasks: [{
+				id: "5F96B3E603DD7C61"
+				item: "gtceu:lv_field_generator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["550D768BAF5FE57D"]
+			icon: "gtceu:bronze_large_boiler"
+			id: "74BAE02FAE791A9B"
+			shape: "square"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7214AFA0A239852F"
+					item: "gtceu:bronze_large_boiler"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "37D16A7B3732F0F2"
+					item: { Count: 23, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1CC23234DEC19E50"
+					item: { Count: 5, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "31E2195B4589B6AA"
+					item: "gtceu:bronze_pipe_casing"
+					type: "item"
+				}
+				{
+					id: "320085D99BE18C9C"
+					item: "gtceu:auto_maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "01A012A85E05D33D"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "373BBFF66A311970"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "351DB4FCD1CE409A"
+					item: "gtceu:ulv_output_hatch"
+					type: "item"
+				}
+				{
+					id: "0E0E03717FB8180D"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0058B3BE79467709"
+				"712AF8381F6A7BA7"
+			]
+			icon: "gtceu:sintering_oven"
+			id: "39BB449DED5D60E4"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Electrode Refinement"
+			tasks: [
+				{
+					id: "7B5409F796FCDB32"
+					item: "gtceu:sintering_oven"
+					type: "item"
+				}
+				{
+					id: "09B3064A52C3ACE3"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "58DF3E3B213CBD56"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "5BCB7C96CCA6FBC3"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "394B668CF725046A"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "2AFF05F13BC0AB40"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "799D3365A3E32466"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 72L
+					id: "5ED30D714042DF0C"
+					item: "kubejs:sintering_bricks"
+					type: "item"
+				}
+				{
+					count: 44L
+					id: "5944F4952862A65C"
+					item: "kubejs:structural_casing"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "17B2B8D21F2131A0"
+					item: "gtceu:steel_frame"
+					type: "item"
+				}
+			]
+			title: "Sintering Oven"
+			x: 1.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["04CBEACF154A83DF"]
+			icon: "gtceu:electrolytic_cell_controller"
+			id: "38962D0E89F72063"
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					id: "689FF620D25E68A0"
+					item: "gtceu:electrolytic_cell"
+					type: "item"
+				}
+				{
+					id: "67CEE49B69CF45F6"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "292544672138CFA8"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "3151C44D0BB1E053"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "066E27FDCECE8616"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "645C826C6C638C8A"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "284E3A0E76211408"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 42L
+					id: "6C30D0E17A162736"
+					item: { Count: 42, id: "gtceu:solid_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "4EC2ADDCE95DDD86"
+					item: { Count: 12, id: "gtceu:steel_pipe_casing" }
+					type: "item"
+				}
+			]
+			title: "Electrolytic Cell"
+			x: 9.375d
+			y: 0.625d
+		}
+		{
+			dependencies: [
+				"39BB449DED5D60E4"
+				"44E4C608827F9815"
+			]
+			id: "0473BC3AB0051EF2"
+			shape: "square"
+			tasks: [{
+				id: "2DB3CA9ACBB8618A"
+				item: "kubejs:graphite_electrode"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"69A4C6B417A5AE8B"
+				"332395B1CAFFA558"
+			]
+			id: "6B6C825761DC59B6"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Electric Coke Oven"
+			tasks: [{
+				id: "3555E7EED325F157"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["6B6C825761DC59B6"]
+			id: "0058B3BE79467709"
+			shape: "square"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:syngas"
+				id: "66DF6A3B678292F8"
+				type: "fluid"
+			}]
+			x: 1.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["42CF27F45CAF2D65"]
+			id: "69A4C6B417A5AE8B"
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "3B349148FCBCEB9E"
+				item: { Count: 16, id: "gtceu:nickel_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"7E52F5F372CA95D2"
+				"13CB0BD75767B55E"
+			]
+			id: "44E4C608827F9815"
+			shape: "square"
+			tasks: [{
+				id: "1629D55FD166356D"
+				item: "kubejs:raw_electrode"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["6B6C825761DC59B6"]
+			id: "13CB0BD75767B55E"
+			shape: "square"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:coal_tar"
+				id: "5A7DA2AF5E25B24C"
+				type: "fluid"
+			}]
+			x: -1.5d
+			y: -11.5d
+		}
+		{
+			id: "70705456E857F052"
+			shape: "square"
+			tasks: [{
+				id: "0E3B753BD3A45868"
+				item: "gtceu:silver_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42CF27F45CAF2D65"]
+			id: "332395B1CAFFA558"
+			shape: "square"
+			tasks: [{
+				id: "1FA6965869E2DB8A"
+				item: "kubejs:mineral_wool"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["42CF27F45CAF2D65"]
+			description: ["You may need soldering alloy for some recipes in the assembler. It is made in the mixer with 6 tin, 3 lead, and 1 antimony."]
+			id: "1F6FCAAEF95D0D77"
+			shape: "square"
+			tasks: [{
+				id: "431153369353F2BD"
+				item: "gtceu:soldering_alloy_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["04CBEACF154A83DF"]
+			id: "3EBB932D84D69311"
+			shape: "square"
+			tasks: [
+				{
+					id: "7C70A86B8CC25415"
+					item: "gtceu:nickel_rod"
+					type: "item"
+				}
+				{
+					id: "0859B219D84DCE14"
+					item: "gtceu:iron_rod"
+					type: "item"
+				}
+			]
+			title: "Water Electrolysis"
+			x: 9.5d
+			y: -1.0d
+		}
+	]
+	title: "3: LV"
+}

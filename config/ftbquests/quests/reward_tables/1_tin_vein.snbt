@@ -1,0 +1,10 @@
+{
+	id: "008E4DF4126227AF"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ item: "pamhc2foodextended:strawberryrhubarbpieitem" }
+		{ item: "pamhc2foodextended:blackberrycobbleritem" }
+	]
+	title: "1: Tin Vein"
+}

@@ -1,0 +1,10 @@
+{
+	id: "3974C77CCE073D03"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 12, item: "minecraft:flint" }
+		{ item: "minecraft:cookie" }
+	]
+	title: "Flint Tools"
+}

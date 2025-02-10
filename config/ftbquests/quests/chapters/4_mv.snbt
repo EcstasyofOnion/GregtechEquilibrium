@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4_mv"
+	group: "4E01422849EACB02"
+	icon: "gtceu:mv_steam_turbine"
+	id: "00099FAE5F5F9187"
+	order_index: 4
+	quest_links: [{
+		id: "69F69CDBC2BDFF6C"
+		linked_quest: "2B077557A957FD1B"
+		shape: "square"
+		x: 1.0d
+		y: 1.0d
+	}]
+	quests: [ ]
+	title: "4: MV"
+}

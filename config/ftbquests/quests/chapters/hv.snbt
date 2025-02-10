@@ -1,0 +1,222 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hv"
+	group: "73E51B8DD5910226"
+	icon: "gtceu:advanced_integrated_circuit"
+	id: "2CA4681F3CF51A1E"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3E29FCEB3F68F186"
+			shape: "rsquare"
+			tasks: [{
+				id: "695A4CF08A8917AA"
+				item: "gtceu:nickel_ii_oxide_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3E29FCEB3F68F186"]
+			id: "6742777696C6C824"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:nickel_ii_nitrate_solution"
+				id: "5B0B12152079AA67"
+				type: "fluid"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6742777696C6C824"]
+			id: "34F4B01AEEC72C8A"
+			shape: "rsquare"
+			tasks: [{
+				id: "3D8E3B037A7F6ECA"
+				item: "gtceu:nickel_ii_nitrate_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["34F4B01AEEC72C8A"]
+			id: "6C0CAABBD04276AA"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:nickel_ii_bis_solution"
+				id: "1063C63035EA94EB"
+				type: "fluid"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C0CAABBD04276AA"]
+			id: "0E84F670336F1F7D"
+			shape: "rsquare"
+			tasks: [{
+				id: "43BD269975F87092"
+				item: "gtceu:nickel_ii_bis_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0E84F670336F1F7D"
+				"58ED1AFA4E9D173E"
+			]
+			id: "24C8E80EDFBFAB73"
+			shape: "rsquare"
+			tasks: [{
+				id: "3B1DC1528CC601B6"
+				item: "gtceu:bis_nickel_dust"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"663FA8BD728C3E3F"
+				"4B86F8EADC95AE9D"
+			]
+			id: "58ED1AFA4E9D173E"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:1_5_cyclooctadiene"
+				id: "2B9C34E507BA293B"
+				type: "fluid"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["24C8E80EDFBFAB73"]
+			id: "094F99E3B7706B62"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:shell_higher_olefin_catalyst_solution"
+				id: "5137AB75C73F98FB"
+				type: "fluid"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			id: "58BE177896E644BB"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:chlorobenzene"
+				id: "1F46592D0FED0314"
+				type: "fluid"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2E7A30FB2511E298"
+				"24B995CBF1105A00"
+			]
+			id: "663FA8BD728C3E3F"
+			shape: "rsquare"
+			tasks: [{
+				id: "1A428A7C73A8EBCB"
+				item: "gtceu:dicarbonyl_bis_nickel_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			id: "4B86F8EADC95AE9D"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:butadiene"
+				id: "00550BFEF5ACBC58"
+				type: "fluid"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"27BEC0F82DD48881"
+				"7AB2F2A9C8958123"
+			]
+			id: "2E7A30FB2511E298"
+			shape: "rsquare"
+			tasks: [{
+				id: "647230D1358F5F3A"
+				item: "gtceu:dichloro_bis_nickel_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			id: "24B995CBF1105A00"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:tetrahydrofuran"
+				id: "7F92DF9D4E7CE841"
+				type: "fluid"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "7AB2F2A9C8958123"
+			shape: "rsquare"
+			tasks: [{
+				id: "456B7D4A947D56B2"
+				item: "gtceu:nickel_chloride_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"58BE177896E644BB"
+				"1E42F131BC08F541"
+			]
+			id: "27BEC0F82DD48881"
+			shape: "rsquare"
+			tasks: [{
+				id: "47A7D8555589B2F7"
+				item: "gtceu:triphenylphosphine_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			id: "1E42F131BC08F541"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:phosphorus_trichloride"
+				id: "5DBFCB341BC165D4"
+				type: "fluid"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+	]
+	title: "HV Chains"
+}

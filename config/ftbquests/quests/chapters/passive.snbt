@@ -1,0 +1,61 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "passive"
+	group: "1FAD8197F2E7C90B"
+	id: "0077121DFDE04054"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7E32A70599F079A1"
+			optional: true
+			tasks: [{
+				entity: "minecraft:pig"
+				icon: "minecraft:pig_spawn_egg"
+				id: "5A9D5EC1E22DFA7A"
+				type: "kill"
+				value: 100L
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			id: "6121A66AEB910252"
+			optional: true
+			tasks: [{
+				entity: "minecraft:cow"
+				id: "368114CF28F7445D"
+				type: "kill"
+				value: 100L
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			id: "1AF8152FDDBC1187"
+			optional: true
+			tasks: [{
+				entity: "minecraft:sheep"
+				id: "10E618CEEBF0E2BD"
+				type: "kill"
+				value: 100L
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "6F8A6E805AFEA148"
+			optional: true
+			tasks: [{
+				entity: "minecraft:chicken"
+				id: "226767A3B81F416D"
+				type: "kill"
+				value: 100L
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+	]
+	title: "Passive"
+}

@@ -1,0 +1,87 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "workshop_for_handsome_adventurer"
+	group: "7E112B0E9DB5DDEB"
+	icon: "workshop_for_handsome_adventurer:workstation_placer_dark_oak"
+	id: "7FED901C4DB4A8F3"
+	order_index: 0
+	quest_links: [{
+		id: "5D3CB068517646E3"
+		linked_quest: "07A3F0DE98DE0D40"
+		x: 5.0d
+		y: 0.5d
+	}]
+	quests: [
+		{
+			dependencies: ["07A3F0DE98DE0D40"]
+			description: ["These drawers can store large amounts of any item or block."]
+			icon: "functionalstorage:oak_1"
+			id: "27130EEC9A682D85"
+			tasks: [{
+				id: "64ABA493535D2A18"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any #functionalstorage:drawer"
+				type: "item"
+			}]
+			title: "Item Drawers"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["07A3F0DE98DE0D40"]
+			id: "3B8DC789AC138B0E"
+			tasks: [{
+				id: "560627E20F8DAF23"
+				item: "functionalstorage:fluid_1"
+				type: "item"
+			}]
+			title: "Fluid Drawers"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			id: "40363E6D9CD153DC"
+			tasks: [{
+				id: "0997C29B0FF8F995"
+				item: {
+					Count: 1
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			id: "1BD942B7E2B0A9ED"
+			tasks: [
+				{
+					count: 2L
+					id: "75B249C04ED45134"
+					item: "mtr:rail"
+					type: "item"
+				}
+				{
+					id: "4FD10E74540AB24C"
+					item: {
+						Count: 1
+						id: "mtr:rail_connector_80"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 3.5d
+		}
+	]
+	title: "Utility"
+}

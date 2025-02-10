@@ -1,0 +1,1387 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1_bronze_age"
+	group: "4E01422849EACB02"
+	icon: "gtceu:bronze_ingot"
+	id: "796C234C1A40E474"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5AB6F310724C47D3"]
+			description: ["Hunger will remain looming over you for all of time, but it will get better! For now have a lunch bag, this way you can carry more food with you at once! Plus it automatically switches things up!"]
+			id: "461DB31D0BCE5786"
+			rewards: [
+				{
+					id: "6018068681A8B3E4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "solonion:lunchbag"
+					}
+					type: "item"
+				}
+				{
+					id: "5D4BE22AD4DC266B"
+					item: "solonion:food_book"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "7ADD6CF53470C841"
+				title: "Hunger Won't Forget You"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["461DB31D0BCE5786"]
+			id: "68B25EE3B3F05506"
+			shape: "square"
+			tasks: [{
+				count: 192L
+				id: "5C2C2174F310F36A"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			title: "Gathering Time: Sand"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["461DB31D0BCE5786"]
+			description: ["Lush stacks, lush caves, beaches, and under jacaranda jungles are a good place to get lots of clay!"]
+			icon: "minecraft:clay"
+			id: "146B01B0AC4F728B"
+			shape: "square"
+			tasks: [{
+				count: 128L
+				id: "5F9AB4E3CB658E51"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "Gathering Time: Clay"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["461DB31D0BCE5786"]
+			id: "7C448D77272E1942"
+			shape: "square"
+			tasks: [{
+				count: 25L
+				id: "14DD1710083DD1F8"
+				item: { Count: 25, id: "minecraft:stone" }
+				type: "item"
+			}]
+			title: "Processing Stone"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7C448D77272E1942"]
+			id: "6F6BD1BF2D993BE2"
+			shape: "square"
+			subtitle: "A Better Way to Get Flint!"
+			tasks: [{
+				id: "27DF7D0BDDC03DD5"
+				item: {
+					Count: 1
+					id: "gtceu:flint_mortar"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "Macerator Indev"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"68B25EE3B3F05506"
+				"146B01B0AC4F728B"
+				"1AAEE652FB6AC70A"
+			]
+			description: [
+				"Time to make charcoal! To get charcoal you need a coke oven. Thankfully you just collected all the resources you need!"
+				""
+				"The coke oven requires a controller in this version of Gregtech, so you'll need to make that too."
+				""
+				"Make sure to always have your coke ovens running, they take a long time to make charcoal and you don't want to run out!"
+			]
+			icon: "gtceu:coke_oven"
+			id: "2A189EF27E518A0C"
+			rewards: [{
+				count: 4
+				id: "7BE670326F68E45E"
+				item: "farmersdelight:chicken_sandwich"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 25L
+					id: "377E69EB3C534879"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					id: "6CA8D5EDD2B67885"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+			]
+			title: "Charcoal "
+			x: -11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2A189EF27E518A0C"]
+			description: ["You can make charcoal now!"]
+			id: "6C80DD93E0E4B7EA"
+			rewards: [
+				{
+					id: "4FDCEEB455845591"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "64BCB1133F984435"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "5CAB6B1378CF7BCD"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			title: "Fuel!"
+			x: -12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2A189EF27E518A0C"]
+			description: [
+				"You can make coke too in your coke oven, who would have guessed? Make some!"
+				""
+				"You will use coke later to make pig iron and steel."
+			]
+			id: "11F15F97292C4C4C"
+			rewards: [
+				{
+					count: 8
+					id: "373D425B736A9B8C"
+					item: "gtceu:coke_gem"
+					type: "item"
+				}
+				{
+					id: "11A3207BF64546E8"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "1189F282222C59B2"
+				item: { Count: 8, id: "gtceu:coke_gem" }
+				type: "item"
+			}]
+			title: "Coke"
+			x: -12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2A189EF27E518A0C"
+				"119474B26B09D93F"
+			]
+			description: [
+				"Your coke oven will produce creosote as well, you need to find a way to dispose of it or it will clog up your coke oven! To fill a bucket from the coke oven just select the empty bucket and click on the creosote to fill the bucket."
+				""
+				"You can use it to make treated wood which we will use to make our second multiblock."
+				""
+				" If you have extra that you need to get rid of then the easiest way is either using it as fuel in a furnace, or you could always just dump it in a big hole..."
+			]
+			id: "0BAC9B16D54D7320"
+			shape: "square"
+			tasks: [{
+				id: "3A0172B3ACACE066"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2A189EF27E518A0C"]
+			description: ["This is the biggest tree I could find so you can have it, I'm sure you'll make good use of it!"]
+			id: "43FCC64BF587A732"
+			rewards: [{
+				count: 4
+				id: "348706F5D7CFFEE2"
+				item: "biomeswevegone:redwood_sapling"
+				type: "item"
+			}]
+			subtitle: "Big Trees"
+			tasks: [
+				{
+					count: 4L
+					id: "68CE2E4CF7F37D45"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5EC680AA34E3547A"
+					item: "minecraft:jungle_sapling"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "24C1653F1742CD9C"
+					item: { Count: 4, id: "minecraft:dark_oak_sapling" }
+					type: "item"
+				}
+			]
+			title: "Getting More Wood"
+			x: -10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5E2597336C284E53"]
+			description: [
+				"&fIron&r can be found in several veins:"
+				"Iron Vein"
+				"Olivine Vein"
+				"Magnetite Vein"
+				"Mineral Sand Vein"
+				"Chalcopyrite Vein"
+			]
+			id: "1AAEE652FB6AC70A"
+			rewards: [{
+				id: "01462FD1A19D9FF1"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Finding Iron"
+			tasks: [{
+				count: 64L
+				id: "28DE5A61E0D89AB7"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Iron"
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["68C40DA3B882C63A"]
+			icon: "minecraft:oak_door"
+			id: "239B7C7655108611"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1765766DF2AB81A5"
+					table_id: 4107694994711100866L
+					type: "choice"
+				}
+				{
+					id: "41CFC5B9C94B5504"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0CB7FE59C881ABEE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:wooden_doors"
+					}
+				}
+				only_from_crafting: true
+				title: "Any #minecraft:wooden_doors"
+				type: "item"
+			}]
+			title: "Door!"
+			x: -14.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["239B7C7655108611"]
+			description: ["Well of course you can just right click on them but whats the fun in that? Let's make some alternative methods!"]
+			id: "01718CE77EFF748B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "439CECEBDA411232"
+					table_id: 2077282252469041566L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "71305636AFCFF404"
+					table_id: 6832011184596249054L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					count: 10L
+					id: "4E768E25D341E902"
+					item: { Count: 10, id: "minecraft:oak_pressure_plate" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "2E9391779BC4530C"
+					item: { Count: 10, id: "minecraft:oak_button" }
+					type: "item"
+				}
+			]
+			title: "How to Open Doors?"
+			x: -15.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1AAEE652FB6AC70A"]
+			description: ["You will need these tools moving forward."]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_screwdriver"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						MaxDamage: 255
+					}
+					HideFlags: 2
+				}
+			}
+			id: "68C40DA3B882C63A"
+			rewards: [{
+				count: 8
+				id: "21C09B15B91472B5"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Proper Tools"
+			tasks: [
+				{
+					id: "399572F8F2620C23"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27474B2026E7C198"
+					item: {
+						Count: 1
+						id: "gtceu:iron_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "08A684F84940E7EE"
+					item: {
+						Count: 1
+						id: "gtceu:iron_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "619412849C3CBD36"
+					item: {
+						Count: 1
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D78658DEAD83E50"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4527B2706E04BB57"
+					item: {
+						Count: 1
+						id: "gtceu:iron_file"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tools!"
+			x: -13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07A3F0DE98DE0D40"]
+			icon: "minecraft:copper_ingot"
+			id: "5013757A0ECCE4CD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0A75D88E71EB3581"
+					table_id: 8256353669714180502L
+					type: "choice"
+				}
+				{
+					id: "4232C59E4C15FF38"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				count: 48L
+				id: "0E194580C0F46531"
+				item: { Count: 48, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			title: "Copper"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["07A3F0DE98DE0D40"]
+			icon: "gtceu:tin_ingot"
+			id: "57CD02659BCD6AFA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "52846681F2CB61CC"
+					table_id: 40055157368694703L
+					type: "choice"
+				}
+				{
+					id: "59B7CC73C4010CD3"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "7B920F4C394AFEA9"
+				item: { Count: 16, id: "gtceu:tin_ingot" }
+				type: "item"
+			}]
+			title: "Tin"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"57CD02659BCD6AFA"
+				"5013757A0ECCE4CD"
+			]
+			description: ["Finally we can make our first alloy. &6Bronze&r is not necessarily the strongest, but its fairly cheap and will get the job done. You will need more &6bronze&r to get through the steam age, so find some more &6copper&r and &ftin&r soon! You can use &6bronze&r to make a better set of tools so we can go get &firon&r. "]
+			id: "554452C7184DDEF7"
+			rewards: [{
+				id: "4D67A6AB23964CDA"
+				item: "pamhc2foodextended:curryitem"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "The First Alloy!"
+			tasks: [{
+				count: 16L
+				id: "192353B853D9395A"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "Bronze"
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F3995AE19CB1FC0"]
+			description: [""]
+			id: "5E2597336C284E53"
+			shape: "square"
+			subtitle: "A Better Pickaxe!"
+			tasks: [{
+				id: "461FEE0D9FEAB72E"
+				item: {
+					Count: 1
+					id: "gtceu:bronze_pickaxe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 191
+							ToolSpeed: 7.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5E2597336C284E53"]
+			description: [
+				"Mining Hammers will make gathering resources much much easier. Mining hammers mine a 3x3x1 area allowing you to quickly clear entire ore veins. You don't NEED to make one, but if you don't you hate yourself."
+				""
+				"I'll even give you a spare!"
+			]
+			id: "5BCD433441A85DA3"
+			rewards: [{
+				id: "2067FF4932B69006"
+				item: {
+					Count: 1
+					id: "gtceu:wrought_iron_mining_hammer"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 1151
+							ToolSpeed: 4.8f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "026F2CC41302B9FC"
+				item: {
+					Count: 1
+					id: "gtceu:bronze_mining_hammer"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 575
+							ToolSpeed: 5.2f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5E2597336C284E53"]
+			description: [""]
+			id: "1C1962C741887CEB"
+			shape: "diamond"
+			subtitle: "A Better Weapon!"
+			tasks: [{
+				id: "5566BF6A176E8E9C"
+				item: {
+					Count: 1
+					id: "gtceu:bronze_sword"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 5.0f
+							AttackSpeed: -2.4f
+							Damage: 0
+							MaxDamage: 191
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"68C40DA3B882C63A"
+				"5224D5A0F291EC73"
+				"723E94F70A31607E"
+			]
+			id: "4DFF959087191902"
+			rewards: [
+				{
+					count: 10
+					id: "6E03D9DCFA385903"
+					item: "gtceu:bronze_small_fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "2E4934C2C7119938"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "013DDC8C7923AB01"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -17.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["68C40DA3B882C63A"]
+			description: ["Chad is a much easier way to make paper early game."]
+			id: "028594A6DC9911FC"
+			rewards: [
+				{
+					count: 10
+					id: "3847DA55D140ADB1"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					id: "74FD94BD19CF1639"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "steam_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				count: 30L
+				id: "00657214D1ADE431"
+				item: { Count: 30, id: "gtceu:paper_dust" }
+				type: "item"
+			}]
+			title: "Gigachad"
+			x: -14.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["461DB31D0BCE5786"]
+			description: [""]
+			id: "717DA153911BFC64"
+			shape: "square"
+			tasks: [{
+				id: "3AA83961DCCE15B0"
+				item: {
+					Count: 1
+					id: "gtceu:flint_knife"
+					tag: {
+						DisallowContainerItem: 0b
+						Enchantments: [{
+							id: "minecraft:fire_aspect"
+							lvl: 2s
+						}]
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 1.0f
+							AttackSpeed: 3.0f
+							Damage: 0
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["717DA153911BFC64"]
+			id: "5E52090682BD444D"
+			rewards: [{
+				id: "1F1A4621410C995D"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "6B87ED537E427CA3"
+				item: "gtceu:brick_wooden_form"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C80DD93E0E4B7EA"]
+			id: "0A2A0EA516EFDEDE"
+			subtitle: "Finally Light!"
+			tasks: [{
+				count: 4L
+				id: "4492C80CF5B4FBF9"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			title: "Torches!"
+			x: -13.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["68C40DA3B882C63A"]
+			id: "47DE3DC0E45904B4"
+			rewards: [
+				{
+					count: 2
+					id: "3FB8094918019D56"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "3289DAB6074F46F5"
+					item: "pamhc2foodcore:powdereddonutitem"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Faster Smelting!"
+			tasks: [{
+				id: "3E84093DBE2C114A"
+				item: "ironfurnaces:copper_furnace"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["68C40DA3B882C63A"]
+			id: "1F8A51C1B59762E3"
+			rewards: [{
+				count: 2
+				id: "6B9593358192C0C1"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Better Storage!"
+			tasks: [{
+				id: "4E7567D41102A7F0"
+				item: "ironchest:copper_chest"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["554452C7184DDEF7"]
+			description: ["You need these to make bronze tools and a few other things."]
+			id: "5F3995AE19CB1FC0"
+			rewards: [{
+				id: "1E6AAAE15797E678"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "0D4FB688DC0EBEE8"
+					item: {
+						Count: 1
+						id: "gtceu:bronze_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 191
+								ToolSpeed: 7.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "282D08BF29316231"
+					item: {
+						Count: 1
+						id: "gtceu:bronze_file"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 191
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55D8D258388B19DE"
+					item: {
+						Count: 1
+						id: "gtceu:bronze_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 191
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Starter Crafting Tools"
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["68C40DA3B882C63A"]
+			description: ["Make a lunch box, it hold more food than the bag you have."]
+			id: "76401BB2F41B64DD"
+			subtitle: "Even Better Eating!"
+			tasks: [{
+				id: "542DBFCEF14784D5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 9
+						}
+					}
+					id: "solonion:lunchbox"
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5F3995AE19CB1FC0"]
+			description: [
+				"You can use the hammer you just crafted to break things down. Try it on some cobblestone, place it down and then use your hammer to break it and you'll get gravel. If you repeat the process with gravel you will get sand."
+				""
+				"This might be useful to you if you are running out of gravel or sand from the previous quests."
+				""
+				"You can also use the hammer to double (some) ores by mining them with the hammer!"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "2022B161DCF4467D"
+			rewards: [
+				{
+					count: 4
+					id: "613B530AF7BAC5EB"
+					item: "minecraft:clay"
+					type: "item"
+				}
+				{
+					id: "20A1D2E6DFBAC29F"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Get Hammered"
+			tasks: [{
+				consume_items: true
+				id: "41206EDCFB645A82"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			title: "Forge Hammer Indev"
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0BAC9B16D54D7320"]
+			id: "37284EB7B8DFCFAA"
+			shape: "square"
+			tasks: [{
+				count: 64L
+				id: "57C8F2B9C0A3299C"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			title: "Treated Wood"
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["37284EB7B8DFCFAA"]
+			description: [
+				"This pump will allow you to get plenty of water for your boilers. You will need it going into steam."
+				""
+				"You can view multiblock info in REI."
+			]
+			icon: "gtceu:primitive_pump"
+			id: "5224D5A0F291EC73"
+			rewards: [
+				{
+					count: 8
+					id: "08FD2A104E266E8A"
+					item: "gtceu:treated_wood_large_fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "6894B434BCFAD082"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "steam_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Infinite Water?"
+			tasks: [
+				{
+					count: 10L
+					id: "4E1BEF0F8813AE23"
+					item: "gtceu:pump_deck"
+					type: "item"
+				}
+				{
+					id: "4C7E37C8CEF2D0B7"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					id: "57315A18A67E455C"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6DFC09CE7DCAC6AB"
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+			]
+			title: "Primitive Pump"
+			x: -15.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["768435E2782362E0"]
+			description: ["You can use this tank to store fluid. For now its mostly useful for storing large amounts of water that we will get from the pump."]
+			icon: "gtceu:wooden_multiblock_tank"
+			id: "723E94F70A31607E"
+			rewards: [
+				{
+					count: 4
+					id: "0DD8A557F15618A2"
+					item: "gtceu:lead_ingot"
+					type: "item"
+				}
+				{
+					id: "76187507087188D0"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "steam_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Storing Fluid"
+			tasks: [
+				{
+					count: 23L
+					id: "6D33BC607B6F2757"
+					item: "gtceu:wood_wall"
+					type: "item"
+				}
+				{
+					id: "339F9B1E2FC2E23D"
+					item: "gtceu:wooden_multiblock_tank"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1FAB2ACE361BEE8E"
+					item: { Count: 2, id: "gtceu:wooden_tank_valve" }
+					type: "item"
+				}
+			]
+			title: "Wooden Tank"
+			x: -17.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["37284EB7B8DFCFAA"]
+			description: ["&5Lead&r can be acquired from &5Galena&r veins. &5 Galena&r and &5Lead&r both can be smelted into &5Lead&r ingots. You need &5Lead&r to make the wooden tank multiblock."]
+			id: "768435E2782362E0"
+			shape: "square"
+			tasks: [{
+				count: 64L
+				id: "4FE1D501CFB80EF7"
+				item: "gtceu:lead_ingot"
+				type: "item"
+			}]
+			title: "Lead"
+			x: -15.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["68C40DA3B882C63A"]
+			description: ["Sleeping bags let you sleep anywhere, and they wont change your spawnpoint. Perfect to avoid the night when you're out on an expedition."]
+			id: "1C2D06F1D404666F"
+			tasks: [{
+				icon: "comforts:sleeping_bag_red"
+				id: "3674B7F64BD3B439"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "comforts:sleeping_bags"
+					}
+				}
+				title: "Any #comforts:sleeping_bags"
+				type: "item"
+			}]
+			title: "Sleeping on the Go"
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["68C40DA3B882C63A"]
+			id: "6C195497D71A1E8F"
+			tasks: [{
+				id: "43758E84418B98CD"
+				item: {
+					Count: 1
+					id: "minecraft:shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["461DB31D0BCE5786"]
+			description: [
+				"The workstation allows you to make multiple recipes in the same table, also it keeps ingredients inside and can access other inventories via upgrades. Make one and I'll give you some upgrades."
+				""
+				"Name tags allow access to bordering containers, chests keep items inside the workstation, lanterns light up your work area."
+				""
+				"P.S. You can connect it to more than chests!"
+			]
+			id: "07A3F0DE98DE0D40"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "71E4837AC5161D26"
+					table_id: 387872088303219450L
+					type: "choice"
+				}
+				{
+					id: "0AFA3AF35ED0C560"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "28AD5C6FDFB5FD5F"
+				item: "workshop_for_handsome_adventurer:workstation_placer_oak"
+				type: "item"
+			}]
+			title: "Crafting 1.5"
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["461DB31D0BCE5786"]
+			description: ["Getting a lot of coal now will be useful as you will have to smelt a lot of things in this tier and moving forward. Try to save some of it for later so you can make it into coke!"]
+			id: "45E3BCDF5C8FDDE2"
+			shape: "square"
+			subtitle: "Early Fuel"
+			tasks: [{
+				count: 64L
+				id: "3E279337D132D076"
+				item: "gtceu:raw_coal"
+				type: "item"
+			}]
+			title: "Coal"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["028594A6DC9911FC"]
+			description: ["This book will show you every recipe you can make with the items in your inventory."]
+			id: "403528E6BD03BE59"
+			tasks: [{
+				id: "719EB423E1FD06B8"
+				item: "cookingforblockheads:recipe_book"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["768435E2782362E0"]
+			description: ["&8Potin&r is an alloy of &5Lead&r, &6Copper&r, and &fTin&r. These pipes have a very high throughput. If you need better pipes consider trying these."]
+			id: "61E6C8E89F131752"
+			optional: true
+			tasks: [{
+				id: "76D16CD7B1A13B5E"
+				item: "gtceu:potin_small_fluid_pipe"
+				type: "item"
+			}]
+			title: "Potin"
+			x: -15.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["68C40DA3B882C63A"]
+			id: "119474B26B09D93F"
+			rewards: [
+				{
+					id: "144BF9C3E408A887"
+					item: "minecraft:salmon_bucket"
+					type: "item"
+				}
+				{
+					id: "5262D94C655D044D"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "6F1FD80D2AFA9554"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F3995AE19CB1FC0"]
+			id: "056A275DFF32C518"
+			shape: "square"
+			tasks: [{
+				id: "0513188579332105"
+				item: "ytech:potters_wheel"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+	]
+	title: "1: Bronze Age"
+}

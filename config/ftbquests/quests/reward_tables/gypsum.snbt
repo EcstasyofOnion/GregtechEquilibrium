@@ -1,0 +1,10 @@
+{
+	id: "3B6D3740E2CF423E"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ count: 20, item: "gtceu:calcite_dust" }
+		{ count: 20, item: "gtceu:gypsum_dust" }
+	]
+	title: "gypsum"
+}

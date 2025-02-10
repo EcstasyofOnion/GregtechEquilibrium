@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "polyethylene"
+	group: "73E51B8DD5910226"
+	icon: "gtceu:polyethylene_ingot"
+	id: "7D29F23BEE598B6E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Polyethylene"
+}

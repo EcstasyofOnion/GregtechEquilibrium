@@ -1,0 +1,10 @@
+{
+	id: "17204366B1F91C43"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ count: 3, item: "pamhc2foodextended:onionhamburgeritem" }
+		{ count: 5, item: "oreberriesreplanted:essence_berry" }
+	]
+	title: "Redstone"
+}

@@ -1,0 +1,60 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mob_bounties"
+	group: "1FAD8197F2E7C90B"
+	id: "104EF9EA2177A109"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "75F3FAE85EA84EB4"
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "15A0557D41EB0231"
+				type: "kill"
+				value: 100L
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			id: "05FB131FD626171F"
+			tasks: [{
+				entity: "minecraft:creeper"
+				icon: "minecraft:creeper_head"
+				id: "6104FFC3D79090B4"
+				type: "kill"
+				value: 100L
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			id: "4A30F133EB44C95F"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				icon: "minecraft:skeleton_skull"
+				id: "4770F6643BAD26CD"
+				type: "kill"
+				value: 100L
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			id: "072829AE07A21988"
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_spawn_egg"
+				id: "1D42A3188C4F5870"
+				type: "kill"
+				value: 100L
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+	]
+	title: "Hostile"
+}

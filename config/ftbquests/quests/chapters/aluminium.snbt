@@ -1,0 +1,208 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aluminium"
+	group: "73E51B8DD5910226"
+	icon: "gtceu:aluminium_ingot"
+	id: "29B49CDC1F3ADC15"
+	order_index: 0
+	quest_links: [
+		{
+			id: "55451BA9E080360A"
+			linked_quest: "039AA3DB61561F31"
+			shape: "rsquare"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			id: "79C3FEC961D459A2"
+			linked_quest: "2F4D88D3726E6D9E"
+			shape: "rsquare"
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			id: "0E86F22FEEA9B078"
+			linked_quest: "40F91F7AEDA44FB1"
+			shape: "rsquare"
+			x: -6.0d
+			y: 6.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"34C8E466BEE6BFED"
+				"0C530C9F675C283B"
+			]
+			id: "1AF2C7718102C855"
+			shape: "rsquare"
+			tasks: [{
+				id: "239350635BF79699"
+				item: "gtceu:alumina_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["667A93F0084A4802"]
+			id: "24634F3B95E00016"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:sodium_aluminate_solution"
+				id: "41D90A0289DC80A2"
+				type: "fluid"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"24634F3B95E00016"
+				"185A7D68BBAFCE55"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Combine Carbon Dioxide, Water, and Sodium Aluminate Solution in the Crystallizer to get Sodium Hydroxide."]
+			id: "0C530C9F675C283B"
+			shape: "rsquare"
+			tasks: [{
+				id: "6EB63108AC1D528B"
+				item: "gtceu:aluminium_hydroxide_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"66540A029D956307"
+				"2F4D88D3726E6D9E"
+			]
+			description: ["Roast Sodium Fluoride and Aluminium Trifluoride with Sodium Hydroxide Solution to get Cryolite"]
+			id: "79F76FC12A655173"
+			shape: "rsquare"
+			tasks: [{
+				id: "345DDAAD80FA860E"
+				item: "gtceu:cryolite_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1AF2C7718102C855"]
+			description: ["Roast Alumina dust with Hydrofluoric Acid to create Aluminium Trifluoride."]
+			id: "66540A029D956307"
+			shape: "rsquare"
+			tasks: [{
+				id: "75AA2894810E83AC"
+				item: "gtceu:aluminium_trifluoride_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["79F76FC12A655173"]
+			description: ["You can use the extractor to turn cryolite dust into its liquid form."]
+			id: "3040FFB478E34433"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:cryolite"
+				id: "5C96CF0559AC3394"
+				type: "fluid"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["54A908BC38E6E0B0"]
+			id: "667A93F0084A4802"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:impure_sodium_aluminate_solution"
+				id: "060556C57A127D82"
+				type: "fluid"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			id: "54A908BC38E6E0B0"
+			shape: "rsquare"
+			tasks: [{
+				id: "4891D1BCD6E2E01B"
+				item: "gtceu:bauxite_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["31A0799A21D5CCEA"]
+			id: "185A7D68BBAFCE55"
+			shape: "rsquare"
+			tasks: [{
+				id: "5131BDBF9CFDED34"
+				item: "gtceu:aluminium_alkoxide_mixture_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5EA1BDEC6F262E38"]
+			id: "31A0799A21D5CCEA"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:aluminium_alkoxide_solution"
+				id: "2260C0C577BEFB11"
+				type: "fluid"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			id: "4C4D4FCBE286791D"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:ethylene"
+				id: "0BE2C051784F369B"
+				type: "fluid"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			id: "50E3B5943BFBFC54"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:triethylaluminium"
+				id: "41EAD0C66FFE19DE"
+				type: "fluid"
+			}]
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			id: "5EA1BDEC6F262E38"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:alfol_trialkylaluminium_mixture"
+				id: "2B43F8CC0BCF0A9E"
+				type: "fluid"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+	]
+	title: "Aluminium"
+}

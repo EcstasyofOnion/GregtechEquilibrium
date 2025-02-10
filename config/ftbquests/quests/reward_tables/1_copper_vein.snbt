@@ -1,0 +1,10 @@
+{
+	id: "729475EB274E7996"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{ count: 2, item: "pamhc2foodextended:zucchinibakeitem" }
+		{ count: 2, item: "pamhc2foodextended:footlongitem" }
+	]
+	title: "1: Copper Vein"
+}

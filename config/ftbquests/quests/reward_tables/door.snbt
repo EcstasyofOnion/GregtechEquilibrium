@@ -1,0 +1,11 @@
+{
+	id: "390176D58D67BDC2"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ count: 2, item: "minecraft:oak_door" }
+		{ count: 4, item: "minecraft:oak_pressure_plate" }
+		{ count: 4, item: "minecraft:iron_ingot" }
+	]
+	title: "Door"
+}

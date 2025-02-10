@@ -1,0 +1,63 @@
+{
+// Ores
+	"material.gtceu.smithsonite": "Smithsonite",
+// Water Related
+	"material.gtceu.deaerated_water": "Deaerated Water",
+	"material.gtceu.sterilized_water": "Sterilized Water",
+	"material.gtceu.demineralized_water": "Demineralized Water",
+	"material.gtceu.filtered_water": "Filtered Water",
+	"material.gtceu.ultrapure_water": "Ultrapure Water",
+	"material.gtceu.sugary_water": "Sugary Water",
+	"material.gtceu.diluted_saltwater": "Diluted Salt Water",
+	"material.gtceu.dense_steam": "Dense Steam",
+	"material.gtceu.wastewater_sludge": "Wastewater Sludge",
+
+
+// Solutions
+	"material.gtceu.sodium_hydroxide_solution": "Sodium Hydroxide Solution",
+	"material.gtceu.diluted_sodium_hydroxide_solution": "Diluted Sodium Hydroxide Solution",
+	"material.gtceu.impure_sodium_hydroxide_solution": "Impure Sodium Hydroxide Solution",
+	"material.gtceu.potassium_hydroxide_solution": "Potassium Hydroxide Solution",
+	"material.gtceu.rock_salt_solution": "Rock Salt Solution",
+	"material.gtceu.diluted_rock_salt_solution": "Diluted Rock Salt Solution",
+	"material.gtceu.nickel_ii_bis_solution": "Nickel(II) Bis(acetylacetonate) Solution",
+	"material.gtceu.nickel_ii_nitrate_solution": "Nickel II Nitrate Solution",
+
+// Aluminium Related
+	"material.gtceu.alumina": "Alumina",
+	"material.gtceu.aluminium_trifluoride": "Aluminium Trifluoride",
+	"material.gtceu.aluminium_hydroxide": "Aluminium Hydroxide",
+	"material.gtceu.impure_sodium_aluminate_solution": "Impure Sodium Aluminate Solution",
+	"material.gtceu.sodium_aluminate_solution": "Sodium Aluminate Solution",
+	"material.gtceu.aluminium_alkoxide_solution": "Aluminium Alkoxide Solution",
+	"material.gtceu.aluminium_alkoxide": "Aluminium Alkoxide",
+	"material.gtceu.triethylaluminium": "Triethylaluminium",
+	"material.gtceu.diethylaluminium_acetylacetonate": "Diethylaluminium Acetylacetonate",
+	"material.gtceu.cryolite": "Cryolite",
+	"material.gtceu.red_mud": "Red Mud",
+
+// Olefin
+	"material.gtceu.shell_higher_olefin_catalyst_solution": "Shell Higher Olefin Catalyst Solution",
+
+// Nickel
+	"material.gtceu.nickel_ii_nitrate": "Nickel II Nitrate",
+	"material.gtceu.nickel_ii_oxide": "Nickel II Oxide",
+	"material.gtceu.nickel_chloride": "Nickel Chloride",
+	"material.gtceu.dichloro_bis_nickel": "Dichlorobis(triphenylphosphine)nickel(II)",	
+	"material.gtceu.dicarbonyl_bis_nickel": "Dicarbonylbis(triphenylphosphine)nickel(0)",	
+	"material.gtceu.nickel_ii_bis": "Nickel(II) Bis(acetylacetonate)",
+	"material.gtceu.bis_nickel": "Bis(cyclooctadiene)nickel(0)",
+	"material.gtceu.isopropenyl_acetate": "Isopropenyl Acetate",
+
+	"material.gtceu.sodium_fluoride": "Sodium Fluoride",
+	"material.gtceu.sodium_fluoride_solution": "Sodium Fluoride Solution",
+	"material.gtceu.hydrogen_fluoride": "Hydrogen Fluoride",
+
+	"material.gtceu.1_5_cyclooctadiene": "1,5-Cyclooctadiene",
+	"material.gtceu.triphenylphosphine": "Triphenylphosphine",
+	"material.gtceu.triphenylphosphine_dichloride": "Triphenylphosphine Dichloride",
+
+
+	"material.gtceu.sodium_arsenide": "Sodium Arsenide",
+	"material.gtceu.arsine": "Arsine"
+}

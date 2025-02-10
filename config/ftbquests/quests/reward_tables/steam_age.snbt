@@ -1,0 +1,319 @@
+{
+	id: "1040303111742EF4"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "steam_age"
+	}
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{ count: 16, item: "minecraft:experience_bottle" }
+		{ count: 8, item: "minecraft:lever" }
+		{ count: 8, item: "minecraft:string" }
+		{ count: 16, item: "minecraft:arrow" }
+		{
+			item: {
+				Count: 1
+				id: "minecraft:bow"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 64, item: "minecraft:glass" }
+		{ item: "hexerei:mahogany_sapling" }
+		{ item: "hexerei:willow_sapling" }
+		{ item: "hexerei:witch_hazel_sapling" }
+		{ count: 16, item: "farmersdelight:cooked_chicken_cuts" }
+		{ count: 16, item: "farmersdelight:cooked_bacon" }
+		{ count: 16, item: "farmersdelight:cooked_cod_slice" }
+		{ count: 16, item: "farmersdelight:cooked_mutton_chops" }
+		{ count: 16, item: "farmersdelight:cooked_salmon_slice" }
+		{ count: 8, item: "minecraft:gunpowder" }
+		{ count: 32, item: "minecraft:glass_pane" }
+		{ count: 16, item: "minecraft:bone" }
+		{ count: 32, item: "minecraft:terracotta" }
+		{ item: "minecraft:iron_block" }
+		{ item: "minecraft:gold_block" }
+		{ item: "minecraft:redstone_block" }
+		{ item: "minecraft:lapis_block" }
+		{ item: "minecraft:diamond_block" }
+		{ item: "gtceu:bronze_block" }
+		{ item: "minecraft:copper_block" }
+		{ item: "gtceu:tin_block" }
+		{ count: 16, item: "minecraft:obsidian" }
+		{ count: 8, item: "minecraft:chest" }
+		{ count: 8, item: "minecraft:charcoal" }
+		{ count: 16, item: "minecraft:bone_meal" }
+		{ count: 128, item: "minecraft:torch" }
+		{ count: 64, item: "quark:spruce_ladder" }
+		{ count: 4, item: "pamhc2foodcore:potatosoupitem" }
+		{ count: 2, item: "minecraft:bucket" }
+		{ item: "gtceu:bronze_brick_casing" }
+		{ count: 16, item: "gtceu:sticky_resin" }
+		{ item: "minecraft:piston" }
+		{ item: "minecraft:sticky_piston" }
+		{ count: 8, item: "minecraft:bricks" }
+		{ count: 16, item: "minecraft:iron_ingot" }
+		{ count: 16, item: "gtceu:red_alloy_ingot" }
+		{ count: 16, item: "gtceu:bronze_ingot" }
+		{ item: "ironchest:obsidian_chest" }
+		{ count: 4, item: "gtceu:damascus_steel_ingot" }
+		{ count: 2, item: "gtceu:lp_steam_solid_boiler" }
+		{ item: "gtceu:hp_steam_solid_boiler" }
+		{ item: "gtceu:lp_steam_macerator" }
+		{
+			item: {
+				Count: 1
+				id: "minecraft:chainmail_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:chainmail_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:chainmail_leggings"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:chainmail_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 32, item: "gtceu:coke_gem" }
+		{
+			count: 2
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:strong_healing"
+				}
+			}
+		}
+		{
+			count: 2
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:long_regeneration"
+				}
+			}
+		}
+		{
+			count: 2
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:fire_resistance"
+				}
+			}
+		}
+		{
+			count: 2
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:strength"
+				}
+			}
+		}
+		{
+			count: 4
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:long_night_vision"
+				}
+			}
+		}
+		{
+			count: 2
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:leaping"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gtceu:damascus_steel_mortar"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						MaxDamage: 1023
+					}
+					HideFlags: 2
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gtceu:steel_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 3
+						MaxDamage: 511
+						ToolSpeed: 9.0f
+					}
+					HideFlags: 2
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gtceu:iron_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gtceu:iron_screwdriver"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						MaxDamage: 255
+					}
+					HideFlags: 2
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gtceu:iron_file"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						MaxDamage: 255
+					}
+					HideFlags: 2
+				}
+			}
+		}
+		{ count: 16, item: "gtceu:iron_rod" }
+		{ item: "minecraft:cat_spawn_egg" }
+		{ item: "minecraft:cow_spawn_egg" }
+		{ item: "minecraft:chicken_spawn_egg" }
+		{ item: "minecraft:pig_spawn_egg" }
+		{ item: "minecraft:sheep_spawn_egg" }
+		{ item: "minecraft:wolf_spawn_egg" }
+		{ item: "minecraft:ocelot_spawn_egg" }
+		{ count: 4, item: "minecraft:hopper" }
+		{ count: 4, item: "pamhc2foodextended:meatfeastpizzaitem" }
+		{ count: 4, item: "pamhc2foodextended:beefwellingtonitem" }
+		{ count: 4, item: "pamhc2foodextended:sausageinbreaditem" }
+		{ count: 4, item: "pamhc2foodextended:deluxecheeseburgeritem" }
+		{ count: 8, item: "pamhc2foodcore:friesitem" }
+		{ count: 4, item: "pamhc2foodextended:heartybreakfastitem" }
+		{
+			item: {
+				Count: 1
+				id: "gtceu:hazmat_headpiece"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "gtceu:steel_wrench"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 3
+						MaxDamage: 511
+						ToolSpeed: 9.0f
+					}
+					HideFlags: 2
+				}
+			}
+		}
+	]
+	title: "Steam Age"
+}

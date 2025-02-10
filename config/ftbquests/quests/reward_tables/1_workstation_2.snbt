@@ -1,0 +1,11 @@
+{
+	id: "0561FF9BF99A32FA"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{ count: 4, item: "minecraft:lantern" }
+		{ count: 4, item: "minecraft:name_tag" }
+		{ count: 4, item: "minecraft:chest" }
+	]
+	title: "1: Workstation"
+}

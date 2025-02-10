@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "4E01422849EACB02", title: "Tiers" }
+		{ id: "73E51B8DD5910226", title: "Chain Processing" }
+		{ id: "7E112B0E9DB5DDEB", title: "Base Building" }
+		{ id: "2D9841B29E904733", title: "All the Ore" }
+		{ id: "1FAD8197F2E7C90B", title: "Bounties" }
+	]
+}

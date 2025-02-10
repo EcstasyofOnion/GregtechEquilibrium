@@ -1,0 +1,973 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0stone"
+	group: "4E01422849EACB02"
+	icon: "minecraft:flint"
+	id: "615CC7F18404BBEA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to &l&eGregtech: Equilibrium&r&r friend! This pack was designed with longevity and difficulty in mind. Expect a hardcore journey! This quest book will take you through the whole pack, while giving you some tips along the way. There is much to do and much to explore in this vast world, prepare yourself!"
+				""
+				"As for the questline, it is divided into multiple &ltiers&r starting from the Stone Age you are in now. Each chapter will guide you through that tier and give you some tips on how to be succesful, I cannot promise to cover everything for you though, so there will be some things to figure out on your own. The questline is structured in a way that is simple to follow, quests with a square border are main quests to move forward, hexagonal quests are milestones in each tier, these are required to complete. Quests with a circular outline are optional, it is recommended to complete them, however."
+				""
+				"Anyways, let's get started. Night time will be difficult, there is many new monsters that lurk in the dark that would be best to avoid for now. Be careful out there!"
+			]
+			icon: "gtceu:gregification_hazard_sign_block"
+			id: "33F31E5A44C2A6CA"
+			shape: "square"
+			size: 1.5d
+			subtitle: "An Introduction"
+			tasks: [{
+				id: "24489CF9ACA0F3DA"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: [
+				"REI is included in this pack along with multiple addons for it. It is more functional than JEI and allows for more. REI will take a moment to load each time you enter the world so be patient. It works very similarily, you will notice however that there are a few differences:"
+				""
+				"&l1&r. Bookmarking Recipes! You can bookmark entire recipes. Just press your bookmark key (default 'A') on the recipe arrow and you can save the entire recipe, it can help if something has a lot of different ways to be made or just to be able to actively see what you need."
+				""
+				"&l2&r. Folders! Similar blocks are all foldered to save tabs. You can alt-click the folders to open them."
+				""
+				"&l3&r. Drag and Drop! You can drag and drop items to your bookmarks or drag items from your bookmarks to the trash, as well as reorder them."
+				""
+				"&l4&r. Exporting Recipes! Hold down F8 while hovering over a recipe and release to export the recipe."
+			]
+			id: "0EB91AD2951976B2"
+			subtitle: "How to use REI"
+			tasks: [{
+				id: "598F5B05BEF5F8CD"
+				title: "REI Tutorial"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: [
+				"This pack includes many things during the night making it extremely dangerous to be outside. You will find that the night is much darker, being almost pitch black you will not be able to see without a light source of some sort. In addition there are many new monsters running around, as well as dangerous &4infernals&r! Seek shelter and stay safe!"
+				""
+				"(If you have shaders enabled the hardcore darkness will not apply)"
+			]
+			id: "3E9C4FD505C552B4"
+			subtitle: "Nightfall Information"
+			tasks: [{
+				id: "1620F39E0DE2BB0E"
+				title: "Beware Nightfall!"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: ["You can get rid of your questbook! You can open quests from your bookmarks in REI. If the questbook is missing from there then go to the bottom and click add and you can re-add the questbook, alternatively you can set a keybind to open the quests menu as well, which I would recommend doing."]
+			id: "29A0EC6B468FFBAF"
+			subtitle: "What About my Questbook?"
+			tasks: [{
+				id: "7ED10FA26BF22E96"
+				title: "Questing"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: [
+				"To start find some gravel to get flint. If you don't know where to find gravel look near water. You'll find plenty on coastlines or in river beds. I wouldn't recommend looking in a cave."
+				""
+				"You need food too. Keep an eye out for Pam's gardens or trees! If you can, then save some of the drops to grow later!"
+			]
+			icon: "minecraft:oak_log"
+			id: "1BD4B696C80A826F"
+			rewards: [{
+				id: "5DE33213DBEC8061"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Getting Started"
+			tasks: [
+				{
+					count: 9L
+					id: "49270C49ECCFEBCE"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					count: 5L
+					icon: "minecraft:oak_log"
+					id: "7F6356B6A75A3AB8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					icon: "minecraft:oak_log"
+					id: "58EFF69432C38286"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+			]
+			title: "First Night"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: ["&e&lGregtech: Equilibrium&r&r contains many different biome and terrain mods. You will find 100's of different places all around your world. The main 3 are &lRegions Unexplored&r, &lBiomes O'Plenty&r, and &lOh the Biomes We've Gone&r, however there are others too. Expect plenty of exploration and discovery!"]
+			id: "1F34AEEBA017A097"
+			subtitle: "What's in this world?"
+			tasks: [{
+				id: "7A6EDD5C7F105EEC"
+				title: "Biomes"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: ["&lJourneymap&r is the map mod for this pack. It is very easy to use and user friendly. I would recommend using it's waypoints feature a lot. It can be very helpful to mark things like biomes, ore veins, structures, and more. Feel free to configure its settings to your liking. It is avaliable from the start of the game and free to use!"]
+			id: "3973A6645FA8EB6C"
+			subtitle: "Using the Map"
+			tasks: [{
+				id: "36B50154CA45D187"
+				title: "Journeymap"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: ["The mod &lSimple Backups&r is included in the pack to make backups of your world. It will automatically create backups that you can load."]
+			id: "636E6A735ECE1AF8"
+			subtitle: "Saving Your Progress!"
+			tasks: [{
+				id: "481EC6A9837B2ED7"
+				title: "Backups!"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: ["This pack contains Hunger Overhaul, you will notice very quickly it's effects. You need to eat different foods and bring some variety to your diet, eating the same thing over and over will not only make you eat it slower but also it will restore less and less hunger until eventually it will restore none at all."]
+			id: "2EC38B62CA5AC99C"
+			subtitle: "So... Hungry...."
+			tasks: [{
+				id: "7BBED10E61F19028"
+				title: "Hunger Overhaul"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1BD4B696C80A826F"]
+			description: ["There is a recipe to make flint from gravel, look it up in REI and make some."]
+			id: "221419C47EAF6DC9"
+			rewards: [{
+				id: "1023F21978DB2759"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 3L
+				id: "549F4303E9A97710"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			title: "Flint!"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"56E4C4BF34D176F1"
+				"3D443A9B03447095"
+			]
+			description: ["It's how we all craft things."]
+			id: "19BC81026B73092F"
+			rewards: [{
+				count: 2
+				id: "71BE2E741306FE07"
+				item: "pamhc2crops:pineappleitem"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.5d
+			subtitle: "It's a Table of Crafting"
+			tasks: [{
+				id: "6ED3854D2D50F085"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Crafting"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19BC81026B73092F"]
+			description: ["Now that you've gotten some resources and hopefully a shelter it's time to make some tools!"]
+			id: "5BF0F6D8BD3DD238"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A41B3108274722E"
+					table_id: 4140153296306781443L
+					type: "choice"
+				}
+				{
+					id: "28280C055847E4A8"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "0EB63F7DB039AF55"
+					item: {
+						Count: 1
+						id: "gtceu:flint_pickaxe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2ED9C741E5DC6440"
+					item: {
+						Count: 1
+						id: "gtceu:flint_shovel"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50E043F7AA4589C1"
+					item: {
+						Count: 1
+						id: "gtceu:flint_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 3.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B8CB808339F0042"
+					item: {
+						Count: 1
+						id: "gtceu:flint_hoe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "First Tools"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BF0F6D8BD3DD238"]
+			description: [
+				"To save yourself the hunger make some stairs. Then you don't have to be jumping all the time! I'll even throw in some ladders too, free of charge!"
+				""
+				"Ladders are your best friend! I promise! Try them for yourself."
+			]
+			id: "4CFF70E240A2F49C"
+			optional: true
+			rewards: [
+				{
+					count: 128
+					id: "0302A8D293CB1800"
+					item: "bbb:spruce_ladder"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6902692383483247"
+					item: "pamhc2foodextended:suaderoitem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					icon: "minecraft:oak_stairs"
+					id: "03EA8B1A3064476D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:wooden_stairs"
+						}
+					}
+					title: "Any #minecraft:wooden_stairs"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "019DBF55253530C7"
+					item: "minecraft:cobblestone_stairs"
+					type: "item"
+				}
+			]
+			title: "Stairs"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["19BC81026B73092F"]
+			description: ["Pam's adds a lot of trees that grow food! You should make an apple tree and plant one for a permanent food source."]
+			icon: "pamhc2trees:apple_sapling"
+			id: "08BEF6A303063BDA"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0220C9FC0AEECDF0"
+				table_id: 4027364424742145319L
+				type: "choice"
+			}]
+			subtitle: "Trees to Grow Food!"
+			tasks: [{
+				id: "61EE0886CAF1BD9C"
+				item: "pamhc2trees:apple_sapling"
+				type: "item"
+			}]
+			title: "Apple Trees!"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BF0F6D8BD3DD238"]
+			description: [
+				"Now you should make a weapon! This way you can defend yourself. As a bonus the flint sword has fire aspect built into it, so free cooked meat!"
+				""
+				"Now that you'll be killing things, check out the mob bounties chapter."
+			]
+			id: "4B566DC37956B08C"
+			shape: "square"
+			subtitle: "Why is it Enchanted?"
+			tasks: [{
+				id: "074BAF5668C849E2"
+				item: {
+					Count: 1
+					id: "gtceu:flint_sword"
+					tag: {
+						DisallowContainerItem: 0b
+						Enchantments: [{
+							id: "minecraft:fire_aspect"
+							lvl: 2s
+						}]
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 4.0f
+							AttackSpeed: -2.4f
+							Damage: 0
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B566DC37956B08C"]
+			description: ["Kill sheep! Get wool! Make Bed!"]
+			id: "469E28350E5AE8C3"
+			rewards: [{
+				id: "2D20B059B2EB3E33"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 6L
+				icon: "minecraft:white_wool"
+				id: "1C23A434441FF6B8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:wool"
+					}
+				}
+				title: "Any #forge:wool"
+				type: "item"
+			}]
+			title: "Fluffy"
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4B566DC37956B08C"]
+			id: "0E897D1A69DD5E9B"
+			optional: true
+			rewards: [{
+				id: "40A8C774720B0F89"
+				item: "minecraft:cooked_porkchop"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:pig"
+				id: "182111536E714789"
+				type: "kill"
+				value: 5L
+			}]
+			title: "Rest in Porkchops"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			description: ["Now that you have a nice proper pickaxe, let's mine some cobblestone, YIPPEE!! You might even make some proper walls!"]
+			id: "304309CDB21AA913"
+			rewards: [{
+				id: "238CA093E225531F"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 64L
+				id: "394F0D1F32021423"
+				item: { Count: 64, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			title: "Gathering Time: Cobblestone"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51D3EF55C3BFAD64"]
+			id: "3C57343A4E34A420"
+			rewards: [{
+				id: "66C4A44681366627"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Time to Burn"
+			tasks: [{
+				id: "02D0A8D74F10B9DF"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Fire!"
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5BF0F6D8BD3DD238"]
+			description: [
+				"You have a mallet now! And a new crop?"
+				""
+				"You could just eat them.. but why not use the mallet to make some seeds and plant them instead!"
+			]
+			id: "3E268F85A4425527"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "29079BEFA2F6CAF8"
+				table_id: 2988390450031884265L
+				type: "choice"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "4236ED84DF944422"
+				item: {
+					Count: 1
+					id: "gtceu:wood_mallet"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 127
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "It's a Hamme.... Mallet"
+			x: 13.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3E268F85A4425527"
+				"469E28350E5AE8C3"
+				"3C57343A4E34A420"
+			]
+			description: [
+				"Now you have a bed and can sleep!"
+				""
+				"Thing's don't get any easier though.."
+				""
+				"See you in Tier 1!"
+			]
+			id: "5AB6F310724C47D3"
+			rewards: [
+				{
+					id: "09F6F0D48D9A6405"
+					item: "farmersdelight:sweet_berry_cheesecake_slice"
+					type: "item"
+				}
+				{
+					id: "3622B866D49F22AF"
+					item: "minecraft:oak_door"
+					type: "item"
+				}
+				{
+					id: "7236142F690D0D99"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			subtitle: "Mimimimimimimimimi"
+			tasks: [{
+				icon: "minecraft:red_bed"
+				id: "29E0838A600D698F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				title: "Any #minecraft:beds"
+				type: "item"
+			}]
+			title: "eepy"
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5BF0F6D8BD3DD238"]
+			description: ["Here is some \"free\" carrots. You should plant these by the way. You won't always be given free food."]
+			icon: "minecraft:carrot"
+			id: "7702C8ED317B4301"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "1500B7AA441BBE89"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "51C33466FCF57842"
+				item: { Count: 8, id: "minecraft:stick" }
+				type: "item"
+			}]
+			title: "Free Crops"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7702C8ED317B4301"]
+			description: ["If you actually planted the carrots then here is some potatoes to grow as well!"]
+			icon: "minecraft:potato"
+			id: "317F535FB6FED92D"
+			optional: true
+			rewards: [
+				{
+					count: 5
+					id: "357609CA2475D977"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "0750AFBD95802564"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "stone_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 12L
+				id: "71AAF3301E260635"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			title: "And Potatoes?"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7702C8ED317B4301"]
+			description: ["Are you tired of watching your crops oh so slowly grow? Fear not! Bone meal will save the day! If you get a stack of logs.... Chop Chop!"]
+			icon: "minecraft:bone_meal"
+			id: "6A43CD3977829D0F"
+			optional: true
+			rewards: [
+				{
+					count: 12
+					id: "4C4EB6B3D46414DA"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "308CE7478364EDAD"
+					table_id: 3122202576269629729L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				count: 64L
+				icon: "minecraft:oak_log"
+				id: "3A9BFAED73E1B0F3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "Growing Impatience?"
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["19BC81026B73092F"]
+			id: "05375BE3372191DF"
+			rewards: [{
+				id: "579BEF3173CBE25F"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "stone_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Storing Items!"
+			tasks: [{
+				id: "0E5421E0F897A815"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+				title: "Any #forge:chests/wooden"
+				type: "item"
+			}]
+			title: "Chest"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: ["Press C to zoom in. Useful to read far away waypoint or just for any long distance observation. That's it. that's the tip."]
+			id: "0F6EEA0CA1B64EEC"
+			tasks: [{
+				id: "35E8AC92ACB279D4"
+				title: "ZOOM"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: ["This is the link to the Gregtech CEu Modern wiki if you need additional information: https://gregtechceu.github.io/gtceu-modern-docs/Gameplay/Ore-Generation/"]
+			id: "31A626C64743E038"
+			tasks: [{
+				id: "26458C340529DCDE"
+				title: "Wiki"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			description: ["Multiblocks can be confusing! All Gregtech multiblocks are viewable on REI in the multiblock info tab. Also if you place a multiblocks controller down and sneak+rmb with an empty hand it will place a ghost outline of where to place the rest of the blocks, neat!"]
+			id: "4F41D2F227667860"
+			tasks: [{
+				id: "6866D81A955485AD"
+				title: "Multiblock Info"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5BF0F6D8BD3DD238"]
+			description: ["If you can find a cold desert biome, a ridge, or stony shore biome then this will be extremely easy!"]
+			id: "44BC8DF740B684B5"
+			shape: "square"
+			tasks: [{
+				count: 64L
+				id: "5D7F2972DA6946DD"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			title: "Gathering Time: Gravel"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["221419C47EAF6DC9"]
+			description: ["Right click on a block of stone with a piece of flint to get sharp flint."]
+			id: "37F7A73EF7AC79DC"
+			shape: "square"
+			tasks: [{
+				id: "6AE564DF8325D33A"
+				item: {
+					Count: 1
+					id: "ytech:sharp_flint"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["37F7A73EF7AC79DC"]
+			description: ["Grass Fibers can be obtained by cutting grass with your sharp flint."]
+			id: "578179B071A626B7"
+			shape: "square"
+			tasks: [{
+				count: 32L
+				id: "721DE6A3F9C5A41F"
+				item: "ytech:grass_fibers"
+				type: "item"
+			}]
+			title: "Fibrous"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"578179B071A626B7"
+				"19BC81026B73092F"
+			]
+			description: ["The grass bed will let you skip the nights, you cannot set your spawn however."]
+			id: "140A7DAAF6148147"
+			shape: "square"
+			subtitle: "Mimimimi 0.5"
+			tasks: [{
+				id: "7C9DC555DEAF0E82"
+				item: "ytech:grass_bed"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33F31E5A44C2A6CA"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/icon/gregtech_logo.png"
+				}
+			}
+			id: "2984878883A69421"
+			rewards: [
+				{
+					count: 3
+					id: "7FD9060C3235198E"
+					item: "pamhc2foodextended:chickentendersitem"
+					type: "item"
+				}
+				{
+					id: "2105C18D31E217F6"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.lv"
+						tag: {
+							Charge: 100000L
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Some Items to Help You on Your Adventure"
+			tasks: [{
+				id: "4D98D29359004AA1"
+				title: "s"
+				type: "checkmark"
+			}]
+			title: "Starter Kit"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6CF75FFB3C424EA5"]
+			id: "56E4C4BF34D176F1"
+			shape: "square"
+			size: 1.15d
+			tasks: [{
+				id: "3BFD25753DCEB38A"
+				item: "ytech:crafting_workspace"
+				type: "item"
+			}]
+			title: "Crafting 0.5"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["578179B071A626B7"]
+			id: "6CF75FFB3C424EA5"
+			shape: "square"
+			tasks: [{
+				count: 2L
+				id: "12E3D6850D7C2CB6"
+				item: "ytech:grass_twine"
+				type: "item"
+			}]
+			title: "Grass Twine"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5BF0F6D8BD3DD238"]
+			id: "51D3EF55C3BFAD64"
+			shape: "square"
+			tasks: [{
+				id: "08CB2C987BE095B1"
+				item: {
+					Count: 1
+					id: "ytech:stone_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["37F7A73EF7AC79DC"]
+			description: ["You'll need Leather to make a crafting table, for now you'll have to beat a cow to death with the flint, but once you get 1 piece you can make some basic weapons."]
+			id: "3D443A9B03447095"
+			shape: "square"
+			tasks: [{
+				id: "67BE3B32B7620126"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+	]
+	title: "0: Stone Age"
+}

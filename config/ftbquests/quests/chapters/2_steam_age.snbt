@@ -1,0 +1,1853 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2_steam_age"
+	group: "4E01422849EACB02"
+	icon: "gtceu:hp_steam_solid_boiler"
+	id: "6783154DF4430D76"
+	order_index: 2
+	quest_links: [{
+		id: "25AD9472E8BBC011"
+		linked_quest: "4DFF959087191902"
+		shape: "square"
+		size: 1.5d
+		x: 0.0d
+		y: -6.75d
+	}]
+	quests: [
+		{
+			dependencies: ["4DFF959087191902"]
+			description: [
+				"You will make many casings for all the steam era machines. Better bookmark it!"
+				""
+				"Some machines will require steel to make, follow the questline to get steel production!"
+			]
+			id: "6E5DE9B49264F058"
+			rewards: [{
+				count: 2
+				id: "470345ECBBE121CB"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 2.0d
+			subtitle: "Foundation of Civilization"
+			tasks: [{
+				id: "4307F7A77A5FDD64"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			description: [
+				"The alloy smelter can make bronze directly using ingots, nuggets, or dust."
+				""
+				"It will also be useful to make rubber later."
+				""
+				"You can also use a hopper to empty it."
+			]
+			id: "26F329A2FBA25DC1"
+			rewards: [{
+				count: 2
+				id: "7633363C31CF1F5B"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "79F672B4048535BB"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			description: ["The steam furnace is slower than a regular furnace, but it will save you from using your fuel. "]
+			id: "21980BB332795823"
+			optional: true
+			rewards: [{
+				id: "272B5DCC2C7C6CAA"
+				item: "pamhc2foodextended:lamingtonitem"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "3D10EF6A2AA60F2E"
+				item: "gtceu:lp_steam_furnace"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["21980BB332795823"]
+			description: ["Uses the same amount of steam but is 2x as fast as the low pressure variant."]
+			id: "58BCBEA319D39230"
+			optional: true
+			rewards: [{
+				id: "3079A015D3C34641"
+				item: "pamhc2foodextended:friedfeastitem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "09B9A94236121A98"
+				item: "gtceu:hp_steam_furnace"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4DFF959087191902"]
+			id: "3AFAE990CDD0450A"
+			optional: true
+			rewards: [{
+				id: "2313E072BED7DC2F"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CA34C5ABA9E5C7C"
+				title: "Alternate Steam Generation"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3AFAE990CDD0450A"]
+			id: "0520B8DD7FDBEAEA"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "4BF9A430A390F1B8"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "09B343A69977A1A9"
+				item: "gtceu:lp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0520B8DD7FDBEAEA"]
+			id: "6ACF90D9C0A05A41"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "33CC2AFD48C2A17D"
+				item: "gtceu:hp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4DFF959087191902"]
+			id: "2202A223044A792E"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "4712D23A5E84976E"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["26F329A2FBA25DC1"]
+			id: "01B92E89775103D5"
+			optional: true
+			tasks: [{
+				id: "52BC1E46AACE4C27"
+				item: "gtceu:hp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["237C7A461FDA7191"]
+			description: ["&4Red Alloy&r is one of the most important alloys of this tier. "]
+			id: "4DF0C0CAC0CA312C"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "4742356F53F1B275"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			title: "Red Alloy"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["50EE3FC417341A70"]
+			id: "1F2719253A460852"
+			rewards: [{
+				count: 2
+				id: "5B97DA92B1CF322B"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "11F73A5B7916D54B"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -3.75d
+		}
+		{
+			dependencies: ["1F2719253A460852"]
+			id: "593FFC9B641099B6"
+			optional: true
+			tasks: [{
+				id: "6C11E1B652BA177A"
+				item: "gtceu:hp_steam_macerator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			hide_dependency_lines: false
+			id: "07BF20A07527A9A9"
+			rewards: [{
+				count: 2
+				id: "1CD55583BE599294"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1BF9E5F2D7659451"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["07BF20A07527A9A9"]
+			id: "37C3D69C3A79A6B7"
+			optional: true
+			tasks: [{
+				id: "35B5DCC9A4DB9544"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			id: "23CB39DEC6C75D5B"
+			optional: true
+			subtitle: "Why Does it Need Steel?"
+			tasks: [{
+				id: "1512251EB0EAFF59"
+				item: "minecraft:iron_door"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			description: [""]
+			id: "0B19C4BE83CD6791"
+			shape: "diamond"
+			subtitle: "Putting the \"Steel\" in Flint and Steel"
+			tasks: [{
+				id: "07F3F6221D588EA3"
+				item: {
+					Count: 1
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0B19C4BE83CD6791"]
+			id: "64AD5A323AE9C4D3"
+			shape: "square"
+			subtitle: "Highway to Hell!"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "001E8006F4F2A4C9"
+				type: "dimension"
+			}]
+			title: "The Nether!"
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0D7999C86D95CD63"]
+			hide_text_until_complete: false
+			id: "7867DEDA35430CB2"
+			optional: true
+			tasks: [{
+				id: "33DF795319DDBE86"
+				item: {
+					Count: 1
+					id: "gtceu:rubber_mallet"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 255
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "A Better Mallet"
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0D7999C86D95CD63"]
+			description: ["Plungers remove fluid from machines."]
+			id: "596C2B7C7EDCD38F"
+			optional: true
+			tasks: [{
+				id: "293B59E3C71EED95"
+				item: {
+					Count: 1
+					id: "gtceu:rubber_plunger"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 255
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "Plunge the World!"
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1795C48840DD0C2F"
+				"2D39501AA9CF7267"
+			]
+			id: "3B346232CE3789CB"
+			shape: "square"
+			tasks: [{
+				id: "7B7790E7D9133595"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0D7999C86D95CD63"]
+			description: ["To make cable you need to pump liquid rubber into the spout and then put a tin wire on the depot and it will create a tin cable. "]
+			id: "1795C48840DD0C2F"
+			shape: "square"
+			tasks: [{
+				count: 8L
+				id: "63C3E43BB45263E0"
+				item: "gtceu:tin_single_cable"
+				type: "item"
+			}]
+			title: "Cable!"
+			x: -0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			description: ["It's about time for an upgrade."]
+			icon: {
+				Count: 1
+				id: "gtceu:steel_pickaxe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 3
+						MaxDamage: 511
+						ToolSpeed: 9.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "2A0A5BFF2A7A1656"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "32BD0F94F367C09F"
+					item: {
+						Count: 1
+						id: "gtceu:steel_pickaxe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 511
+								ToolSpeed: 9.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04B0A9175CCB3EF8"
+					item: {
+						Count: 1
+						id: "gtceu:steel_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 511
+								ToolSpeed: 7.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6B83C988F7476E49"
+					item: {
+						Count: 1
+						id: "gtceu:steel_shovel"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 511
+								ToolSpeed: 9.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0FB51D8E5958EDF3"
+					item: {
+						Count: 1
+						id: "gtceu:steel_mining_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 1535
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Steel Tools!"
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0E80A539C7C92D76"]
+			id: "4CFED180277F2DFD"
+			shape: "square"
+			tasks: [{
+				id: "0922D67E9FC8B23F"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1BE38FB3521BBAD3"]
+			description: ["You need sticky resin to make a circuit board.  To get it either smelt slime balls or use the steam seperator you just built!"]
+			id: "0E80A539C7C92D76"
+			shape: "square"
+			tasks: [{
+				count: 4L
+				id: "4ACB88311415CF1B"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4EBF203036A25492"
+				"261A4A1008CE78D2"
+				"4DF0C0CAC0CA312C"
+			]
+			id: "2313EADE15C5B32D"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				count: 2L
+				id: "4CA9B73F19C6A6F4"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2B801C588B4E0A72"
+				"4CFED180277F2DFD"
+				"2313EADE15C5B32D"
+			]
+			id: "2D36B5EAED12658D"
+			shape: "square"
+			tasks: [{
+				id: "2A6CCCE7BE7B08DC"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "First Electronic Circuit!"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E80A539C7C92D76"]
+			id: "2B801C588B4E0A72"
+			shape: "square"
+			tasks: [{
+				id: "580D8E6321BD9DA5"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			id: "4C2A13DC5871814B"
+			shape: "square"
+			tasks: [{
+				id: "713626B2EED5581C"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3B346232CE3789CB"
+				"2D36B5EAED12658D"
+				"6305D017DC294AAA"
+			]
+			id: "550D768BAF5FE57D"
+			shape: "square"
+			size: 4.0d
+			tasks: [{
+				id: "5643FB9C95DFE58E"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			description: ["The steam seperator is basically a very very early centrifuge which might be useful to have."]
+			icon: "steamadditions:steam_separator"
+			id: "1BE38FB3521BBAD3"
+			shape: "square"
+			tasks: [
+				{
+					count: 18L
+					id: "4AAB89C9F0F7FF0E"
+					item: { Count: 18, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "7F6A67832CBBA07F"
+					item: "steamadditions:steam_separator"
+					type: "item"
+				}
+				{
+					id: "3CC30F0A0EF64BE5"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "21A5C8BA6DBD1CCA"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "723B9785430FC35B"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+			]
+			title: "Seperating with Steam"
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6E5DE9B49264F058"
+				"4B2C352056E8B9DE"
+			]
+			id: "261A4A1008CE78D2"
+			rewards: [{
+				count: 2
+				id: "14A3B26E44781FC4"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "3B9D75834F0CC841"
+				item: "gtceu:lp_steam_vacuum_chamber"
+				type: "item"
+			}]
+			title: "Low Pressure Steam Vacuum Chamber"
+			x: 2.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["261A4A1008CE78D2"]
+			id: "5C16F034B97F995D"
+			optional: true
+			tasks: [{
+				id: "2298AD331720F2AF"
+				item: "gtceu:hp_steam_vacuum_chamber"
+				type: "item"
+			}]
+			title: "High Pressure Vacuum Chamber"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			id: "3AD116CEA08B6818"
+			rewards: [{
+				count: 2
+				id: "498D89165718174E"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "11600E190B88EEDC"
+				item: "gtceu:lp_steam_mixer"
+				type: "item"
+			}]
+			title: "Low Pressure Steam Mixer"
+			x: 2.25d
+			y: -3.75d
+		}
+		{
+			dependencies: ["3AD116CEA08B6818"]
+			id: "0444F968B1C35D6D"
+			optional: true
+			tasks: [{
+				id: "42E3E3D092956959"
+				item: "gtceu:hp_steam_mixer"
+				type: "item"
+			}]
+			title: "High Pressure Steam Mixer"
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			id: "1523F5FF51193A80"
+			rewards: [{
+				count: 2
+				id: "2F0D7B3E4396969E"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "7605F79B8B6C5505"
+				item: "gtceu:lp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1523F5FF51193A80"]
+			id: "467EFFF6033B0BD8"
+			optional: true
+			tasks: [{
+				id: "42D8A6129AEDDE9A"
+				item: "gtceu:hp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			description: ["You will need steam pistons for a lot of steam machines."]
+			id: "50EE3FC417341A70"
+			rewards: [{
+				id: "3F4422EEB00B33D9"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "steam_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "493EB7D6E07EFAA8"
+				item: "susy:steam.piston"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			id: "472B79BD7BA0919A"
+			rewards: [{
+				count: 2
+				id: "103CC88231B0C388"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "7E6437E44A555BAE"
+				item: "gtceu:lp_steam_latex_collector"
+				type: "item"
+			}]
+			title: "Low Pressure Latex Collector"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"472B79BD7BA0919A"
+				"4B2C352056E8B9DE"
+			]
+			id: "59D95E48013CA9B1"
+			optional: true
+			tasks: [{
+				id: "2284CD280D92C049"
+				item: "gtceu:hp_steam_latex_collector"
+				type: "item"
+			}]
+			title: "High Pressure Steam Latex Collector"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["50EE3FC417341A70"]
+			description: ["You will need steam motors for other machines and components."]
+			id: "49394B6E34982B5A"
+			rewards: [{
+				id: "3614FEF107197C8C"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "steam_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "6380CA0D21C30529"
+				item: "susy:steam.motor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["49394B6E34982B5A"]
+			description: ["The steam pump can be used as a crafting ingredient in some recipes, but also it can pump fluids. Useful for early game automation setups."]
+			hide_dependent_lines: true
+			id: "4B2C352056E8B9DE"
+			rewards: [{
+				id: "3B3E128CD537A14E"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "steam_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "0D33CD78A5ECA81F"
+				item: "susy:steam_pump"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["49394B6E34982B5A"]
+			id: "6DB6B464358E52C8"
+			optional: true
+			rewards: [{
+				id: "67618AB50839B259"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "steam_age"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E65C4730651206D"
+				item: "susy:steam_conveyor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["50EE3FC417341A70"]
+			id: "197B97F1A7BF240E"
+			rewards: [{
+				count: 2
+				id: "60ED9ABF1F6FFFF8"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "53312D45C176FB1B"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -5.25d
+		}
+		{
+			dependencies: ["197B97F1A7BF240E"]
+			id: "422BD8747ED3D85B"
+			optional: true
+			tasks: [{
+				id: "4F270383A940AF15"
+				item: "gtceu:hp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			id: "01F630314CDDCD5D"
+			rewards: [{
+				count: 2
+				id: "12FEAEC6974935BA"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "2B4897B798B2A370"
+				item: "gtceu:lp_steam_vulcanizing_press"
+				type: "item"
+			}]
+			title: "Low Pressure Steam Vulcanizing Press"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C2A13DC5871814B"]
+			id: "6305D017DC294AAA"
+			shape: "square"
+			tasks: [{
+				id: "671160A47E5F74C5"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["01F630314CDDCD5D"]
+			id: "65CE0644B6FCE24E"
+			optional: true
+			tasks: [{
+				id: "574B80EA30A2B108"
+				item: "gtceu:hp_steam_vulcanizing_press"
+				type: "item"
+			}]
+			title: "High Pressure Steam Vulcanizing Press"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			description: ["You can make bigger versions of the coagulation tank if you would like, check REI for more info."]
+			icon: "susy:coagulation_tank"
+			id: "16771605E4C4F78C"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Solidifying Things"
+			tasks: [
+				{
+					count: 24L
+					id: "5376ACE2E7295256"
+					item: "susy:coagulation_tank_wall"
+					type: "item"
+				}
+				{
+					id: "0FC862F17AF7D727"
+					item: "susy:coagulation_tank"
+					type: "item"
+				}
+			]
+			title: "Coagulation Tank"
+			x: -2.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["26F329A2FBA25DC1"]
+			description: ["You will need &4redstone&r to make &4red alloy&r, so find a vein now."]
+			icon: "gtceu:raw_redstone"
+			id: "237C7A461FDA7191"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F0963FB89DF17C9"
+					table_id: 1666405970478701635L
+					type: "choice"
+				}
+				{
+					id: "338E84DD55942E12"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "steam_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				count: 64L
+				id: "193A1F51A216C1EF"
+				item: { Count: 64, id: "gtceu:raw_redstone" }
+				type: "item"
+			}]
+			title: "Redstone"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			id: "2DEA8223BB647013"
+			rewards: [{
+				count: 2
+				id: "507B348A1F356FD3"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "31E234F540370D5D"
+				item: "gtceu:steam_miner"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -5.25d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			id: "72ADDC59B6F99069"
+			rewards: [
+				{
+					count: 2
+					id: "4596BAA7201C2BD2"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+				{
+					id: "46CFE5D821D7E75B"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "steam_age"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "2D6DDED265251AFB"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72ADDC59B6F99069"]
+			id: "2A678B6B5085E41D"
+			optional: true
+			tasks: [{
+				id: "2E0399C3998F71DB"
+				item: "gtceu:hp_steam_compressor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			description: ["Some advanced molds you will need to make some things moving forward."]
+			id: "4EBF203036A25492"
+			shape: "square"
+			tasks: [
+				{
+					id: "3B7218F0848BDE1C"
+					item: "gtceu:gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "3CCF54697B536911"
+					item: "gtceu:small_gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "0F7BAF237A6CF4E4"
+					item: "gtceu:rotor_casting_mold"
+					type: "item"
+				}
+				{
+					id: "4FFBC66C8F7CFE0B"
+					item: "gtceu:cylinder_casting_mold"
+					type: "item"
+				}
+				{
+					id: "4C4DEC4737D4BD17"
+					item: "gtceu:ball_casting_mold"
+					type: "item"
+				}
+				{
+					id: "6F3BB468D9FE79D4"
+					item: "gtceu:bottle_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Advanced Molds"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			description: ["Some basic molds that will make your life a lot easier."]
+			id: "4207712D0F3952B8"
+			shape: "square"
+			tasks: [
+				{
+					id: "5D315F4CCA584F77"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+				{
+					id: "2233936D02D344BD"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "222F4CA83892E096"
+					item: "gtceu:ingot_casting_mold"
+					type: "item"
+				}
+				{
+					id: "73CEA4F96745FE22"
+					item: "gtceu:nugget_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Basic Molds"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3AFAE990CDD0450A"]
+			id: "2C4E6E9068D24858"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "7F3DA55C1192D9FB"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "37B91FBE0740AD76"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2C4E6E9068D24858"]
+			id: "574013609C1C488D"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "052C5BA0A9248F9F"
+				item: "gtceu:hp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.0d
+		}
+		{
+			description: ["Wrought iron is a stronger version of iron. You can make tools with it too."]
+			id: "6294137A69C3ACC4"
+			rewards: [
+				{
+					id: "49572095432AEDA0"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "632FD8C9039BCB27"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				count: 16L
+				id: "3362892738AFBF00"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			title: "Iron 2.0"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["72ADDC59B6F99069"]
+			description: [
+				"You can find calcite in a &1lapis&r vein."
+				""
+				"Alternatively you can look for an &5amethyst&r geode and mine the calcite surrounding it, and then macerate it to get the dust."
+			]
+			icon: "gtceu:calcite_dust"
+			id: "0AEF49B855ADB0AC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "551D7A1756F2C001"
+				table_id: 4282139572521878078L
+				type: "choice"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 48L
+				id: "5A1B93888369175D"
+				item: { Count: 48, id: "gtceu:calcite_dust" }
+				type: "item"
+			}]
+			title: "Calcite"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["72ADDC59B6F99069"]
+			description: ["Gypsum is found in mineral sand veins. "]
+			icon: "gtceu:gypsum_dust"
+			id: "7B2FC344F7D838FA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "095F55BB8B23F5FD"
+				table_id: 4282139572521878078L
+				type: "choice"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 48L
+				id: "21117E1A565A07D8"
+				item: { Count: 32, id: "gtceu:gypsum_dust" }
+				type: "item"
+			}]
+			title: "Gypsum"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["602466CD5F5F80DB"]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "6F187B2995A6AEBD"
+			shape: "square"
+			tasks: [
+				{
+					id: "64478C7448C2A057"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1EB6F848299D1801"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
+			title: "Blast Furnace!"
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6F187B2995A6AEBD"
+				"11F15F97292C4C4C"
+			]
+			description: [
+				"&8Steel&r unlocks a whole new tier of the steam age to explore. Some new multiblocks are avaliable, as well as progression towards LV! Continute following the questline to get there!"
+				""
+				"You will need a lot more steel by the way..."
+			]
+			id: "40B278387486100A"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "You'll Need More Than This"
+			tasks: [{
+				count: 8L
+				id: "3683A67EC041629F"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			title: "Steel!"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			description: ["The &8steel&r multiblock tank might be useful to you."]
+			icon: "gtceu:steel_multiblock_tank"
+			id: "1C389AA341827E65"
+			optional: true
+			tasks: [
+				{
+					count: 25L
+					id: "549FF233FFE52C6B"
+					item: { Count: 25, id: "gtceu:solid_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "2044C2CAC007CA70"
+					item: "gtceu:steel_multiblock_tank"
+					type: "item"
+				}
+			]
+			title: "Steel Multiblock Tank"
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"7B2FC344F7D838FA"
+				"0AEF49B855ADB0AC"
+			]
+			id: "602466CD5F5F80DB"
+			shape: "square"
+			tasks: [{
+				id: "09830E44CDA3327F"
+				item: "gtceu:firebrick"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6F187B2995A6AEBD"]
+			description: ["Blast furnaces can share walls, allowing to quickly expand your existing blasting setup. Why don't you make 3 more blast furances? See if you can figure out how to make 4 of them with all this firebrick."]
+			icon: "gtceu:steel_block"
+			id: "135F7E8E66C7560E"
+			optional: true
+			tasks: [
+				{
+					count: 52L
+					id: "07A636DDFF6AC9B3"
+					item: { Count: 84, id: "gtceu:firebricks" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3CDBACF5FEEB7596"
+					item: { Count: 3, id: "gtceu:primitive_blast_furnace" }
+					type: "item"
+				}
+			]
+			title: "Bulk Blasting"
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3F0034A6A83D5A05"
+				"01F630314CDDCD5D"
+				"08E7591A3226AA7E"
+				"70D37D361A3D1120"
+			]
+			description: [
+				"To make rubber put latex dust, sulfur dust, a catalyst dust, and an extruder mold in the vulcanizing press. "
+				""
+				"Why don't you make a lot of it? It will be useful to make cables for LV."
+			]
+			id: "0D7999C86D95CD63"
+			shape: "square"
+			tasks: [{
+				count: 64L
+				id: "7E0BDC3BC71766DC"
+				item: { Count: 16, id: "gtceu:rubber_ingot" }
+				type: "item"
+			}]
+			title: "Rubber"
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40B278387486100A"]
+			description: ["Even though you won't have an extruder until LV, some steam machines require these."]
+			id: "0F9352D8E8326D4D"
+			shape: "square"
+			tasks: [
+				{
+					id: "0F6511CD16E05086"
+					item: "gtceu:plate_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "1CB4A1C71F83F972"
+					item: "gtceu:ingot_extruder_mold"
+					type: "item"
+				}
+			]
+			title: "Early Molds"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4A4CC9EAB709DF1C"
+				"4A7B71507B906E3C"
+			]
+			description: [
+				"Catalysts are substances that speed up the rate of chemical reactions."
+				""
+				"They work by providing an alternative pathway for the reaction to occur, lowering the activation energy required for the reaction to proceed."
+				""
+				"You can make &6Zincite&r or &8Magnesia&r to speed up rubber processing."
+				""
+				"&6Zincite&r can be made in the roaster."
+			]
+			id: "3F0034A6A83D5A05"
+			shape: "square"
+			tasks: [
+				{
+					id: "39A30396DB85B07F"
+					item: "gtceu:zincite_dust"
+					type: "item"
+				}
+				{
+					id: "45551E63F1617010"
+					item: "gtceu:magnesia_dust"
+					type: "item"
+				}
+			]
+			title: "Catalysts"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			id: "0B84530206BE5EA2"
+			rewards: [{
+				count: 2
+				id: "1C2328970EFF6A28"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "2BA3DDE3C1F119A8"
+				item: "gtceu:lp_steam_roaster"
+				type: "item"
+			}]
+			title: "Low Pressure Steam Roaster"
+			x: -0.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["0B84530206BE5EA2"]
+			id: "320E94ECDAD02EE0"
+			optional: true
+			tasks: [{
+				id: "0A8FEA4A64C160D1"
+				item: "gtceu:hp_steam_roaster"
+				type: "item"
+			}]
+			title: "High Pressure Steam Roaster"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0B84530206BE5EA2"
+				"002C5AA970958ECC"
+			]
+			description: ["&3Smithsonite&r will be used to make catalysts for rubber production. Go find a vein!"]
+			id: "4A4CC9EAB709DF1C"
+			shape: "square"
+			tasks: [{
+				count: 8L
+				id: "77AE1D61C3C24514"
+				item: "gtceu:smithsonite_dust"
+				type: "item"
+			}]
+			title: "Smithsonite"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0B84530206BE5EA2"
+				"121646E8B1F153A8"
+			]
+			description: ["&7Magnesite&r will be used to make catalysts for rubber production. Go find a vein!"]
+			id: "4A7B71507B906E3C"
+			shape: "square"
+			tasks: [{
+				count: 8L
+				id: "0F20339BBA6A7E38"
+				item: { Count: 8, id: "gtceu:magnesite_dust" }
+				type: "item"
+			}]
+			title: "Magnesite"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"The primitive mud pump collects mud once per second if placed in a &3river&r biome."
+				""
+				"The controller must be placed between Y 64 and Y 80. To collect mud you can use a steam pump or a lv output hatch."
+				""
+				"Check REI for multiblock info."
+			]
+			icon: "susy:primitive_mud_pump"
+			id: "58E1A332B4E42A64"
+			shape: "square"
+			tasks: [
+				{
+					count: 17L
+					id: "6C6B5A6D2F70AB7C"
+					item: "gtceu:bronze_machine_casing"
+					type: "item"
+				}
+				{
+					id: "5BAF5FB78560A004"
+					item: "susy:primitive_mud_pump"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "12122D8D382A352C"
+					item: "gtceu:treated_wood_frame"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "2EE3B6472EB0A47C"
+					item: { Count: 50, id: "gtceu:treated_wood_planks" }
+					type: "item"
+				}
+			]
+			title: "Primitive Mud Pump"
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6D5344C54AB36D24"]
+			id: "2D39501AA9CF7267"
+			shape: "square"
+			tasks: [{
+				id: "435F3A294493B8B7"
+				item: "gtceu:magnetic_iron_rod"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			hide_dependency_lines: true
+			id: "07A41D1FF976673C"
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "4C24D4BDD8D6F6E1"
+				item: { Count: 16, id: "railcraft:zinc_ingot" }
+				type: "item"
+			}]
+			title: "Zinc"
+			x: 2.5d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"07A41D1FF976673C"
+				"60225472B290B0BF"
+			]
+			id: "6D5344C54AB36D24"
+			shape: "square"
+			tasks: [{
+				id: "0267ECBD51432F35"
+				item: "susy:voltaic_pile"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			hide_dependency_lines: true
+			id: "60225472B290B0BF"
+			shape: "square"
+			tasks: [{
+				id: "3279FA3FCD61BFBE"
+				item: "susy:electrolyte_paper"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["6E5DE9B49264F058"]
+			hide_dependency_lines: true
+			id: "70D37D361A3D1120"
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "6681A2D5685C87C2"
+				item: { Count: 32, id: "gtceu:sulfur_dust" }
+				type: "item"
+			}]
+			title: "Sulfur"
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"16771605E4C4F78C"
+				"21B76060E30B9EBF"
+			]
+			id: "08E7591A3226AA7E"
+			shape: "square"
+			tasks: [{
+				count: 64L
+				id: "4811C56E1318D758"
+				item: "kubejs:latex_dust"
+				type: "item"
+			}]
+			title: "Latex Dust"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["472B79BD7BA0919A"]
+			id: "21B76060E30B9EBF"
+			shape: "square"
+			tasks: [{
+				amount: 1000L
+				fluid: "minecraft:water"
+				id: "3EEFE018C5D409AD"
+				type: "fluid"
+			}]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7680A7D9657DBBBB"]
+			description: ["You can make &6sulfuric acid&r by putting &esulfur trioxide&r in a mixer with &9water&r. Try it!"]
+			id: "795CD5D11D5618EB"
+			shape: "square"
+			subtitle: "Steam Age Acid???"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:sulfuric_acid"
+				id: "5A55141EB7BF2624"
+				type: "fluid"
+			}]
+			x: -8.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["70D37D361A3D1120"]
+			description: ["You can get &esulfur trioxide&r by putting &epyrite dust&r in a roaster."]
+			id: "7680A7D9657DBBBB"
+			shape: "square"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:sulfur_trioxide"
+				id: "698B5657D76D7326"
+				type: "fluid"
+			}]
+			x: -8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1795C48840DD0C2F"]
+			id: "1E03C35406B24D44"
+			shape: "square"
+			tasks: [{
+				id: "697FC04DCF07F39E"
+				item: "kubejs:lead_anode"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1795C48840DD0C2F"]
+			id: "32577B5F8EC410F0"
+			shape: "square"
+			tasks: [{
+				id: "7824192A689144AD"
+				item: "kubejs:lead_cathode"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"32577B5F8EC410F0"
+				"1E03C35406B24D44"
+				"795CD5D11D5618EB"
+			]
+			id: "4729B29A9B99B664"
+			shape: "square"
+			tasks: [{
+				id: "26EDD90C0C3E2D82"
+				item: "susy:battery.lead_acid"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["795CD5D11D5618EB"]
+			description: ["To store volatile liquids and gases you need to use a gold drum."]
+			id: "10EFAD315D7EADC9"
+			optional: true
+			tasks: [{
+				id: "30AB2088A0EB74FC"
+				item: "gtceu:gold_drum"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["4DFF959087191902"]
+			hide_dependency_lines: true
+			id: "002C5AA970958ECC"
+			rewards: [{
+				id: "496793ABFBC646EB"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "steam_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "77E683F2F49D3BEF"
+				item: "gtceu:raw_smithsonite"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DFF959087191902"]
+			hide_dependency_lines: true
+			id: "121646E8B1F153A8"
+			rewards: [{
+				id: "515163447AED6B72"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "steam_age"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "037B223A0D91A176"
+				item: "gtceu:raw_magnesite"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26F329A2FBA25DC1"]
+			description: ["A multiblock alloy smelter. Much faster than the regular steam ones."]
+			icon: "steamadditions:steam_foundry"
+			id: "62F0FB0DF818B78F"
+			subtitle: "Multiblock Alloy Smelting"
+			tasks: [
+				{
+					id: "28A372955FA995F7"
+					item: "steamadditions:steam_foundry"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "7A8D1F7495CA0C52"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "13EFDC7C76583DC0"
+					item: "gtceu:bronze_firebox_casing"
+					type: "item"
+				}
+				{
+					id: "72E755A29DCC5591"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "35BDD16E0057A5AC"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "5166585A60E3981B"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -0.5d
+		}
+	]
+	title: "2: Steam"
+}

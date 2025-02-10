@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5_hv"
+	group: "4E01422849EACB02"
+	icon: "gtceu:hv_steam_turbine"
+	id: "2B12E90CE7E1A01C"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "5: HV"
+}

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mv"
+	group: "73E51B8DD5910226"
+	icon: "gtceu:good_electronic_circuit"
+	id: "4998C2D36E81950F"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "MV Chains"
+}
