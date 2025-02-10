@@ -639,10 +639,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0xb0ad9b)  
 
+
+//Cryogenics -- How to make cryogenic??
     event.create('liquid_natural_gas')
         .liquid()
         .color(0xe6e1d5)      
-        .fluidTemp(110) 
 
 
 //olefin
