@@ -642,7 +642,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('liquid_natural_gas')
         .liquid()
         .color(0xe6e1d5)      
-        .temperature(110)
+        .fluidTemp(110) 
 
 
 //olefin
