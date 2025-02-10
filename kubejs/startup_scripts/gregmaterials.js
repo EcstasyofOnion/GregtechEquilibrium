@@ -71,8 +71,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('potassium_bisulfate')
         .dust()
+        .liquid()
         .components('1x potassium', '1x hydrogen', '1x sulfur', '4x oxygen')
-        .color(0xffd1f9)
+        .color(0x58acb8)
 
     event.create('wet_antimony_trifluoride')
         .dust()
@@ -142,6 +143,29 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('4x carbon', '8x hydrogen', '1x oxygen')
         .color(0xa3108b) 
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('ultramafic_tailing')
+        .dust()
+        .color(0x0a0a0a) 
+
+    event.create('limestone_tailing')
+        .dust()
+        .color(0x2b2a27)
+
+    event.create('vinyl_chloride_suspension')
+        .liquid()
+        .components('2x carbon', '5x hydrogen', '1x chlorine', '1x oxygen')
+        .color(0xbcfc3)
+
+    event.create('potassium_persulfate')
+        .dust()
+        .components('2x potassium', '2x sulfur', '8x oxygen')
+        .color(0x24252e)
+
+
+
+
+
 
 
 
@@ -495,6 +519,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gas()
         .color(0x223632)
 
+    event.create('hot_sulfuric_acid')
+        .liquid()
+        .color(0xb0420e)
+
     event.create('diphenylphosphinoacetic_acid')
         .gas()
         .components('14x carbon', '13x hydrogen', '2x oxygen', '1x phosphorus')
@@ -529,6 +557,75 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('3x carbon', '4x hydrogen', '3x oxygen')
         .color(0x32594c)      
+
+    event.create('diluted_oil')
+        .liquid()
+        .color(0x0f0f0f)      
+
+    event.create('desalted_oil')
+        .liquid()
+        .color(0x000000)      
+
+    event.create('oily_brine')
+        .liquid()
+        .color(0x66604b)      
+
+    event.create('sulfuric_gasoline')
+        .liquid()
+        .color(0xdbc251)      
+
+    event.create('treated_sulfuric_gasoline')
+        .liquid()
+        .color(0xddc251)      
+
+    event.create('sulfuric_diesel')
+        .liquid()
+        .color(0x786924)      
+
+    event.create('treated_sulfuric_diesel')
+        .liquid()
+        .color(0x7f6924)      
+
+    event.create('sulfuric_fuel_oil')
+        .liquid()
+        .color(0x544a1c)      
+
+    event.create('sulfuric_oil_residue')
+        .liquid()
+        .color(0x38341f)    
+
+    event.create('sulfuric_kerosene')
+        .liquid()
+        .color(0x8f823d)      
+
+    event.create('sulfuric_refinery_gas')
+        .gas()
+        .color(0xbfbeb6)    
+
+    event.create('sour_gas')
+        .gas()
+        .color(0xb8ac77)     
+
+    event.create('grain_solution')
+        .liquid()
+        .color(0x9cb898)      
+
+    event.create('impure_ethanol')
+        .liquid()
+        .color(0x997462)      
+
+    event.create('mash')
+        .liquid()
+        .color(0x826456)      
+
+    event.create('ethanol_water_azeotrope')
+        .liquid()
+        .components('182x carbon', '564x hydrogen', '100x oxygen')
+        .color(0x732f0a)      
+
+    event.create('fusel_oil')
+        .liquid()
+        .color(0x702b08)      
 
 
 
@@ -578,4 +675,6 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('shell_higher_olefin_catalyst_solution').setFormula('Ni(C14H13O2P)(C8H12)2(C2H6O2)')
     GTMaterials.get('lithium_hexafluorophosphate_electrolyte').setFormula('(LiPF6)(C3H4O3)')
     GTMaterials.get('aluminium_phenolate').setFormula('Al(OC6H5)3')
+    GTMaterials.get('ethanol_water_azeotrope').setFormula('(C2H6O)91(H2O)9')
+    GTMaterials.get('vinyl_chloride_suspension').setFormula('(C2H3Cl)(H2O)')
 })

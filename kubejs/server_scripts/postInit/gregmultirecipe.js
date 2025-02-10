@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
         .duration(720)
         .EUt(30)
 
-        event.recipes.gtceu.advanced_electrolyzation('gtceu:potassium_hydroxide_electrolyzation')
+        event.recipes.gtceu.advanced_electrolyzation('gtceu:aluminium_electrolyzation')
         .itemInputs(
             '10x gtceu:alumina_dust',
             'gtceu:aluminium_trifluoride_dust',
