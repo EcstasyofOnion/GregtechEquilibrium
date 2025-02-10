@@ -6,7 +6,12 @@
 	icon: "gtceu:polyethylene_ingot"
 	id: "7D29F23BEE598B6E"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "5FC44D2A50E2C325"
+		linked_quest: "4C4D4FCBE286791D"
+		x: 1.0d
+		y: 0.5d
+	}]
 	quests: [ ]
 	title: "Polyethylene"
 }

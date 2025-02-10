@@ -569,6 +569,20 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
 
+    event.recipes.gtceu.batch_reaction('gtceu:triethylaluminium')
+        .itemInputs(
+            '2x #forge:dusts/aluminium'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:ethylene', 6000),
+            Fluid.of('gtceu:hydrogen', 6000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:triethylaluminium', 1000)  
+        )
+        .duration(200)
+        .EUt(120)
+
     //Bubble Column Reactor
     event.recipes.gtceu.column_reaction('gtceu:column_sodium_fluoride')
         .inputFluids(
@@ -630,15 +644,11 @@ ServerEvents.recipes(event => {
             Fluid.of('gtceu:ethylene', 300),
             Fluid.of('gtceu:sodium_aluminate_solution', 1500)   
         )
-        .itemOutputs(
-            '7x gtceu:aluminium_hyrdoxide_dust'
-        )
         .outputFluids(
-            Fluid.of('gtceu:impure_sodium_hydroxide_solution', 1000)  
+            Fluid.of('gtceu:alfol_trialkylaluminium_mixture', 50)  
         )
-        .notConsumable('gtceu:aluminium_hydroxide_dust')
-        .duration(300)
-        .EUt(16)
+        .duration(10)
+        .EUt(30)
 
     event.recipes.gtceu.stirred_tank_reaction('gtceu:diethyl_ether_solution')
         .inputFluids(

@@ -5,14 +5,23 @@
 	group: "73E51B8DD5910226"
 	icon: "gtceu:basic_electronic_circuit"
 	id: "538C478614C52A50"
-	order_index: 3
-	quest_links: [{
-		id: "03805F16AEAA4281"
-		linked_quest: "795CD5D11D5618EB"
-		shape: "rsquare"
-		x: -5.0d
-		y: -1.0d
-	}]
+	order_index: 5
+	quest_links: [
+		{
+			id: "03805F16AEAA4281"
+			linked_quest: "795CD5D11D5618EB"
+			shape: "rsquare"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "0ADF2B8834E723C6"
+			linked_quest: "4C4D4FCBE286791D"
+			shape: "rsquare"
+			x: -0.5d
+			y: 5.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["7D25A6F8836DA456"]
@@ -52,7 +61,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7D25A6F8836DA456"]
@@ -129,7 +138,7 @@
 				item: "gtceu:lithium_oxide_dust"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -6.5d
 			y: 2.0d
 		}
 		{
@@ -141,7 +150,7 @@
 				item: "gtceu:lithium_carbonate_dust"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -153,7 +162,7 @@
 				item: "gtceu:lithium_fluoride_dust"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: 2.0d
 		}
 		{
@@ -164,8 +173,78 @@
 				item: "gtceu:lithium_dust"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"32AE68E2A8741EB9"
+				"7D25A6F8836DA456"
+			]
+			id: "5262190A5F3AB001"
+			shape: "rsquare"
+			tasks: [{
+				id: "78A281B482C90C35"
+				item: "gtceu:lithium_hexafluorophosphate_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5262190A5F3AB001"
+				"17DD83400DC6133E"
+			]
+			id: "62F7F0C6B8232B5D"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:lithium_hexafluorophosphate_electrolyte"
+				id: "688FF29B728E05AA"
+				type: "fluid"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4C4D4FCBE286791D"]
+			id: "17DD83400DC6133E"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:ethylene_carbonate"
+				id: "7F90A921DA46BD0B"
+				type: "fluid"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"7FA10240B3BCA35E"
+				"2B4FC8551C367913"
+			]
+			id: "1893C18A7C2D14B5"
+			shape: "rsquare"
+			tasks: [{
+				id: "4E91F720EE0C6AE4"
+				item: "gtceu:lithium__cobalt_oxide_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			id: "2B4FC8551C367913"
+			shape: "rsquare"
+			tasks: [{
+				id: "2A66B261030E446E"
+				item: "gtceu:cobalt_oxide_dust"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.5d
 		}
 	]
 	title: "LV Chains"

@@ -33,9 +33,17 @@
 	"material.gtceu.aluminium_alkoxide_mixture": "Aluminium Alkoxide",
 	"material.gtceu.triethylaluminium": "Triethylaluminium",
 	"material.gtceu.diethylaluminium_acetylacetonate": "Diethylaluminium Acetylacetonate",
-	"material.gtceu.alfol_trialkylaluminium_mixture": "alfol Trialkylaluminium Mixture",
+	"material.gtceu.alfol_trialkylaluminium_mixture": "Alfol Trialkylaluminium Mixture",
 	"material.gtceu.cryolite": "Cryolite",
 	"material.gtceu.red_mud": "Red Mud",
+
+// Oil
+	"material.gtceu.diluted_oil": "Diluted Oil",
+	"material.gtceu.desalted_oil": "Desalted Oil",
+	"material.gtceu.oily_brine": "Oily Brine",
+
+	"material.gtceu.sulfuric_diesel": "Sulfuric Diesel",
+	"material.gtceu.treated_sulfuric_diesel": "Treated Sulfuric Diesel",
 
 // Olefin
 	"material.gtceu.shell_higher_olefin_catalyst_solution": "Shell Higher Olefin Catalyst Solution",

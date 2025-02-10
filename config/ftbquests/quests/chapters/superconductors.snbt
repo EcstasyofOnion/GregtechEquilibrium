@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "superconductors"
+	group: "73E51B8DD5910226"
+	icon: "gtceu:manganese_phosphide_hex_wire"
+	id: "35360174AEB4F349"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Superconductors"
+}

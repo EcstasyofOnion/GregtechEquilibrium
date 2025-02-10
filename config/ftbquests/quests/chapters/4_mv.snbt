@@ -13,6 +13,17 @@
 		x: 1.0d
 		y: 1.0d
 	}]
-	quests: [ ]
+	quests: [{
+		dependencies: ["2B077557A957FD1B"]
+		id: "38AE61EDD1B27865"
+		shape: "square"
+		tasks: [{
+			id: "37D10AFE9E3A7D58"
+			item: "gtca:mega_oil_cracking_unit"
+			type: "item"
+		}]
+		x: 4.0d
+		y: 1.0d
+	}]
 	title: "4: MV"
 }

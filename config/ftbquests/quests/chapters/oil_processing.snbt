@@ -5,8 +5,155 @@
 	group: "73E51B8DD5910226"
 	icon: "gtceu:oil_medium_bucket"
 	id: "414F132FD1558219"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "1CB4CC3BDF91C40E"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:oil_medium"
+				id: "1F46CC783D5FAC94"
+				type: "fluid"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			description: [""]
+			id: "026C91857B055463"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:oil"
+				id: "1023687F86365600"
+				type: "fluid"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			description: ["You get the most from gasoline"]
+			id: "13217CED68AAE820"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:ethane"
+				id: "1EBA6EDEC9981C67"
+				type: "fluid"
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			id: "3A653881A3C09793"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:steam_cracked_ethane"
+				id: "3C81F55D89E16435"
+				type: "fluid"
+			}]
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			id: "4C4D4FCBE286791D"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:ethylene"
+				id: "0BE2C051784F369B"
+				type: "fluid"
+			}]
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			id: "61C068B99539AD28"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:naphtha"
+				id: "32255481F4910CBB"
+				type: "fluid"
+			}]
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			id: "74CE229E1167D3C8"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:sulfuric_naphtha"
+				id: "2D9AE44F04284CBE"
+				type: "fluid"
+			}]
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["49FCA525A2370A81"]
+			description: ["First you need to use a &bdistillery&r, and later the &9distillation tower&r, to seperate sulfuric fluid from desalted oil."]
+			id: "2665428D78A288EA"
+			shape: "rsquare"
+			tasks: [{
+				id: "5DB6A872F0EA511E"
+				type: "checkmark"
+			}]
+			title: "Seperation"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2665428D78A288EA"]
+			description: ["Next you can use a &bfixed bed reactor&r to treat the sulfuric fuel."]
+			id: "4D131CF7030947E9"
+			shape: "rsquare"
+			tasks: [{
+				id: "3FCDC238D59BAE44"
+				type: "checkmark"
+			}]
+			title: "Treatment"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4D131CF7030947E9"]
+			description: ["To get the final product use the treated fluid in a &bdistillery&r or the &9distillation tower&r."]
+			id: "63E7FCD88F8C81CD"
+			shape: "rsquare"
+			tasks: [{
+				id: "0397AF16F86CFDD7"
+				type: "checkmark"
+			}]
+			title: "Final Product"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5DF5DE5AC1DB758B"]
+			id: "49FCA525A2370A81"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:desalted_oil"
+				id: "75526B428528312D"
+				type: "fluid"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["026C91857B055463"]
+			id: "5DF5DE5AC1DB758B"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:diluted_oil"
+				id: "52CCA2C257EDF1C0"
+				type: "fluid"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+	]
 	title: "Oil Processing"
 }

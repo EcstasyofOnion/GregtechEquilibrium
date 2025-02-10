@@ -8,13 +8,6 @@
 	order_index: 0
 	quest_links: [
 		{
-			id: "55451BA9E080360A"
-			linked_quest: "039AA3DB61561F31"
-			shape: "rsquare"
-			x: 4.0d
-			y: 3.0d
-		}
-		{
 			id: "79C3FEC961D459A2"
 			linked_quest: "2F4D88D3726E6D9E"
 			shape: "rsquare"
@@ -25,8 +18,15 @@
 			id: "0E86F22FEEA9B078"
 			linked_quest: "40F91F7AEDA44FB1"
 			shape: "rsquare"
-			x: -6.0d
-			y: 6.5d
+			x: -6.5d
+			y: 7.0d
+		}
+		{
+			id: "45E8A28B2123C760"
+			linked_quest: "4C4D4FCBE286791D"
+			shape: "rsquare"
+			x: -5.0d
+			y: 8.5d
 		}
 	]
 	quests: [
@@ -35,6 +35,7 @@
 				"34C8E466BEE6BFED"
 				"0C530C9F675C283B"
 			]
+			description: ["Putting Aluminium Hydroxide into the &9EBF&r will output Alumina dust"]
 			id: "1AF2C7718102C855"
 			shape: "rsquare"
 			tasks: [{
@@ -64,7 +65,7 @@
 				"185A7D68BBAFCE55"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Combine Carbon Dioxide, Water, and Sodium Aluminate Solution in the Crystallizer to get Sodium Hydroxide."]
+			description: ["Combine Carbon Dioxide, Water, and Sodium Aluminate Solution in the &bCrystallizer&r to get Sodium Hydroxide."]
 			id: "0C530C9F675C283B"
 			shape: "rsquare"
 			tasks: [{
@@ -80,7 +81,7 @@
 				"66540A029D956307"
 				"2F4D88D3726E6D9E"
 			]
-			description: ["Roast Sodium Fluoride and Aluminium Trifluoride with Sodium Hydroxide Solution to get Cryolite"]
+			description: ["&bRoast&r Sodium Fluoride and Aluminium Trifluoride with Sodium Hydroxide Solution to get Cryolite"]
 			id: "79F76FC12A655173"
 			shape: "rsquare"
 			tasks: [{
@@ -93,7 +94,7 @@
 		}
 		{
 			dependencies: ["1AF2C7718102C855"]
-			description: ["Roast Alumina dust with Hydrofluoric Acid to create Aluminium Trifluoride."]
+			description: ["&bRoast&r Alumina dust with Hydrofluoric Acid to create Aluminium Trifluoride."]
 			id: "66540A029D956307"
 			shape: "rsquare"
 			tasks: [{
@@ -106,7 +107,7 @@
 		}
 		{
 			dependencies: ["79F76FC12A655173"]
-			description: ["You can use the extractor to turn cryolite dust into its liquid form."]
+			description: ["You can use the &bextractor&r to turn cryolite dust into its liquid form."]
 			id: "3040FFB478E34433"
 			shape: "rsquare"
 			tasks: [{
@@ -168,18 +169,10 @@
 			y: 5.0d
 		}
 		{
-			id: "4C4D4FCBE286791D"
-			shape: "rsquare"
-			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:ethylene"
-				id: "0BE2C051784F369B"
-				type: "fluid"
-			}]
-			x: -5.0d
-			y: 7.0d
-		}
-		{
+			dependencies: [
+				"4C4D4FCBE286791D"
+				"40F91F7AEDA44FB1"
+			]
 			id: "50E3B5943BFBFC54"
 			shape: "rsquare"
 			tasks: [{
@@ -188,10 +181,11 @@
 				id: "41EAD0C66FFE19DE"
 				type: "fluid"
 			}]
-			x: -4.0d
-			y: 7.5d
+			x: -5.0d
+			y: 7.0d
 		}
 		{
+			dependencies: ["50E3B5943BFBFC54"]
 			id: "5EA1BDEC6F262E38"
 			shape: "rsquare"
 			tasks: [{
@@ -202,6 +196,22 @@
 			}]
 			x: -4.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3040FFB478E34433"
+				"1AF2C7718102C855"
+			]
+			description: ["Combine everything in the &9electrolytic cell&r to make an aluminium ingot."]
+			id: "039AA3DB61561F31"
+			shape: "rsquare"
+			tasks: [{
+				id: "4BE07447CD5CBBF8"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
 		}
 	]
 	title: "Aluminium"

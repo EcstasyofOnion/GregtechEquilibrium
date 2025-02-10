@@ -6,14 +6,23 @@
 	icon: "gtceu:lv_steam_turbine"
 	id: "17B4E34835A3EDBF"
 	order_index: 3
-	quest_links: [{
-		id: "26F98D39E2BD354C"
-		linked_quest: "550D768BAF5FE57D"
-		shape: "square"
-		size: 1.5d
-		x: 6.0d
-		y: -3.0d
-	}]
+	quest_links: [
+		{
+			id: "26F98D39E2BD354C"
+			linked_quest: "550D768BAF5FE57D"
+			shape: "square"
+			size: 1.5d
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			id: "55451BA9E080360A"
+			linked_quest: "039AA3DB61561F31"
+			shape: "square"
+			x: 14.5d
+			y: 1.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["108D790A8D4680DF"]
@@ -656,21 +665,6 @@
 			}]
 			x: 7.5d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"3040FFB478E34433"
-				"1AF2C7718102C855"
-			]
-			id: "039AA3DB61561F31"
-			shape: "square"
-			tasks: [{
-				id: "4BE07447CD5CBBF8"
-				item: "gtceu:aluminium_ingot"
-				type: "item"
-			}]
-			x: 14.5d
-			y: 1.0d
 		}
 		{
 			dependencies: [

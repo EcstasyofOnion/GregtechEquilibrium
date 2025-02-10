@@ -623,9 +623,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('182x carbon', '564x hydrogen', '100x oxygen')
         .color(0x732f0a)      
 
-    event.create('fusel_oil')
+    event.create('fuel_oil')
         .liquid()
-        .color(0x702b08)      
+        .color(0x702b08)   
+
+    event.create('severely_hydro_cracked_gasoline')
+        .liquid()
+        .color(0x756a34)      
+
 
 
 
