@@ -208,6 +208,53 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
 
+//carbon dioxide
+    event.create('cold_carbon_dioxide')
+        .gas()
+        .components('1x carbon', '2x oxygen')
+        .color(0x69b2d1)   
+
+    event.create('compressed_carbon_dioxide')
+        .gas()
+        .components('1x carbon', '2x oxygen')
+        .color(0x69b2d1)     
+
+    event.create('hot_compressed_carbon_dioxide')
+        .gas()
+        .components('1x carbon', '2x oxygen')
+        .color(0x69b2d1)    
+
+    event.create('cold_compressed_carbon_dioxide')
+        .gas()
+        .components('1x carbon', '2x oxygen')
+        .color(0x69b2d1)     
+
+    event.create('supercritical_carbon_dioxide')
+        .liquid()
+        .components('1x carbon', '2x oxygen')
+        .color(0x69b2d1)     
+
+
+
+
+
+
+//oxygen
+    event.create('high_pressure_oxygen')
+        .gas()
+        .components('1x oxygen')
+        .color(0x0bc9de)     
+
+    event.create('hot_high_pressure_oxygen')
+        .gas()
+        .components('1x oxygen')
+        .color(0x0bc9de)       
+
+    event.create('cold_high_pressure_oxygen')
+        .gas()
+        .components('1x oxygen')
+        .color(0x0bc9de)       
+
 //aluminium
     event.create('triethylaluminium')
         .liquid()

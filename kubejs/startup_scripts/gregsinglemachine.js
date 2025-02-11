@@ -87,15 +87,28 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
+//Fluid Compressor recipe type
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-  event.create('test_machine')
-    .category('test')                     // Category used in GUIs (change as desired)
-    .setEUIO('in')                        // Sets the primary I/O side (e.g. "in" for input)
-    .setMaxIOSize(1, 1, 1, 1)              // Define the maximum I/O size (here 1 for each side)
-    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY) // Use a custom overlay texture if available
-    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT) // Progress bar settings
+  event.create('fluid_compression')
+    .category('compresion')                   
+    .setEUIO('in')                     
+    .setMaxIOSize(0, 0, 1, 1)             
+    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
     .setSound(GTSoundEntries.ELECTROLYZER)
 })
+
+//Fluid Decompressor recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+  event.create('fluid_decompression')
+    .category('decompresion')                   
+    .setEUIO('in')                     
+    .setMaxIOSize(0, 0, 1, 1)             
+    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
 
 
 
@@ -207,5 +220,27 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             builder
                 .langValue(`${GTValues.VLVH[tier]} Trickle Bed Reactor`)
                 .recipeType('trickle_bed_reaction')
+        )
+    })  
+
+// GT Fluid Compressor machine
+    GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('fluid_compressor', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Fluid Compressor`)
+                .recipeType('fluid_compression')
+        )
+    })  
+
+// GT Fluid Decompressor machine
+    GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('fluid_decompressor', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Fluid Decompressor`)
+                .recipeType('fluid_decompression')
         )
     })  

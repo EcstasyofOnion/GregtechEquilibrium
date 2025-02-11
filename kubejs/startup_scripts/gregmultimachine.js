@@ -20,6 +20,17 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
+// GT Heat Exchanger recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('heat_exchange')
+        .category('heat_exchanging')
+        .setEUIO('in')
+        .setMaxIOSize(1, 0, 2, 2)
+        .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
 
 
 
@@ -71,7 +82,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
 
         .rotationState(RotationState.NON_Y_AXIS)
-        .appearanceBlock(() => Block.getBlock('kubejs:structural_casing'))
+        .appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
         .recipeTypes('advanced_electrolyzation')
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('M2222', '11111', '11111')
@@ -91,8 +102,43 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 )
         .build())
         .workableCasingRenderer(
-            "gtceu:block/solid_machine_casing",
+            "gtceu:block/machine_casing_solid",
             "gtceu:block/multiblock/large_chemical_reactor",
+            false
+        )
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('heat_exchanger', 'multiblock')
+        .tooltips(Component.translatable('your.langfile.entry.here')) // 
+
+
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
+        .recipeTypes('heat_exchange')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('222', 'E2E', '121')
+            .aisle('222', '232', '121')
+            .aisle('222', '232', '121')
+            .aisle('222', '232', '121')
+            .aisle('222', '232', '121')
+            .aisle('222', '232', '121')
+            .aisle('222', '232', '121')
+            .aisle('222', '232', '121')
+            .aisle('222', 'DCD', '121')
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('D', Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(2))
+            .where('E', Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(2))
+            .where('1', Predicates.blocks("gtceu:steel_frame"))
+            .where('3', Predicates.blocks("gtceu:steel_pipe_casing"))
+            .where('2', Predicates.blocks("gtceu:solid_machine_casing")
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                )
+        .build())
+        .workableCasingRenderer(
+            "gtceu:block/machine_casing_solid",
+            "gtceu:textures/block/machines/multiblocks/heat_exchanger",
             false
         )
 })
