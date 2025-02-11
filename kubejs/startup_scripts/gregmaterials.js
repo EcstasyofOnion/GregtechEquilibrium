@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('iron_ii_sulfide')
         .dust()
         .components('1x iron', '1x sulfur')
-        .color(0x8f8e47)
+        .color(0x969545)
 
     event.create('iron_sulfate')
         .dust()
@@ -27,7 +27,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('iron_iii_sulfate')
         .dust()
         .components('2x iron', '3x sulfur', '12x oxygen')
-        .color(0xffd1f9)
+        .color(0x686269)
+
+    event.create('banded_iron')
+        .dust()
+        .components('2x iron', '3x oxygen')
+        .color(0x381610)
 
     event.create('limestone')
         .dust()

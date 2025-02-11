@@ -23,6 +23,12 @@
 	"material.gtceu.nickel_ii_bis_solution": "Nickel(II) Bis(acetylacetonate) Solution",
 	"material.gtceu.nickel_ii_nitrate_solution": "Nickel II Nitrate Solution",
 
+// Iron Related
+	"material.gtceu.iron_sulfate": "Iron Sulfate",
+	"material.gtceu.iron_iii_sulfate": "Iron III Sulfate",
+	"material.gtceu.iron_ii_sulfide": "Iron II Sulfide",
+	"material.gtceu.banded_iron": "Banded Iron",
+
 // Aluminium Related
 	"material.gtceu.alumina": "Alumina",
 	"material.gtceu.aluminium_trifluoride": "Aluminium Trifluoride",
