@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         )
         .outputFluids(
             Fluid.of('gtceu:methane', 750),
-            Fluid.of('gtceu:butane', 100)
+            Fluid.of('gtceu:butane', 100),
             Fluid.of('gtceu:propane', 100),
             Fluid.of('gtceu:ethane', 100)
         )

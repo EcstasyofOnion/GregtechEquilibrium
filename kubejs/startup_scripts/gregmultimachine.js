@@ -1,4 +1,4 @@
-// GT Pyrolyse Oven recipe type
+// GT Sintering Oven recipe type
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('sintering')
         .category('sinter')

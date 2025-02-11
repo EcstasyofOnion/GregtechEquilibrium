@@ -164,11 +164,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
 
-
-
-
-
-
 //lithium
     event.create('lithium_carbonate')
         .dust()
@@ -251,8 +246,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xc1e3e1)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
         .flags(GTMaterialFlags.GENERATE_PLATE) 
-
-
 
 
 
