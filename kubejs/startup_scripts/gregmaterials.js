@@ -168,6 +168,32 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x24252e)
 
 
+    event.create('polychlorinated_biphenyl')
+        .liquid()
+        .components('12x carbon', '8x hydrogen', '2x chlorine')
+        .color(0xa39d21)
+
+
+
+//warm fluid
+    event.create('warm_sodium_potassium')
+        .liquid()
+        .components('1x salt', '1x potassium')
+        .color(0x63c99d)
+
+    event.create('warm_lubricant')
+        .liquid()
+        .color(0xbebf75)
+
+    event.create('warm_polychlorinated_biphenyl')
+        .liquid()
+        .components('12x carbon', '8x hydrogen', '2x chlorine')
+        .color(0xa39d21)
+
+    event.create('warm_ethylene_glycol')
+        .liquid()
+        .components('2x carbon', '6x hydrogen', '2x oxygen')
+        .color(0x104c9c)   
 
 //lithium
     event.create('lithium_carbonate')
@@ -233,9 +259,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('1x carbon', '2x oxygen')
         .color(0x69b2d1)     
-
-
-
 
 
 
@@ -399,7 +422,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0x545452)
 
+    event.create('warm_water')
+        .liquid()
+        .components('2x hydrogen', '1x oxygen')
+        .color(0x121f94)
 
+    event.create('warm_saltwater')
+        .liquid()
+        .components('1x salt', '1x chlorine', '2x hydrogen', '1x oxygen')
+        .color(0x0b177d)
+   
 
 //brine
     event.create('chlorinated_brine')
@@ -587,7 +619,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('ethylene_glycol')
         .liquid()
         .components('2x carbon', '6x hydrogen', '2x oxygen')
-        .color(0x223632)   
+        .color(0x104c9c)   
 
     event.create('impure_ethylene_oxide')
         .gas()
@@ -739,4 +771,7 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('aluminium_phenolate').setFormula('Al(OC6H5)3')
     GTMaterials.get('ethanol_water_azeotrope').setFormula('(C2H6O)91(H2O)9')
     GTMaterials.get('vinyl_chloride_suspension').setFormula('(C2H3Cl)(H2O)')
+    GTMaterials.get('warm_saltwater').setFormula('(NaCl)(H2O)')
+    GTMaterials.get('polychlorinated_biphenyl').setFormula('(C6H4Cl)2')
+    GTMaterials.get('warm_polychlorinated_biphenyl').setFormula('(C6H4Cl)2')
 })
