@@ -76,7 +76,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
-//Continuous Stirred Tank Reactor recipe type
+//Trickle Bed Reactor recipe type
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('trickle_bed_reaction')
         .category('trickle_reaction')
@@ -90,7 +90,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 //Fluid Compressor recipe type
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
   event.create('fluid_compression')
-    .category('compresion')                   
+    .category('compression')                   
     .setEUIO('in')                     
     .setMaxIOSize(0, 0, 1, 1)             
     .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)

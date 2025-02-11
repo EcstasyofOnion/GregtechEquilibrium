@@ -2,9 +2,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:vacuum_freezer/liquid_oxygen' })
 })
 
-
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.fluid_compressor('gtceu:oxygen_compression')
+    event.recipes.gtceu.fluid_compression('gtceu:oxygen_compression')
         .inputFluids(
             Fluid.of('gtceu:oxygen', 1280)
         )
@@ -14,7 +13,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
-    event.recipes.gtceu.fluid_decompressor('gtceu:oxygen_compression')
+    event.recipes.gtceu.fluid_decompression('gtceu:oxygen_compression')
         .inputFluids(
             Fluid.of('gtceu:cold_high_pressure_oxygen', 1280)
         )
