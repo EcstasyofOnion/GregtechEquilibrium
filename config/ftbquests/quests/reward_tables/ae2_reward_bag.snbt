@@ -1,0 +1,39 @@
+{
+	icon: "ae2:controller"
+	id: "22E949ACA3EAA67F"
+	loot_size: 2
+	order_index: 13
+	rewards: [
+		{ item: "ae2:controller", weight: 0.11f }
+		{ count: 8, item: "ae2:fluix_glass_cable", random_bonus: 16, weight: 2.0f }
+		{ count: 16, item: "ae2:fluix_smart_cable", random_bonus: 24, weight: 2.5f }
+		{ item: "ae2:drive", weight: 0.6f }
+		{ item: "ae2:terminal", weight: 0.7f }
+		{ item: "ae2:crafting_terminal", weight: 0.6f }
+		{
+			item: {
+				Count: 1
+				id: "ae2:item_storage_cell_1k"
+				tag: { }
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "ae2:item_storage_cell_4k"
+				tag: { }
+			}
+			weight: 0.75f
+		}
+		{
+			item: {
+				Count: 1
+				id: "ae2:item_storage_cell_16k"
+				tag: { }
+			}
+			weight: 0.45f
+		}
+		{ item: "ae2:chest", weight: 0.8f }
+	]
+	title: "AE2 Reward Bag"
+}

@@ -21,6 +21,12 @@
 			]
 			description: ["Putting an acid treated wafer and silicon dioxide slurry together in the &bpolisher&r will make the final product of the silicon wafer."]
 			id: "3C4145A8CBE2B87F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "018C91DB63B7E617"
+				table_id: 2515622872696399487L
+				type: "random"
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "00F4AE614D82B5B3"

@@ -1,0 +1,486 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "weaponry"
+	group: "038677B1D646180C"
+	id: "5D3FB642E6EC321B"
+	images: [
+		{
+			height: 1.0d
+			image: "gregtech_equilibrium:textures/quests/germany.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "gregtech_equilibrium:textures/quests/france.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "gregtech_equilibrium:textures/quests/britain.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "gregtech_equilibrium:textures/quests/russia.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.0d
+			y: -5.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "04D31CAFFC534E05"
+			shape: "gear"
+			tasks: [{
+				id: "6CD86C47063EC240"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 5
+						GunFireMode: "SEMI"
+						GunId: "hamster:gew98"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["04D31CAFFC534E05"]
+			id: "066358B0EF7408C9"
+			shape: "gear"
+			tasks: [{
+				id: "153A5C45CD753628"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 5
+						GunFireMode: "SEMI"
+						GunId: "hamster:luger1906"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			id: "377B0CCAC7F66D11"
+			shape: "gear"
+			tasks: [{
+				id: "4DD31C9CB3132467"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 8
+						GunFireMode: "SEMI"
+						GunId: "hamster:lugerp08"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			id: "59EEF301B6FE0F31"
+			shape: "gear"
+			tasks: [{
+				id: "60DAA7CC52B2F03C"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 1
+						GunFireMode: "SEMI"
+						GunId: "hamster:gras1874"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["59EEF301B6FE0F31"]
+			id: "0221FF39D1DE7E75"
+			shape: "gear"
+			tasks: [{
+				id: "0697C0E89B7C6170"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 8
+						GunFireMode: "SEMI"
+						GunId: "hamster:lebel1886"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0221FF39D1DE7E75"]
+			id: "175209FF0EFF156C"
+			shape: "gear"
+			tasks: [{
+				id: "3EAE89BBADF4DBBB"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 3
+						GunFireMode: "SEMI"
+						GunId: "hamster:berthier"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7F1DF8B6537CC661"]
+			id: "5B439082F74ABF8B"
+			shape: "gear"
+			tasks: [{
+				id: "2271BC039CCE32CA"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 10
+						GunFireMode: "SEMI"
+						GunId: "hamster:smle_mk3"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			id: "7F1DF8B6537CC661"
+			shape: "gear"
+			tasks: [{
+				id: "2DAA5A1AD7D3DF83"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 1
+						GunFireMode: "SEMI"
+						GunId: "hamster:martinihenry"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			id: "0ABCB9DC35479051"
+			tasks: [{
+				id: "45101D61ECA4B009"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 1
+						GunFireMode: "SEMI"
+						GunId: "tacz:rpg7"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			id: "6246011D54F64D52"
+			tasks: [{
+				id: "78A00FA228778804"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "tacz:ak47"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["344FA20E99EE3B93"]
+			id: "25C572ADD51AA0DF"
+			tasks: [{
+				id: "2AE33CC2AF0F133F"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 53
+						GunFireMode: "AUTO"
+						GunId: "gz:pp19"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.5d
+		}
+		{
+			id: "14E0EE88F70C0D98"
+			tasks: [{
+				id: "7774AB42ED6FA7BB"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 40
+						GunFireMode: "AUTO"
+						GunId: "tacz:rpk"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["14E0EE88F70C0D98"]
+			id: "0C0C96B28339AE82"
+			tasks: [{
+				id: "50F0767F6FE573AD"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 45
+						GunFireMode: "AUTO"
+						GunId: "gz:classic_rpk74"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0C0C96B28339AE82"]
+			id: "57298F845D074E2D"
+			tasks: [{
+				id: "159602A90EBB1C50"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 45
+						GunFireMode: "AUTO"
+						GunId: "gz:black_market_rpk74"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0F68C90EF454F1F1"]
+			id: "7D9E643BA65E7EA0"
+			tasks: [{
+				id: "799C409677A978FA"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "gz:black_market_akm"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0F68C90EF454F1F1"]
+			id: "344FA20E99EE3B93"
+			tasks: [{
+				id: "73F029734E9800C4"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "suffuse:aks74u"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6246011D54F64D52"]
+			id: "0F68C90EF454F1F1"
+			tasks: [{
+				id: "7953C32EFDCCFC22"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "gz:military_ak74"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["25C572ADD51AA0DF"]
+			id: "006EA3BAE8127D8F"
+			tasks: [{
+				id: "068486EB7D80A20C"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 53
+						GunFireMode: "AUTO"
+						GunId: "gz:enhanced_pp19"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C0C96B28339AE82"]
+			id: "5FD05C0A7601624C"
+			tasks: [{
+				id: "3378594929A73AA9"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 120
+						GunFireMode: "AUTO"
+						GunId: "suffuse:pkp"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0ABCB9DC35479051"]
+			id: "0FF7A2465197A332"
+			tasks: [{
+				id: "7E9E9FCC14A0D26C"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 1
+						GunFireMode: "SEMI"
+						GunId: "suffuse:aiyasinrpg"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["57298F845D074E2D"]
+			id: "3BD52E608A1013FF"
+			tasks: [{
+				id: "37AA5BDC400DA0BD"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 105
+						GunFireMode: "AUTO"
+						GunId: "gz:t81lmg"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 19.5d
+			y: -2.5d
+		}
+		{
+			id: "2FFC0426B14A9079"
+			tasks: [{
+				id: "53BAA36FE53AAE90"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 7
+						GunFireMode: "SEMI"
+						GunId: "suffuse:tt33"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+	]
+	title: "Weaponry"
+}

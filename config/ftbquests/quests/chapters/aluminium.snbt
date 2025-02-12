@@ -205,6 +205,19 @@
 			]
 			description: ["Combine everything in the &9electrolytic cell&r to make an aluminium ingot."]
 			id: "039AA3DB61561F31"
+			rewards: [
+				{
+					id: "70BDF79BE5B48010"
+					table_id: 2515622872696399487L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6963F1E235B540E7"
+					table_id: 2515622872696399487L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			tasks: [{
 				id: "4BE07447CD5CBBF8"

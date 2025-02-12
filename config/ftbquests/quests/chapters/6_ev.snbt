@@ -7,6 +7,24 @@
 	id: "3E23D7B0610B409E"
 	order_index: 6
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "04D6D6344C353F93"
+		tasks: [{
+			id: "182A357274B5C96C"
+			item: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 100
+					GunFireMode: "AUTO"
+					GunId: "applied_armorer:moritz_mg_emg_prototype"
+					HasBulletInBarrel: 1b
+				}
+			}
+			type: "item"
+		}]
+		x: 0.5d
+		y: 1.0d
+	}]
 	title: "6: EV"
 }

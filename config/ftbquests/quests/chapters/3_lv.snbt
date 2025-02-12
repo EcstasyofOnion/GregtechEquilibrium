@@ -92,6 +92,12 @@
 		{
 			dependencies: ["1B6394E85F029921"]
 			id: "42CF27F45CAF2D65"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "460D7E90B07A1167"
+				table_id: 2515622872696399487L
+				type: "random"
+			}]
 			shape: "diamond"
 			size: 1.5d
 			tasks: [{
@@ -673,6 +679,20 @@
 			]
 			icon: "gtceu:electric_blast_furnace"
 			id: "34C8E466BEE6BFED"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "733E767D8F8E199D"
+					table_id: 2515622872696399487L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4020EB7A9813D5C3"
+					table_id: 2515622872696399487L
+					type: "random"
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			tasks: [
@@ -929,6 +949,26 @@
 				"6D1D0DB45DC02EB1"
 			]
 			id: "2B077557A957FD1B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "26FFF28DA06D2F58"
+					table_id: 2515622872696399487L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "757EFCF0195EF66C"
+					table_id: 2515622872696399487L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F46C5D0EBE4E515"
+					table_id: 2515622872696399487L
+					type: "random"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "5B3A5CD5F767BF7B"
@@ -981,6 +1021,12 @@
 				"22C8AAEF2257B41C"
 			]
 			id: "6D1D0DB45DC02EB1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D0C6286E0BACFE9"
+				table_id: 2515622872696399487L
+				type: "random"
+			}]
 			shape: "square"
 			tasks: [{
 				id: "723BC4037F81BE41"
@@ -1153,6 +1199,12 @@
 			dependencies: ["550D768BAF5FE57D"]
 			icon: "gtceu:bronze_large_boiler"
 			id: "74BAE02FAE791A9B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "312A12EBB1C48C12"
+				table_id: 2515622872696399487L
+				type: "random"
+			}]
 			shape: "square"
 			size: 1.5d
 			tasks: [
@@ -1286,7 +1338,7 @@
 			tasks: [
 				{
 					id: "689FF620D25E68A0"
-					item: "gtceu:electrolytic_cell"
+					item: "gtceu:electrolytic_cell_controller"
 					type: "item"
 				}
 				{

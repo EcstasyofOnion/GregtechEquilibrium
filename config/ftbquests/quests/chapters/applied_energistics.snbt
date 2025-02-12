@@ -10,6 +10,12 @@
 	quests: [
 		{
 			id: "0CA5126148DB9DF1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0EAC90338CDF96B4"
+				table_id: 2515622872696399487L
+				type: "random"
+			}]
 			shape: "square"
 			tasks: [{
 				id: "1319A36A3645FB88"
@@ -22,6 +28,12 @@
 		}
 		{
 			id: "192833C215220A52"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "433B58A4A7397A9B"
+				table_id: 2515622872696399487L
+				type: "random"
+			}]
 			shape: "square"
 			tasks: [{
 				id: "207E22E54337A061"

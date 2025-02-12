@@ -590,6 +590,12 @@
 				"6305D017DC294AAA"
 			]
 			id: "550D768BAF5FE57D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33FCA2C5CFE950D2"
+				table_id: 2515622872696399487L
+				type: "random"
+			}]
 			shape: "square"
 			size: 4.0d
 			tasks: [{
