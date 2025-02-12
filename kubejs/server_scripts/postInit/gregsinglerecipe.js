@@ -922,20 +922,6 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     //Mixer
-    event.recipes.gtceu.mixer('gtceu:silicon_dioxide_slurry')
-        .itemInputs(
-            'gtceu:sodium_hydRoxide_dust',
-            '3x gtceu:silicon_dioxide_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:ultrapure_water', 1000)
-        )
-        .outputFluids(
-            Fluid.of('gtceu:silicon_dioxide_slurry', 1000)  
-        )
-        .duration(200)
-        .EUt(64)
-
     event.recipes.gtceu.mixer('gtceu:reduced_zinc_leach')
         .itemInputs(
             '2x gtceu:sphalerite_dust'
