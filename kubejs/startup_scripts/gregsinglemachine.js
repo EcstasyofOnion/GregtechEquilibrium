@@ -1,5 +1,5 @@
 
-// GT Vacuum Chamber recipe type
+//Vacuum Chamber recipe type
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('vacuum_ejection')
         .category('vacuum')
@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
-// Roaster recipe type
+//Roaster recipe type
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('roasting')
         .category('roast')
@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
-// Bubble Column Reactor recipe type
+//Bubble Column Reactor recipe type
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('column_reaction')
         .category('column_reactor')
@@ -59,7 +59,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('crystallizer_crystallization')
         .category('crystallizer')
         .setEUIO('in')
-        .setMaxIOSize(3, 3, 3, 3)
+        .setMaxIOSize(3, 2, 3, 3)
         .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
@@ -108,6 +108,31 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
     .setSound(GTSoundEntries.ELECTROLYZER)
 })
+
+//Polisher recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+  event.create('polishing')
+    .category('polish')                   
+    .setEUIO('in')                     
+    .setMaxIOSize(1, 1, 2, 1)             
+    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
+
+//Zone Refiner recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+  event.create('zone_refinement')
+    .category('zone_refining')                   
+    .setEUIO('in')                     
+    .setMaxIOSize(1, 1, 0, 0)             
+    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
+
 
 
 
@@ -242,5 +267,27 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             builder
                 .langValue(`${GTValues.VLVH[tier]} Fluid Decompressor`)
                 .recipeType('fluid_decompression')
+        )
+    })  
+
+// GT Polisher machine
+    GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('polisher', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Polisher`)
+                .recipeType('polishing')
+        )
+    })  
+
+// GT Zone Refiner machine
+    GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('zone_refiner', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Zone Refiner`)
+                .recipeType('zone_refinement')
         )
     })  

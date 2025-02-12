@@ -232,6 +232,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x076916)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
+    event.create('high_purity_silicon')
+        .dust()
+        .liquid()
+        .components('1x silicon')
+        .color(0x121629)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+
 
 
 //carbon dioxide

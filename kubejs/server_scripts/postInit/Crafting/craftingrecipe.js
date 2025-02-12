@@ -292,7 +292,7 @@ ServerEvents.recipes(event => {
     ],
     {
       A: '#gtceu:circuits/uv',
-      B: 'gtceu:darmstadium_rotor',
+      B: 'gtceu:darmstadtium_rotor',
       C: 'gtceu:naquadah_alloy_quadruple_wire',
       D: 'gtceu:uv_machine_hull',
       E: 'gtceu:yttrium_barium_cuprate_single_cable'
@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
     ],
     {
       A: '#gtceu:circuits/uhv',
-      B: 'gtceu:darmstadium_rotor',
+      B: 'gtceu:darmstadtium_rotor',
       C: 'gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire',
       D: 'gtceu:uhv_machine_hull',
       E: 'gtceu:europium_single_cable'
@@ -349,7 +349,7 @@ ServerEvents.recipes(event => {
     {
       A: 'gtceu:gold_single_cable',
       B: 'gtceu:hv_electric_pump',
-      C: 'gtceu:polyethylene_fluid_pipe',
+      C: 'gtceu:polyethylene_normal_fluid_pipe',
       D: 'gtceu:hv_machine_hull',
       E: '#gtceu:circuits/hv'
     })
@@ -391,7 +391,7 @@ ServerEvents.recipes(event => {
     {
       A: 'gtceu:niobium_titanium_single_cable',
       B: 'gtceu:luv_electric_pump',
-      C: 'gtceu:polytetrafluoroethylene_fluid_pipe',
+      C: 'gtceu:polytetrafluoroethylene_normal_fluid_pipe',
       D: 'gtceu:luv_machine_hull',
       E: '#gtceu:circuits/luv'
     })
@@ -417,9 +417,9 @@ ServerEvents.recipes(event => {
         'EAE'
     ],
     {
-      A: 'gtceu:yttrium_barium_single_cable',
+      A: 'gtceu:yttrium_barium_cuprate_single_cable',
       B: 'gtceu:uv_electric_pump',
-      C: 'gtceu:polytetrafluoroethylene_huge__fluid_pipe',
+      C: 'gtceu:polytetrafluoroethylene_huge_fluid_pipe',
       D: 'gtceu:uv_machine_hull',
       E: '#gtceu:circuits/uv'
     })
@@ -433,7 +433,7 @@ ServerEvents.recipes(event => {
     {
       A: 'gtceu:europium_single_cable',
       B: 'gtceu:uhv_electric_pump',
-      C: 'gtceu:polybenzimidazole_fluid_pipe',
+      C: 'gtceu:polybenzimidazole_normal_fluid_pipe',
       D: 'gtceu:uhv_machine_hull',
       E: '#gtceu:circuits/uhv'
     })
@@ -475,7 +475,7 @@ ServerEvents.recipes(event => {
         'EFE'
     ],
     {
-      A: 'gtceu:polyethylene_fluid_pipe',
+      A: 'gtceu:polyethylene_normal_fluid_pipe',
       B: 'gtceu:stainless_steel_large_fluid_pipe',
       C: 'gtceu:gold_single_cable',
       D: 'gtceu:hv_electric_pump',
@@ -520,7 +520,7 @@ ServerEvents.recipes(event => {
         'EFE'
     ],
     {
-      A: 'gtceu:polytetrafluoroethylene_fluid_pipe',
+      A: 'gtceu:polytetrafluoroethylene_normal_fluid_pipe',
       B: 'gtceu:niobium_titanium_large_fluid_pipe',
       C: 'gtceu:niobium_titanium_single_cable',
       D: 'gtceu:luv_electric_pump',
@@ -552,7 +552,7 @@ ServerEvents.recipes(event => {
     {
       A: 'gtceu:polytetrafluoroethylene_huge_fluid_pipe',
       B: 'gtceu:duranium_large_fluid_pipe',
-      C: 'gtceu:yttrium_barium_single_cable',
+      C: 'gtceu:yttrium_barium_cuprate_single_cable',
       D: 'gtceu:uv_electric_pump',
       E: '#gtceu:circuits/uv',
       F: 'gtceu:uv_machine_hull'
@@ -565,10 +565,145 @@ ServerEvents.recipes(event => {
         'EFE'
     ],
     {
-      A: 'gtceu:polybenzimidazole_fluid_pipe',
+      A: 'gtceu:polybenzimidazole_normal_fluid_pipe',
       B: 'gtceu:neutronium_large_fluid_pipe',
       C: 'gtceu:europium_single_cable',
       D: 'gtceu:uhv_electric_pump',
+      E: '#gtceu:circuits/uhv',
+      F: 'gtceu:uhv_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:lv_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: '#forge:glass',
+      B: 'gtceu:tin_rotor',
+      C: 'gtceu:tin_single_cable',
+      D: 'gtceu:lv_electric_motor',
+      E: '#gtceu:circuits/lv',
+      F: 'gtceu:lv_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:mv_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: '#forge:glass',
+      B: 'gtceu:bronze_rotor',
+      C: 'gtceu:copper_single_cable',
+      D: 'gtceu:mv_electric_motor',
+      E: '#gtceu:circuits/mv',
+      F: 'gtceu:mv_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:hv_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: 'gtceu:polyethylene_normal_fluid_pipe',
+      B: 'gtceu:steel_rotor',
+      C: 'gtceu:gold_single_cable',
+      D: 'gtceu:hv_electric_motor',
+      E: '#gtceu:circuits/hv',
+      F: 'gtceu:hv_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:ev_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: 'gtceu:polyethylene_large_fluid_pipe',
+      B: 'gtceu:stainless_steel_rotor',
+      C: 'gtceu:aluminium_single_cable',
+      D: 'gtceu:ev_electric_motor',
+      E: '#gtceu:circuits/ev',
+      F: 'gtceu:ev_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:iv_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: 'gtceu:polyethylene_huge_fluid_pipe',
+      B: 'gtceu:tungsten_steel_rotor',
+      C: 'gtceu:platinum_single_cable',
+      D: 'gtceu:iv_electric_motor',
+      E: '#gtceu:circuits/iv',
+      F: 'gtceu:iv_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:luv_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: 'gtceu:polytetrafluoroethylene_normal_fluid_pipe',
+      B: 'gtceu:rhodium_plated_palladium_rotor',
+      C: 'gtceu:niobium_titanium_single_cable',
+      D: 'gtceu:luv_electric_motor',
+      E: '#gtceu:circuits/luv',
+      F: 'gtceu:luv_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:zpm_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: 'gtceu:polytetrafluoroethylene_large_fluid_pipe',
+      B: 'gtceu:naquadah_alloy_rotor',
+      C: 'gtceu:vanadium_gallium_single_cable',
+      D: 'gtceu:zpm_electric_motor',
+      E: '#gtceu:circuits/zpm',
+      F: 'gtceu:zpm_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:uv_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: 'gtceu:polytetrafluoroethylene_huge_fluid_pipe',
+      B: 'gtceu:darmstadtium_rotor',
+      C: 'gtceu:yttrium_barium_cuprate_single_cable',
+      D: 'gtceu:uv_electric_motor',
+      E: '#gtceu:circuits/uv',
+      F: 'gtceu:uv_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('gtceu:uhv_continuous_stirred_tank_reactor'), [
+        'ABA',
+        'CDC',
+        'EFE'
+    ],
+    {
+      A: 'gtceu:polybenzimidazole_normal_fluid_pipe',
+      B: 'gtceu:darmstadtium_rotor',
+      C: 'gtceu:europium_single_cable',
+      D: 'gtceu:uhv_electric_motor',
       E: '#gtceu:circuits/uhv',
       F: 'gtceu:uhv_machine_hull'
     })

@@ -9,29 +9,29 @@
       "maxBankHeight": 3
     },
     "lakes": {
-      "sizeMin": 75,
-      "sizeMax": 196,
+      "sizeMin": 79,
+      "sizeMax": 489,
       "minBankHeight": 2,
-      "maxBankHeight": 9,
-      "chance": 0.671,
+      "maxBankHeight": 10,
+      "chance": 0.39776632,
       "minStartDistance": 0.0,
       "maxStartDistance": 0.028,
-      "depth": 9
+      "depth": 14
     },
     "wetlands": {
-      "chance": 0.865,
-      "sizeMin": 134,
-      "sizeMax": 325
+      "chance": 0.84621996,
+      "sizeMin": 140,
+      "sizeMax": 420
     },
     "seedOffset": 0,
-    "riverCount": 14,
+    "riverCount": 15,
     "mainRivers": {
       "bankWidth": 20,
       "bedWidth": 5,
       "fade": 0.504,
       "bedDepth": 5,
       "minBankHeight": 1,
-      "maxBankHeight": 4
+      "maxBankHeight": 5
     }
   },
   "filters": {
@@ -45,52 +45,16 @@
     },
     "smoothing": {
       "iterations": 2,
-      "smoothingRadius": 1.855,
-      "smoothingRate": 0.9467354
+      "smoothingRadius": 2.0618556,
+      "smoothingRate": 0.9209622
     }
   },
   "structures": {
     "structures": {
-      "supplementaries:way_signs": {
-        "spacing": 19,
-        "separation": 10,
-        "salt": 431041527,
-        "disabled": false
-      },
-      "minecraft:trail_ruins": {
-        "spacing": 34,
-        "separation": 8,
-        "salt": 83469867,
-        "disabled": false
-      },
-      "minecraft:pillager_outposts": {
-        "spacing": 32,
-        "separation": 8,
-        "salt": 165745296,
-        "disabled": false
-      },
-      "minecraft:mineshafts": {
-        "spacing": 1,
-        "separation": 0,
-        "salt": 0,
-        "disabled": false
-      },
-      "infectious:abandoned_house_medium_0": {
-        "spacing": 70,
-        "separation": 30,
-        "salt": 139867696,
-        "disabled": false
-      },
-      "infectious:abandoned_trader_house": {
-        "spacing": 60,
-        "separation": 20,
-        "salt": 1898584369,
-        "disabled": false
-      },
-      "tconstruct:overworld_sky_island": {
-        "spacing": 40,
-        "separation": 15,
-        "salt": 14357800,
+      "infectious:abandoned_church": {
+        "spacing": 80,
+        "separation": 40,
+        "salt": 535631554,
         "disabled": false
       },
       "infectious:military_base": {
@@ -99,160 +63,10 @@
         "salt": 443238928,
         "disabled": false
       },
-      "hexerei:dark_coven": {
-        "spacing": 29,
-        "separation": 11,
-        "salt": 2124767140,
-        "disabled": false
-      },
       "swampier_swamps:village": {
         "spacing": 34,
         "separation": 8,
         "salt": 361757362,
-        "disabled": false
-      },
-      "hexerei:owl_post_office": {
-        "spacing": 21,
-        "separation": 12,
-        "salt": 8675309,
-        "disabled": false
-      },
-      "infectious:radio_tower": {
-        "spacing": 35,
-        "separation": 20,
-        "salt": 690374098,
-        "disabled": false
-      },
-      "minecraft:ruined_portals": {
-        "spacing": 40,
-        "separation": 15,
-        "salt": 34222645,
-        "disabled": false
-      },
-      "infectious:abandoned_house_small_1": {
-        "spacing": 48,
-        "separation": 23,
-        "salt": 891955166,
-        "disabled": false
-      },
-      "infectious:bear_trap": {
-        "spacing": 16,
-        "separation": 6,
-        "salt": 1243945082,
-        "disabled": false
-      },
-      "infectious:abandoned_house_medium_2": {
-        "spacing": 70,
-        "separation": 28,
-        "salt": 140252445,
-        "disabled": false
-      },
-      "hexerei:witch_hut": {
-        "spacing": 20,
-        "separation": 8,
-        "salt": 1297727188,
-        "disabled": false
-      },
-      "minecraft:shipwrecks": {
-        "spacing": 24,
-        "separation": 4,
-        "salt": 165745295,
-        "disabled": false
-      },
-      "infectious:armored_truck": {
-        "spacing": 35,
-        "separation": 15,
-        "salt": 2006021642,
-        "disabled": false
-      },
-      "shrews_alien_infection:small_ship": {
-        "spacing": 9,
-        "separation": 7,
-        "salt": 1071961677,
-        "disabled": false
-      },
-      "minecraft:jungle_temples": {
-        "spacing": 32,
-        "separation": 8,
-        "salt": 14357619,
-        "disabled": false
-      },
-      "infectious:swat_truck": {
-        "spacing": 85,
-        "separation": 45,
-        "salt": 908374047,
-        "disabled": false
-      },
-      "infectious:abandoned_house_small_0": {
-        "spacing": 45,
-        "separation": 25,
-        "salt": 892147540,
-        "disabled": false
-      },
-      "minecraft:villages": {
-        "spacing": 34,
-        "separation": 8,
-        "salt": 10387312,
-        "disabled": false
-      },
-      "minecraft:desert_pyramids": {
-        "spacing": 32,
-        "separation": 8,
-        "salt": 14357617,
-        "disabled": false
-      },
-      "minecraft:ocean_monuments": {
-        "spacing": 32,
-        "separation": 5,
-        "salt": 10387313,
-        "disabled": false
-      },
-      "infectious:bus": {
-        "spacing": 70,
-        "separation": 30,
-        "salt": 1770549637,
-        "disabled": false
-      },
-      "infectious:abandoned_house_huge": {
-        "spacing": 100,
-        "separation": 40,
-        "salt": 561308164,
-        "disabled": false
-      },
-      "minecraft:ocean_ruins": {
-        "spacing": 20,
-        "separation": 8,
-        "salt": 14357621,
-        "disabled": false
-      },
-      "infectious:yellow_tank": {
-        "spacing": 140,
-        "separation": 35,
-        "salt": 1517752416,
-        "disabled": false
-      },
-      "wetland_whimsy:wetland_ruins": {
-        "spacing": 10,
-        "separation": 5,
-        "salt": 1918171615,
-        "disabled": false
-      },
-      "infectious:truck": {
-        "spacing": 100,
-        "separation": 25,
-        "salt": 862999536,
-        "disabled": false
-      },
-      "minecraft:ancient_cities": {
-        "spacing": 24,
-        "separation": 8,
-        "salt": 20083232,
-        "disabled": false
-      },
-      "infectious:trader_house_crafter": {
-        "spacing": 55,
-        "separation": 20,
-        "salt": 1963731685,
         "disabled": false
       },
       "tconstruct:overworld_ocean_island": {
@@ -261,46 +75,28 @@
         "salt": 25988585,
         "disabled": false
       },
-      "infectious:trader_house_undead_collector": {
-        "spacing": 65,
-        "separation": 20,
-        "salt": 1133056142,
+      "gigeresque:sculk_gig_dungeon": {
+        "spacing": 25,
+        "separation": 15,
+        "salt": 1234567891,
         "disabled": false
       },
-      "shrews_alien_infection:egg_room": {
-        "spacing": 32,
-        "separation": 28,
-        "salt": 1567653696,
+      "infectious:bus": {
+        "spacing": 70,
+        "separation": 30,
+        "salt": 1770549637,
         "disabled": false
       },
-      "infectious:abandoned_house_medium_1": {
-        "spacing": 65,
-        "separation": 35,
-        "salt": 139675322,
-        "disabled": false
-      },
-      "shrews_alien_infection:complex": {
+      "minecraft:ruined_portals": {
         "spacing": 40,
-        "separation": 32,
-        "salt": 1187092410,
+        "separation": 15,
+        "salt": 34222645,
         "disabled": false
       },
-      "infectious:abandoned_church": {
-        "spacing": 80,
-        "separation": 40,
-        "salt": 535631554,
-        "disabled": false
-      },
-      "hexerei:baba_yaga_hut": {
-        "spacing": 100,
-        "separation": 95,
-        "salt": 2860638,
-        "disabled": false
-      },
-      "infectious:green_tank": {
-        "spacing": 60,
-        "separation": 20,
-        "salt": 1731441052,
+      "infectious:swat_truck": {
+        "spacing": 85,
+        "separation": 45,
+        "salt": 908374047,
         "disabled": false
       },
       "ae2:meteorite": {
@@ -309,34 +105,16 @@
         "salt": 124895654,
         "disabled": false
       },
-      "minecraft:buried_treasures": {
+      "minecraft:mineshafts": {
         "spacing": 1,
         "separation": 0,
         "salt": 0,
         "disabled": false
       },
-      "minecraft:igloos": {
-        "spacing": 32,
-        "separation": 8,
-        "salt": 14357618,
-        "disabled": false
-      },
-      "aether:ruined_portals": {
-        "spacing": 60,
-        "separation": 25,
-        "salt": 14252125,
-        "disabled": false
-      },
-      "minecraft:woodland_mansions": {
-        "spacing": 80,
-        "separation": 20,
-        "salt": 10387319,
-        "disabled": false
-      },
-      "railcraft:geode": {
-        "spacing": 16,
-        "separation": 4,
-        "salt": 73927265,
+      "ad_astra:oil_well": {
+        "spacing": 20,
+        "separation": 14,
+        "salt": 1922601463,
         "disabled": false
       },
       "infectious:mines": {
@@ -345,16 +123,52 @@
         "salt": 1694162000,
         "disabled": false
       },
-      "infectious:villager_outpost": {
-        "spacing": 90,
-        "separation": 35,
-        "salt": 199811984,
+      "minecraft:trail_ruins": {
+        "spacing": 34,
+        "separation": 8,
+        "salt": 83469867,
         "disabled": false
       },
-      "infectious:bunker": {
-        "spacing": 60,
+      "infectious:truck": {
+        "spacing": 100,
+        "separation": 25,
+        "salt": 862999536,
+        "disabled": false
+      },
+      "minecraft:desert_pyramids": {
+        "spacing": 32,
+        "separation": 8,
+        "salt": 14357617,
+        "disabled": false
+      },
+      "hexerei:baba_yaga_hut": {
+        "spacing": 100,
+        "separation": 95,
+        "salt": 2860638,
+        "disabled": false
+      },
+      "minecraft:woodland_mansions": {
+        "spacing": 80,
         "separation": 20,
-        "salt": 767793854,
+        "salt": 10387319,
+        "disabled": false
+      },
+      "malum:weeping_well": {
+        "spacing": 12,
+        "separation": 8,
+        "salt": 4206969,
+        "disabled": false
+      },
+      "hexerei:witch_hut": {
+        "spacing": 20,
+        "separation": 8,
+        "salt": 1297727188,
+        "disabled": false
+      },
+      "minecraft:buried_treasures": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 0,
         "disabled": false
       },
       "shrews_alien_infection:factory": {
@@ -369,16 +183,94 @@
         "salt": 176082327,
         "disabled": false
       },
+      "shrews_alien_infection:egg_room": {
+        "spacing": 32,
+        "separation": 28,
+        "salt": 1567653696,
+        "disabled": false
+      },
+      "wetland_whimsy:wetland_ruins": {
+        "spacing": 10,
+        "separation": 5,
+        "salt": 1918171615,
+        "disabled": false
+      },
+      "infectious:abandoned_trader_house": {
+        "spacing": 60,
+        "separation": 20,
+        "salt": 1898584369,
+        "disabled": false
+      },
+      "supplementaries:way_signs": {
+        "spacing": 19,
+        "separation": 10,
+        "salt": 431041527,
+        "disabled": false
+      },
       "hexerei:nature_coven": {
         "spacing": 29,
         "separation": 11,
         "salt": 1213865252,
         "disabled": false
       },
-      "malum:weeping_well": {
-        "spacing": 12,
+      "infectious:radio_tower": {
+        "spacing": 35,
+        "separation": 20,
+        "salt": 690374098,
+        "disabled": false
+      },
+      "infectious:abandoned_house_small_1": {
+        "spacing": 48,
+        "separation": 23,
+        "salt": 891955166,
+        "disabled": false
+      },
+      "minecraft:ocean_monuments": {
+        "spacing": 32,
+        "separation": 5,
+        "salt": 10387313,
+        "disabled": false
+      },
+      "infectious:bunker": {
+        "spacing": 60,
+        "separation": 20,
+        "salt": 767793854,
+        "disabled": false
+      },
+      "infectious:abandoned_house_small_0": {
+        "spacing": 45,
+        "separation": 25,
+        "salt": 892147540,
+        "disabled": false
+      },
+      "infectious:armored_truck": {
+        "spacing": 35,
+        "separation": 15,
+        "salt": 2006021642,
+        "disabled": false
+      },
+      "minecraft:villages": {
+        "spacing": 34,
         "separation": 8,
-        "salt": 4206969,
+        "salt": 10387312,
+        "disabled": false
+      },
+      "infectious:abandoned_house_medium_0": {
+        "spacing": 70,
+        "separation": 30,
+        "salt": 139867696,
+        "disabled": false
+      },
+      "infectious:trader_house_crafter": {
+        "spacing": 55,
+        "separation": 20,
+        "salt": 1963731685,
+        "disabled": false
+      },
+      "minecraft:pillager_outposts": {
+        "spacing": 32,
+        "separation": 8,
+        "salt": 165745296,
         "disabled": false
       },
       "minecraft:swamp_huts": {
@@ -386,13 +278,139 @@
         "separation": 8,
         "salt": 14357620,
         "disabled": false
+      },
+      "hexerei:owl_post_office": {
+        "spacing": 21,
+        "separation": 12,
+        "salt": 8675309,
+        "disabled": false
+      },
+      "infectious:abandoned_house_medium_2": {
+        "spacing": 70,
+        "separation": 28,
+        "salt": 140252445,
+        "disabled": false
+      },
+      "infectious:bear_trap": {
+        "spacing": 16,
+        "separation": 6,
+        "salt": 1243945082,
+        "disabled": false
+      },
+      "shrews_alien_infection:complex": {
+        "spacing": 40,
+        "separation": 32,
+        "salt": 1187092410,
+        "disabled": false
+      },
+      "minecraft:ocean_ruins": {
+        "spacing": 20,
+        "separation": 8,
+        "salt": 14357621,
+        "disabled": false
+      },
+      "minecraft:jungle_temples": {
+        "spacing": 32,
+        "separation": 8,
+        "salt": 14357619,
+        "disabled": false
+      },
+      "shrews_alien_infection:small_ship": {
+        "spacing": 9,
+        "separation": 7,
+        "salt": 1071961677,
+        "disabled": false
+      },
+      "infectious:abandoned_house_huge": {
+        "spacing": 100,
+        "separation": 40,
+        "salt": 561308164,
+        "disabled": false
+      },
+      "tconstruct:overworld_sky_island": {
+        "spacing": 40,
+        "separation": 15,
+        "salt": 14357800,
+        "disabled": false
+      },
+      "infectious:green_tank": {
+        "spacing": 60,
+        "separation": 20,
+        "salt": 1731441052,
+        "disabled": false
+      },
+      "minecraft:igloos": {
+        "spacing": 32,
+        "separation": 8,
+        "salt": 14357618,
+        "disabled": false
+      },
+      "infectious:villager_outpost": {
+        "spacing": 90,
+        "separation": 35,
+        "salt": 199811984,
+        "disabled": false
+      },
+      "infectious:trader_house_undead_collector": {
+        "spacing": 65,
+        "separation": 20,
+        "salt": 1133056142,
+        "disabled": false
+      },
+      "hexerei:dark_coven": {
+        "spacing": 29,
+        "separation": 11,
+        "salt": 2124767140,
+        "disabled": false
+      },
+      "minecraft:shipwrecks": {
+        "spacing": 24,
+        "separation": 4,
+        "salt": 165745295,
+        "disabled": false
+      },
+      "infectious:abandoned_house_medium_1": {
+        "spacing": 65,
+        "separation": 35,
+        "salt": 139675322,
+        "disabled": false
+      },
+      "railcraft:geode": {
+        "spacing": 16,
+        "separation": 4,
+        "salt": 73927265,
+        "disabled": false
+      },
+      "gigeresque:gig_dungeon": {
+        "spacing": 25,
+        "separation": 15,
+        "salt": 1234567881,
+        "disabled": false
+      },
+      "minecraft:ancient_cities": {
+        "spacing": 24,
+        "separation": 8,
+        "salt": 20083232,
+        "disabled": false
+      },
+      "aether:ruined_portals": {
+        "spacing": 60,
+        "separation": 25,
+        "salt": 14252125,
+        "disabled": false
+      },
+      "infectious:yellow_tank": {
+        "spacing": 140,
+        "separation": 35,
+        "salt": 1517752416,
+        "disabled": false
       }
     }
   },
   "miscellaneous": {
     "vanillaLavaLakes": false,
     "vanillaLavaSprings": false,
-    "mountainBiomeUsage": 0.9390034,
+    "mountainBiomeUsage": 0.97422683,
     "volcanoBiomeUsage": 0.9862543,
     "naturalSnowDecorator": true,
     "customBiomeFeatures": true,
@@ -410,10 +428,10 @@
       "continentNoiseGain": 0.25816151,
       "continentNoiseLacunarity": 4.33,
       "continentSkipping": 0.25859106,
-      "continentSizeVariance": 0.5135309,
+      "continentSizeVariance": 0.75,
       "continentType": "MULTI_IMPROVED",
       "continentShape": "NATURAL",
-      "continentScale": 3689,
+      "continentScale": 4267,
       "continentJitter": 0.810567
     },
     "controlPoints": {
@@ -424,23 +442,23 @@
       "shallowOcean": 0.25
     },
     "properties": {
-      "worldDepth": 240,
+      "worldDepth": 176,
       "seaLevel": 63,
-      "lavaLevel": -221,
+      "lavaLevel": -160,
       "spawnType": "CONTINENT_CENTER",
       "worldHeight": 1024
     }
   },
   "caves": {
-    "ravineCarverProbability": 0.02,
+    "ravineCarverProbability": 0.006013746,
     "largeOreVeins": false,
     "legacyCarverDistribution": false,
-    "caveCarverProbability": 0.14285715,
-    "deepCaveCarverProbability": 0.07,
+    "caveCarverProbability": 0.0652921,
+    "deepCaveCarverProbability": 0.023195876,
     "cheeseCaveProbability": 1.0,
     "spaghettiCaveProbability": 1.0,
     "noodleCaveProbability": 1.0,
-    "entranceCaveProbability": 0.04639175,
+    "entranceCaveProbability": 0.03006873,
     "cheeseCaveDepthOffset": 1.5625
   },
   "climate": {
@@ -461,17 +479,17 @@
       "falloff": 1
     },
     "biomeShape": {
-      "biomeSize": 264,
-      "macroNoiseSize": 8,
-      "biomeWarpScale": 166,
-      "biomeWarpStrength": 135
+      "biomeSize": 661,
+      "macroNoiseSize": 9,
+      "biomeWarpScale": 206,
+      "biomeWarpStrength": 151
     },
     "biomeEdgeShape": {
       "gain": 0.5,
       "lacunarity": 2.65,
-      "strength": 21,
+      "strength": 25,
       "type": "SIMPLEX",
-      "scale": 24,
+      "scale": 27,
       "octaves": 2
     }
   },
@@ -507,7 +525,7 @@
       "horizontalScale": 1.0
     },
     "plains": {
-      "weight": 2.164,
+      "weight": 2.4570446,
       "baseScale": 1.0,
       "verticalScale": 1.0,
       "horizontalScale": 1.1683849
@@ -529,7 +547,7 @@
       "globalHorizontalScale": 1.0,
       "fancyMountains": true,
       "terrainSeedOffset": 0,
-      "terrainRegionSize": 2302
+      "terrainRegionSize": 2365
     },
     "steppe": {
       "weight": 1.519,
