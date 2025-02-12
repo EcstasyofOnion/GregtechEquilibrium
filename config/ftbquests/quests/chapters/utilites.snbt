@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "utilites"
+	group: "038677B1D646180C"
+	id: "5D87B0A54FA61A50"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "1C437577DBF55CDC"
+		tasks: [{
+			id: "2F0AB2ED7288DFA5"
+			item: "unstabletools:unstable_axe"
+			type: "item"
+		}]
+		x: 2.5d
+		y: -2.0d
+	}]
+	title: "Utilites"
+}

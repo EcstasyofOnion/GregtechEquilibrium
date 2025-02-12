@@ -1,0 +1,46 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation"
+	group: "7E112B0E9DB5DDEB"
+	icon: "fluxnetworks:flux_point"
+	id: "40BA015802F397C3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "527C92CC77394042"
+			shape: "square"
+			tasks: [{
+				id: "713EA2F591584297"
+				item: "tesseract:tesseract"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			id: "05050DE1DE7808EE"
+			shape: "square"
+			tasks: [{
+				id: "5B47A2F61EB59C95"
+				item: "fluxnetworks:flux_core"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "24F1A9CA53D123D2"
+			shape: "square"
+			tasks: [{
+				id: "2EC6C66A2AD52F42"
+				item: "xnet:controller"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+	]
+	title: "Automation"
+}

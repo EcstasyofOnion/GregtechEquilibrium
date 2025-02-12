@@ -924,8 +924,8 @@ ServerEvents.recipes(event => {
     //Mixer
     event.recipes.gtceu.mixer('gtceu:silicon_dioxide_slurry')
         .itemInputs(
-            'gtceu:sodium_hyrdoxide_dust',
-            'gtceu:silicon_dioxide_dust'
+            'gtceu:sodium_hydRoxide_dust',
+            '3x gtceu:silicon_dioxide_dust'
         )
         .inputFluids(
             Fluid.of('gtceu:ultrapure_water', 1000)

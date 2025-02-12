@@ -1,0 +1,245 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "silicon"
+	group: "73E51B8DD5910226"
+	icon: "gtceu:silicon_wafer"
+	id: "59DDC6EEEB2545D5"
+	order_index: 3
+	quest_links: [{
+		id: "53384F61F8E2C1CC"
+		linked_quest: "190E646C09E4BECD"
+		shape: "rsquare"
+		x: 2.5d
+		y: -4.0d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"72B88A9EBF152218"
+				"7233963F537A42DD"
+			]
+			description: ["Putting an acid treated wafer and silicon dioxide slurry together in the &bpolisher&r will make the final product of the silicon wafer."]
+			id: "3C4145A8CBE2B87F"
+			shape: "rsquare"
+			tasks: [{
+				id: "00F4AE614D82B5B3"
+				item: "gtceu:silicon_wafer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6D249A1BD07648A7"
+				"7B96005B471D7405"
+			]
+			description: ["A raw silicon wafer in the &bchemical bath&r with water treatment acid will make a treated silicon wafer."]
+			id: "72B88A9EBF152218"
+			shape: "rsquare"
+			tasks: [{
+				id: "588F3AB244E2FE7D"
+				item: "kubejs:acid_treated_silicon_wafer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D22CD54CF98241F"]
+			description: ["Silicon dioxide in the &bmixer&r with sodium hydroxide makes sodium dioxide slurry."]
+			id: "7233963F537A42DD"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:silicon_dioxide_slurry"
+				id: "0D1724E5D35498BC"
+				type: "fluid"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6490B92D863B3FBF"]
+			description: ["A silicon boule in the &bcutter&r will result in raw silicon wafers."]
+			id: "6D249A1BD07648A7"
+			shape: "rsquare"
+			tasks: [{
+				id: "11016B0DB41B1D03"
+				item: "kubejs:raw_silicon_wafer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"190E646C09E4BECD"
+				"01DF2D25832F55DD"
+			]
+			description: ["&bMixing&r hydrofluroic and hydrochloric acid together will create the wastewater treatment acid. Adding acetic acid will speed up the process."]
+			id: "7B96005B471D7405"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:water_treatment_acid"
+				id: "4D0F044BA01121AA"
+				type: "fluid"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4501761530C26CF3"]
+			description: ["Putting an unrefined boule in the &bzone refiner&r will create a refined boule."]
+			id: "6490B92D863B3FBF"
+			shape: "rsquare"
+			tasks: [{
+				id: "0EE77BF3A2326DFC"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"02EFD730CDA14FEE"
+				"58CF38AAFAA8AF51"
+			]
+			id: "4501761530C26CF3"
+			shape: "rsquare"
+			tasks: [{
+				id: "2B399D1452ED0BD3"
+				item: "kubejs:unrefined_silicon_boule"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7EF7C180DADFACF1"]
+			description: ["&bAutoclaving&r high purity silicon dust has a small chance to yield a silicon seed crystal."]
+			id: "02EFD730CDA14FEE"
+			shape: "rsquare"
+			tasks: [{
+				id: "6586C3A142D14B80"
+				item: "kubejs:silicon_seed_crystal"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["444807C21F514AB4"]
+			description: ["&broasting&r zinc dust with trichlorsilane or silicon tetrachloride will purify silicon dust."]
+			id: "7EF7C180DADFACF1"
+			shape: "rsquare"
+			tasks: [{
+				id: "09B406F446A812E8"
+				item: "gtceu:high_purity_silicon_dust"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7490082BF0050F13"]
+			description: ["The &bdistillery&r will purify silicon tetrachloride."]
+			id: "444807C21F514AB4"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:purified_silicon_tetrachloride"
+				id: "25B7973411190372"
+				type: "fluid"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"167147450E243506"
+				"5EE03EA1B686F7BD"
+			]
+			description: ["&bRoast&r hydrogen chloride and silicon dust together to create impure silicon tetrachloride."]
+			id: "7490082BF0050F13"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:silicon_tetrachloride"
+				id: "568BBA6E47D17A9D"
+				type: "fluid"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00099FAE5F5F9187"]
+			id: "167147450E243506"
+			shape: "rsquare"
+			tasks: [{
+				id: "79369D51A5EAAF90"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["00099FAE5F5F9187"]
+			id: "5EE03EA1B686F7BD"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:chlorine"
+				id: "6B579F3866F36994"
+				type: "fluid"
+			}]
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["00099FAE5F5F9187"]
+			description: ["&bRoast&r salt and sulfuric acid together to get hydrochloric acid."]
+			id: "01DF2D25832F55DD"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:hydrochloric_acid"
+				id: "2A2E741759AE4DE6"
+				type: "fluid"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["00099FAE5F5F9187"]
+			description: ["&bCentrifuge&r glass dust."]
+			id: "6D22CD54CF98241F"
+			shape: "rsquare"
+			tasks: [{
+				id: "28A8847BEA76639C"
+				item: "gtceu:silicon_dioxide_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00099FAE5F5F9187"]
+			description: ["The quartz crucible can be made with liquid silicon dioxide in a &bvacuum chamber&r with a crucible mold."]
+			id: "58CF38AAFAA8AF51"
+			shape: "rsquare"
+			tasks: [{
+				id: "2E3B18A17CEFED6A"
+				item: "kubejs:quartz_crucible"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+	]
+	title: "Silicon Wafer"
+}

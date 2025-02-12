@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "2_steam_age"
 	group: "4E01422849EACB02"
-	icon: "gtceu:hp_steam_solid_boiler"
+	icon: "gtceu:vacuum_tube"
 	id: "6783154DF4430D76"
 	order_index: 2
 	quest_links: [{

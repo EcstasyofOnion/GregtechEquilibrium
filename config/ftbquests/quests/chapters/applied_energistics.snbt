@@ -1,0 +1,36 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics"
+	group: "7E112B0E9DB5DDEB"
+	icon: "ae2:controller"
+	id: "716901CE1FEB6404"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0CA5126148DB9DF1"
+			shape: "square"
+			tasks: [{
+				id: "1319A36A3645FB88"
+				item: "advanced_ae:quantum_core"
+				type: "item"
+			}]
+			title: "Quantum Computing"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			id: "192833C215220A52"
+			shape: "square"
+			tasks: [{
+				id: "207E22E54337A061"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+	]
+	title: "Applied Energistics"
+}

@@ -1,6 +1,20 @@
+const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty');
+const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
+const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys');
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_ROD);
 });
+
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    addFluid(GTMaterials.Silicon_Dioxide, $FluidStorageKeys.LIQUID);
+}
+
+let addFluid = (mat, key) => {
+    let prop = new $FluidProperty();
+    prop.getStorage().enqueueRegistration(key, new $FluidBuilder());
+    mat.setProperty(PropertyKey.FLUID, prop);
+}
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('smithsonite')
@@ -121,8 +135,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('zinc_chloride')
         .dust()
+        .liquid()
         .components('1x zinc', '2x chlorine')
-        .color(0x301166) 
+        .color(0x371375) 
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
     event.create('phosphorus_trichloride')
@@ -167,18 +182,53 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('2x potassium', '2x sulfur', '8x oxygen')
         .color(0x24252e)
 
-
     event.create('polychlorinated_biphenyl')
         .liquid()
         .components('12x carbon', '8x hydrogen', '2x chlorine')
         .color(0xa39d21)
+
+    event.create('hydrogen_chloride')
+        .gas()
+        .components('1x hydrogen', '1x chlorine')
+        .color(0x269e7e)
+
+
+
+
+//silicon
+    event.create('high_purity_silicon')
+        .dust()
+        .liquid()
+        .components('1x silicon')
+        .color(0x121629)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('silicon_tetrachloride')
+        .liquid()
+        .components('1x salt', '4x chlorine')
+        .color(0x324345)
+
+    event.create('purified_silicon_tetrachloride')
+        .liquid()
+        .components('1x salt', '4x chlorine')
+        .color(0x445c5e)
+
+    event.create('trichlorosilane')
+        .liquid()
+        .components('1x hydrogen', '1x potassium')
+        .color(0x416266)
+
+    event.create('purified_trichlorosilane')
+        .liquid()
+        .components('1x hydrogen', '1x potassium')
+        .color(0x4b7175)
 
 
 
 //warm fluid
     event.create('warm_sodium_potassium')
         .liquid()
-        .components('1x salt', '1x potassium')
+        .components('1x salt', '3x chlorine', '1x silicon')
         .color(0x63c99d)
 
     event.create('warm_lubricant')
@@ -194,6 +244,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('2x carbon', '6x hydrogen', '2x oxygen')
         .color(0x104c9c)   
+
+
 
 //lithium
     event.create('lithium_carbonate')
@@ -231,14 +283,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x lithium', '1x cobalt', '2x oxygen')
         .color(0x076916)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
-    event.create('high_purity_silicon')
-        .dust()
-        .liquid()
-        .components('1x silicon')
-        .color(0x121629)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
 
 
 
@@ -285,6 +329,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gas()
         .components('1x oxygen')
         .color(0x0bc9de)       
+
+
 
 //aluminium
     event.create('triethylaluminium')
@@ -613,6 +659,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('14x carbon', '13x hydrogen', '2x oxygen', '1x phosphorus')
         .color(0xad894e)
 
+    event.create('water_treatment_acid')
+        .liquid()
+        .components('65x hydrogen', '23x oxygen', '9x chlorine', '9x fluorine', '4x carbon')
+        .color(0x173316)
+
+    event.create('acidic_wastewater')
+        .liquid()
+        .components('2x hydrogen', '1x oxygen')
+        .color(0x7a5a43)
+
+
+
 
 
 //gas    
@@ -782,4 +840,6 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('warm_saltwater').setFormula('(NaCl)(H2O)')
     GTMaterials.get('polychlorinated_biphenyl').setFormula('(C6H4Cl)2')
     GTMaterials.get('warm_polychlorinated_biphenyl').setFormula('(C6H4Cl)2')
+    GTMaterials.get('water_treatment_acid').setFormula('((H2O)(HCl))9((H2O)(HF))9(C2H4O2)2')
+    GTMaterials.get('acidic_wastewater').setFormula('(H2O)(?)')
 })

@@ -12,7 +12,22 @@
 	"material.gtceu.dense_steam": "Dense Steam",
 	"material.gtceu.wastewater_sludge": "Wastewater Sludge",
 
+// Silicon
+	"material.gtceu.high_purity_silicon": "High Purity Silicon",
+	"material.gtceu.silicon_tetrachloride": "Silicon Tetrachloride",
+	"material.gtceu.purified_silicon_tetrachloride": "Purified Silicon Tetrachloride",
+	"material.gtceu.trichlorosilane": "Trichlorosilane",
+	"material.gtceu.purified_trichlorosilane": "Purified Trichlorosilane",
 
+// Acid
+	"material.gtceu.water_treatment_acid": "Water Treatment Acid",
+	"material.gtceu.acidic_wastewater": "Acidic Wastewater",
+
+// Oxygen
+	"material.gtceu.high_pressure_oxygen": "High Pressure Oxygen",
+	"material.gtceu.hot_high_pressure_oxygen": "Hot High Pressure Oxygen",
+	"material.gtceu.cold_high_pressure_oxygen": "Cold High Pressure Oxygen",
+	
 // Solutions
 	"material.gtceu.sodium_hydroxide_solution": "Sodium Hydroxide Solution",
 	"material.gtceu.diluted_sodium_hydroxide_solution": "Diluted Sodium Hydroxide Solution",
@@ -75,6 +90,10 @@
 	"material.gtceu.triphenylphosphine": "Triphenylphosphine",
 	"material.gtceu.triphenylphosphine_dichloride": "Triphenylphosphine Dichloride",
 
+// Slurry
+	"material.gtceu.silicon_dioxide_slurry": "Silicon Dioxide Slurry",
+
+	"material.gtceu.diethyl_ether": "Diethyl Ether",
 
 	"material.gtceu.sodium_arsenide": "Sodium Arsenide",
 	"material.gtceu.arsine": "Arsine"

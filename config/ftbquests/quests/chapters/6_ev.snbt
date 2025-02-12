@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6_ev"
+	group: "4E01422849EACB02"
+	icon: "gtceu:micro_processor_computer"
+	id: "3E23D7B0610B409E"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+	title: "6: EV"
+}

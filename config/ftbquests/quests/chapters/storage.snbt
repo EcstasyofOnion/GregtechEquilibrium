@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "7E112B0E9DB5DDEB"
+	id: "2D28351A8372C2F3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Storage"
+}

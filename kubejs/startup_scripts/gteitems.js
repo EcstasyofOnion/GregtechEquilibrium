@@ -16,4 +16,5 @@ StartupEvents.registry('item', e => {
   e.create('silicon_seed_crystal')
   e.create('unrefined_silicon_boule')
   e.create('quartz_crucible')
+  e.create('crucible_mold')
 })

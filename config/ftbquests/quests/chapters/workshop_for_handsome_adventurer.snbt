@@ -5,7 +5,7 @@
 	group: "7E112B0E9DB5DDEB"
 	icon: "workshop_for_handsome_adventurer:workstation_placer_dark_oak"
 	id: "7FED901C4DB4A8F3"
-	order_index: 0
+	order_index: 2
 	quest_links: [{
 		id: "5D3CB068517646E3"
 		linked_quest: "07A3F0DE98DE0D40"

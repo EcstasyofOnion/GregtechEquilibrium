@@ -861,7 +861,19 @@ ServerEvents.recipes(event => {
   	  A: 'gtceu:tin_single_cable',
   	  B: 'gtceu:lead_plate'
  	})
+    
+    event.shaped(
+     Item.of('kubejs:crucible_mold'), [
+        'A  ',
+        '   ',
+        '  B'
+    ],
+    {
+      A: 'gtceu:empty_mold',
+      B: '#forge:tools/hammers'
+    }).damageIngredient('#forge:tools/hammers')
 
+    
 	event.shaped(
  		Item.of('gtceu:small_lead_battery'), [
  		'ABA',

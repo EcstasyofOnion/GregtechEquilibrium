@@ -1,0 +1,73 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "space_travel"
+	group: "6FE5C0F6D96E6AC1"
+	icon: "gcyr:gps_satellite"
+	id: "4D6DC4FA569C4BCA"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "gcyr:martian_rock"
+			id: "75E923CC31D506C7"
+			shape: "hexagon"
+			tasks: [{
+				dimension: "gcyr:mars"
+				id: "2065D99AF4D08C63"
+				type: "dimension"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			icon: "gcyr:mercury_rock"
+			id: "3D5E05E0F0DA46CD"
+			shape: "hexagon"
+			tasks: [{
+				dimension: "gcyr:mercury"
+				id: "0F09C30A64406932"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			icon: "gcyr:venus_rock"
+			id: "7E88023B63655115"
+			shape: "hexagon"
+			tasks: [{
+				dimension: "gcyr:venus"
+				id: "2BCA914069758641"
+				type: "dimension"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			icon: "gcyr:moon_stone"
+			id: "08B9F4BB2CEB12D7"
+			shape: "hexagon"
+			tasks: [{
+				dimension: "gcyr:luna"
+				id: "2B1EF1508E2C7D63"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			icon: "blocksyouneed_luna:starchart_black_hole"
+			id: "290B43BEDFF37CA2"
+			shape: "hexagon"
+			tasks: [{
+				dimension: "gcyr:black_hole_orbit"
+				id: "0398E84CA105F84C"
+				type: "dimension"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+	]
+	title: "Space Travel"
+}

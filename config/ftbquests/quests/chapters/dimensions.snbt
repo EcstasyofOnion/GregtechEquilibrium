@@ -1,0 +1,85 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dimensions"
+	group: "6FE5C0F6D96E6AC1"
+	icon: "aether:aether_portal_frame"
+	id: "54054BE804096CF3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:grass_block"
+			id: "4FD13CBA97F090FB"
+			shape: "pentagon"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "336CE3CBDAFD22EB"
+				type: "dimension"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			icon: "minecraft:netherrack"
+			id: "05D5261FB36E9B12"
+			shape: "pentagon"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "2CE85132971651AA"
+				type: "dimension"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			icon: "aether:aether_portal_frame"
+			id: "038210040173DE5D"
+			shape: "pentagon"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "3720E8BE964D152F"
+				type: "dimension"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "7267D6842DC2799E"
+			shape: "pentagon"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "5672D171E1AEDD47"
+				type: "dimension"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			icon: "minecraft:end_portal_frame"
+			id: "79BEF5A21B8DCAD9"
+			shape: "pentagon"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "54B46EA0B006E841"
+				type: "dimension"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			icon: "undergarden:catalyst"
+			id: "5831FC170652F0C1"
+			shape: "pentagon"
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				id: "28216D79F8031903"
+				type: "dimension"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+	]
+	title: "Dimensions"
+}

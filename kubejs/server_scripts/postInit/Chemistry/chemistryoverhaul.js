@@ -29,6 +29,22 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(7)
 
+    event.recipes.gtceu.roasting('gtceu:hydrochloric_acid_roasting')
+        .itemInputs(
+            '4x gtceu:salt_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:sulfuric_acid', 1000)
+        )
+        .itemOutputs(
+            '7x gtceu:sodium_sulfate_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:hydrochloric_acid', 1000)
+        )
+        .duration(60)
+        .EUt(30)
+
     //Vacuum Chamber
     event.recipes.gtceu.electrolyzer('gtceu:water_electrolysis')
         .inputFluids(

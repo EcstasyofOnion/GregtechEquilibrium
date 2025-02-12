@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "farming"
+	group: "038677B1D646180C"
+	id: "0D20B1BE57128B52"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Farming"
+}

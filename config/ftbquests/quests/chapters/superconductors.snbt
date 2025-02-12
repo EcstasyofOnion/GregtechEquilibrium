@@ -5,8 +5,73 @@
 	group: "73E51B8DD5910226"
 	icon: "gtceu:manganese_phosphide_hex_wire"
 	id: "35360174AEB4F349"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["686D5456C293E0AC"]
+			id: "1ECE5C9ABF846ECF"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:liquid_oxygen"
+				id: "408990A9F67C34AF"
+				type: "fluid"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0FE06B5C6592A8DA"]
+			id: "7D1D66F771FA6043"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:hot_high_pressure_oxygen"
+				id: "3BFACB937937BEA6"
+				type: "fluid"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7363E9453156F8F1"]
+			id: "686D5456C293E0AC"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:cold_high_pressure_oxygen"
+				id: "5E73353ED706BEFA"
+				type: "fluid"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D1D66F771FA6043"]
+			id: "7363E9453156F8F1"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:high_pressure_oxygen"
+				id: "209060B6E8F613AC"
+				type: "fluid"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			id: "0FE06B5C6592A8DA"
+			shape: "rsquare"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:oxygen"
+				id: "788AEB8F1756AA57"
+				type: "fluid"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+	]
 	title: "Superconductors"
 }

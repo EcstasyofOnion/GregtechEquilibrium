@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "4_mv"
 	group: "4E01422849EACB02"
-	icon: "gtceu:mv_steam_turbine"
+	icon: "gtceu:good_electronic_circuit"
 	id: "00099FAE5F5F9187"
 	order_index: 4
 	quest_links: [{
