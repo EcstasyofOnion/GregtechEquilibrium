@@ -68,6 +68,20 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped(
+        Item.of('ae2:interface'), [
+        'ABA',
+        'CDE',
+        'ABA'
+    ],
+    {
+      A: 'gtceu:titanium_plate',
+      B: 'ae2:fluix_glass_cable',
+      C: 'ae2:annihilation_core',
+      D: 'ae2:formation_core',
+      E: 'gtceu:ev_robot_arm'
+    })
+
+    event.shaped(
         Item.of('ae2:semi_dark_monitor'), [
         'ABA'
     ],

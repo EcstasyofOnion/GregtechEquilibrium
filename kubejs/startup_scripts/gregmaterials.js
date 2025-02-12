@@ -7,14 +7,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    addFluid(GTMaterials.Silicon_Dioxide, $FluidStorageKeys.LIQUID);
-}
+    addFluid(GTMaterials.SiliconDioxide, $FluidStorageKeys.LIQUID);
+})
 
 let addFluid = (mat, key) => {
     let prop = new $FluidProperty();
     prop.getStorage().enqueueRegistration(key, new $FluidBuilder());
     mat.setProperty(PropertyKey.FLUID, prop);
-}
+};
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('smithsonite')
