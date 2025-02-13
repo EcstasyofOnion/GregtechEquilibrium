@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
         )
         .outputFluids(
             Fluid.of('gtceu:fusel_oil', 20),
-            Fluid.of('minecraft:water', 1280)
+            Fluid.of('minecraft:water', 1280),
             Fluid.of('gtceu:ethanol_water_azeotrope', 700)
         )
         .duration(50)
