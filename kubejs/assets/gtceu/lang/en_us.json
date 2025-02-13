@@ -13,6 +13,10 @@
 	"material.gtceu.dense_steam": "Dense Steam",
 	"material.gtceu.wastewater_sludge": "Wastewater Sludge",
 
+//Plastic
+	"material.gtceu.vinyl_chloride_suspension": "Vinyl Chloride Suspension",
+	"material.gtceu.polyvinyl_chloride_suspension": "Polyvinyl Chloride Suspension",
+
 // Catalyst
 	"material.gtceu.philips_catalyst": "Philips Catalyst",
 	"material.gtceu.ziegler_natta_catalyst": "Ziegler Natta Catalyst",
@@ -109,6 +113,13 @@
 
 	"material.gtceu.sodium_arsenide": "Sodium Arsenide",
 	"material.gtceu.arsine": "Arsine",
+
+	"material.gtceu.acetylene": "Acetylene",
+
+	"material.gtceu.calcium_carbide": "Calcium Carbide",
+	"material.gtceu.calcium_hydroxide": "Slaked Lime (Calcium Hydroxide)",
+
+	"material.gtceu.potassium_persulfate": "Potassium Persulfate",	
 
 	"material.gtceu.acetylacetone": "Acetylacetone"
 }

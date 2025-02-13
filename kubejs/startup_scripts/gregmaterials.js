@@ -172,11 +172,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0x2b2a27)
 
-    event.create('vinyl_chloride_suspension')
-        .liquid()
-        .components('2x carbon', '5x hydrogen', '1x chlorine', '1x oxygen')
-        .color(0xbcfc3)
-
     event.create('potassium_persulfate')
         .dust()
         .components('2x potassium', '2x sulfur', '8x oxygen')
@@ -191,6 +186,36 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gas()
         .components('1x hydrogen', '1x chlorine')
         .color(0x269e7e)
+
+    event.create('acetylene')
+        .gas()
+        .components('2x carbon', '2x hydrogen')
+        .color(0x170c59)
+
+    event.create('calcium_carbide')
+        .dust()
+        .components('1x calcium', '2x carbon')
+        .color(0x3b3b3d)
+
+    event.create('calcium_hydroxide')
+        .dust()
+        .components('1x calcium', '2x oxygen', '2x hydrogen')
+        .color(0x666669)
+
+
+
+
+//plastic
+
+    event.create('vinyl_chloride_suspension')
+        .liquid()
+        .components('2x carbon', '5x hydrogen', '1x chlorine', '1x oxygen')
+        .color(0xbcfc3)
+
+    event.create('polyvinyl_chloride_suspension')
+        .liquid()
+        .components('2x carbon', '5x hydrogen', '1x chlorine', '1x oxygen')
+        .color(0xbcfc3)
 
 
 
@@ -869,6 +894,7 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('aluminium_phenolate').setFormula('Al(OC6H5)3')
     GTMaterials.get('ethanol_water_azeotrope').setFormula('(C2H6O)91(H2O)9')
     GTMaterials.get('vinyl_chloride_suspension').setFormula('(C2H3Cl)(H2O)')
+    GTMaterials.get('polyvinyl_chloride_suspension').setFormula('(C2H3Cl)(H2O)')
     GTMaterials.get('warm_saltwater').setFormula('(NaCl)(H2O)')
     GTMaterials.get('polychlorinated_biphenyl').setFormula('(C6H4Cl)2')
     GTMaterials.get('warm_polychlorinated_biphenyl').setFormula('(C6H4Cl)2')
@@ -878,5 +904,5 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('ziegler_natta_catalyst').setFormula('(Al2(C2H5)6)(TiCl4)')
     GTMaterials.get('kraminsky_catalyst').setFormula('(Zr(C5H5)2Cl2)(AlCH3O)')
     GTMaterials.get('aluminium_chloride_solution').setFormula('(AlCl3)(H2O)3')
-
+    GTMaterials.get('calcium_hydroxide').setFormula('Ca(OH)2')
 })

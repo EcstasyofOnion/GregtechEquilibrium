@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'gtceu:empty_mold'
         )    
-        itemOutputs(
+        .itemOutputs(
             'kubejs:crucible_mold'
         )
         .notConsumable('kubejs:crucible_mold')

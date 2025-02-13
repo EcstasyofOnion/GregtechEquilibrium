@@ -1,4 +1,14 @@
 ServerEvents.recipes(event => {
+	event.remove({ id: 'gtceu:chemical_reactor/polyethylene_from_oxygen' })
+    event.remove({ id: 'gtceu:chemical_reactor/polyethylene_from_air' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/polyethylene_from_oxygen' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/polyethylene_from_air' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/polyethylene_from_tetrachloride_oxygen' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/polyethylene_from_tetrachloride_air' })
+})
+
+
+ServerEvents.recipes(event => {
     event.recipes.gtceu.stirred_tank_reaction('gtceu:stirred_ethylene1')
         .inputFluids(
             Fluid.of('gtceu:ethanol_water_azeotrope', 100),

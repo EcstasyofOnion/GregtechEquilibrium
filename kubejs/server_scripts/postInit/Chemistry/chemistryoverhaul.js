@@ -117,9 +117,9 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
-    event.recipes.gtceu.mixer('gtceu:grain_solution1')
+    event.recipes.gtceu.mixer('gtceu:grain_solution2')
         .itemInputs(
-            '2x gtceu:croptopia_flour'
+            '2x croptopia:flour'
         )
         .inputFluids(
             Fluid.of('minecraft:water', 1000)

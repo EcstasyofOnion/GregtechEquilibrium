@@ -43,6 +43,20 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 })
 
 
+// GT Fermentation Vat recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('fermentation')
+        .category('fermentation')
+        .setEUIO('in')
+        .setMaxIOSize(3, 3, 3, 3)
+        .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
+
+
+
 
 
 
@@ -116,39 +130,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 )
         .build())
         .workableCasingRenderer(
-            "gtceu:block/machine_casing_solid",
+            "gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/large_chemical_reactor",
             false
         )
-})
-
-GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('polymerization_tank', 'multiblock')
-        .tooltips(Component.translatable('your.langfile.entry.here')) // 
-
-
-        .rotationState(RotationState.NON_Y_AXIS)
-        .appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
-        .recipeTypes('polymerization')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('1 1', '222', '222', '222', '222')
-            .aisle('   ', '2A2', '2A2', '2A2', '2A2')
-            .aisle('1 1', '2C2', '222', '222', '222')
-            .where(' ', Predicates.air())
-            .where('A', Predicates.blocks("gtceu:steel_pipe_casing"))
-            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('1', Predicates.blocks("gtceu:steel_frame"))
-            .where('2', Predicates.blocks("gtceu:solid_machine_casing")
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setPreviewCount(1))
-                )
-        .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing', 'gtceu:block/multiblock/large_chemical_reactor', false);
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -180,8 +165,68 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 )
         .build())
         .workableCasingRenderer(
-            "gtceu:block/machine_casing_solid",
+            "gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:textures/block/machines/multiblocks/heat_exchanger",
             false
         )
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('polymerization_tank', 'multiblock')
+        .tooltips(Component.translatable('your.langfile.entry.here')) // 
+
+
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
+        .recipeTypes('polymerization')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('1 1', '222', '222', '222', '222')
+            .aisle('   ', '2A2', '2A2', '2A2', '2A2')
+            .aisle('1 1', '2C2', '222', '222', '222')
+            .where(' ', Predicates.air())
+            .where('A', Predicates.blocks("gtceu:steel_pipe_casing"))
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('1', Predicates.blocks("gtceu:steel_frame"))
+            .where('2', Predicates.blocks("gtceu:solid_machine_casing")
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setPreviewCount(1))
+                )
+        .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/multiblock/large_chemical_reactor', false);
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('fermentation_vat', 'multiblock')
+        .tooltips(Component.translatable('your.langfile.entry.here')) // 
+
+
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(() => Block.getBlock('gtceu:ulv_machine_casing'))
+        .recipeTypes('fermentation')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('     ', '     ', ' 222 ', ' 222 ', ' 222 ', '     ')
+            .aisle(' 1 1 ', ' 222 ', '2   2', '2   2', '2   2', ' 222 ')
+            .aisle('     ', ' 222 ', '2   2', '2   2', '2   2', ' 2M2 ')
+            .aisle(' 1 1 ', ' 222 ', '2   2', '2   2', '2   2', ' 222 ')
+            .aisle('     ', '     ', ' 222 ', ' 2C2 ', ' 222 ', '     ')
+            .where(' ', Predicates.air())
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('M', Predicates.abilities(PartAbility.MUFFLER).setPreviewCount(1))
+            .where('1', Predicates.blocks("gtceu:steel_frame"))
+            .where('2', Predicates.blocks("gtceu:solid_machine_casing")
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setPreviewCount(1))
+                )
+        .build())
+        .workableCasingRenderer('gtceu:block/casings/voltage/ulv', 'gtceu:block/multiblock/large_chemical_reactor', false);
 })
