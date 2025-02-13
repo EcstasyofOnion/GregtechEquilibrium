@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
-    event.smelting('minecraft:iron_ingot1')
+    event.recipes.smelting('minecraft:iron_ingot1')
         .itemInputs(
             'gtceu:magnetic_iron_ingot'
         )
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
             'minecraft:iron_ingot'
         )
 
-    event.smelting('minecraft:iron_ingot2')
+    event.recipes.smelting('minecraft:iron_ingot2')
         .itemInputs(
             'gtceu:wrought_iron_ingot'
         )
