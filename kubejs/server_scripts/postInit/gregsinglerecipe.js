@@ -283,22 +283,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
 
-    event.recipes.gtceu.batch_reaction('gtceu:hexafluorosilicic_acid')
-        .itemInputs(
-            '3x gtceu:silicon_dioxide_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:hydrofluoric_acid', 6000)
-        )
-        .itemOutputs(
-            '5x gtceu:limestone_dust'
-        )
-        .outputFluids( 
-            Fluid.of('gtceu:diluted_hexafluorosilicic_acid', 9000)  
-        )
-        .duration(160)
-        .EUt(30)
-
     event.recipes.gtceu.batch_reaction('gtceu:calcium_sulfate')
         .itemInputs(
             '3x gcyr:fluorite_dust'

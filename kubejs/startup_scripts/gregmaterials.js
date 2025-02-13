@@ -194,6 +194,27 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
 
+//catalyst
+    event.create('philips_catalyst')
+        .dust()
+        .components('1x silicon', '5x oxygen', '1x chromium')
+        .color(0x9f1da8)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('ziegler_natta_catalyst')
+        .dust()
+        .components('2x aluminium', '12x carbon', '30x hydrogen', '1x titanium', '4x chlorine')
+        .color(0x0c6106)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('kraminsky_catalyst')
+        .dust()
+        .components('1x zirconium', '11x carbon', '13x hydrogen', '2x chlorine', '1x aluminium', '1x oxygen')
+        .color(0x1a0e09)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+
+
 
 //silicon
     event.create('high_purity_silicon')
@@ -346,7 +367,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('diethylaluminium_acetylacetonate')
         .liquid()
         .components('1x aluminium')
-        .color(0xb09731)
+        .color(0x2f9655)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
     event.create('aluminium_trifluoride')
@@ -375,6 +396,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xc1e3e1)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
         .flags(GTMaterialFlags.GENERATE_PLATE) 
+
+    event.create('aluminium_chloride_solution')
+        .dust()
+        .components('1x aluminium', '3x chlorine', '6x hydrogen', '3x oxygen')
+        .color(0x24829c)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
 
 
@@ -764,7 +791,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('ethanol_water_azeotrope')
         .liquid()
         .components('182x carbon', '564x hydrogen', '100x oxygen')
-        .color(0x732f0a)      
+        .color(0x75300b)      
 
     event.create('fuel_oil')
         .liquid()
@@ -780,7 +807,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('pentane')
         .liquid()
-        .color(0xb0ad9b)  
+        .color(0xb0ad9b) 
+
+    event.create('c5_fraction')
+        .liquid()
+        .color(0x63521c)  
+
 
 
 //Cryogenics -- How to make cryogenic??
@@ -842,4 +874,9 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('warm_polychlorinated_biphenyl').setFormula('(C6H4Cl)2')
     GTMaterials.get('water_treatment_acid').setFormula('((H2O)(HCl))9((H2O)(HF))9(C2H4O2)2')
     GTMaterials.get('acidic_wastewater').setFormula('(H2O)(?)')
+    GTMaterials.get('philips_catalyst').setFormula('(SiO2)(CrO3)')
+    GTMaterials.get('ziegler_natta_catalyst').setFormula('(Al2(C2H5)6)(TiCl4)')
+    GTMaterials.get('kraminsky_catalyst').setFormula('(Zr(C5H5)2Cl2)(AlCH3O)')
+    GTMaterials.get('aluminium_chloride_solution').setFormula('(AlCl3)(H2O)3')
+
 })

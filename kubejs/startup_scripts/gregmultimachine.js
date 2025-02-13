@@ -130,6 +130,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
         .recipeTypes('polymerization')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('1 1', '222', '222', '222', '222')
             .aisle('   ', '2A2', '2A2', '2A2', '2A2')
@@ -147,11 +148,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setPreviewCount(1))
                 )
         .build())
-        .workableCasingRenderer(
-            "gtceu:block/machine_casing_solid",
-            "gtceu:block/multiblock/large_chemical_reactor",
-            false
-        )
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing', 'gtceu:block/multiblock/large_chemical_reactor', false);
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {

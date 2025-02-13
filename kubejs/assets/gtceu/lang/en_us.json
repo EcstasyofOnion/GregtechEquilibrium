@@ -1,6 +1,7 @@
 {
 // Ores
 	"material.gtceu.smithsonite": "Smithsonite",
+
 // Water Related
 	"material.gtceu.deaerated_water": "Deaerated Water",
 	"material.gtceu.sterilized_water": "Sterilized Water",
@@ -12,6 +13,11 @@
 	"material.gtceu.dense_steam": "Dense Steam",
 	"material.gtceu.wastewater_sludge": "Wastewater Sludge",
 
+// Catalyst
+	"material.gtceu.philips_catalyst": "Philips Catalyst",
+	"material.gtceu.ziegler_natta_catalyst": "Ziegler Natta Catalyst",
+	"material.gtceu.kraminsky_catalyst": "Kraminsky Catalyst",
+
 // Silicon
 	"material.gtceu.high_purity_silicon": "High Purity Silicon",
 	"material.gtceu.silicon_tetrachloride": "Silicon Tetrachloride",
@@ -22,6 +28,7 @@
 // Acid
 	"material.gtceu.water_treatment_acid": "Water Treatment Acid",
 	"material.gtceu.acidic_wastewater": "Acidic Wastewater",
+	"material.gtceu.hot_sulfuric_acid": "Hot Sulfuric Acid",
 
 // Oxygen
 	"material.gtceu.high_pressure_oxygen": "High Pressure Oxygen",
@@ -57,6 +64,7 @@
 	"material.gtceu.alfol_trialkylaluminium_mixture": "Alfol Trialkylaluminium Mixture",
 	"material.gtceu.cryolite": "Cryolite",
 	"material.gtceu.red_mud": "Red Mud",
+	"material.gtceu.aluminium_chloride_solution": "Aluminium Chloride Solution",
 
 // Oil
 	"material.gtceu.diluted_oil": "Diluted Oil",
@@ -69,6 +77,10 @@
 	"material.gtceu.sulfuric_diesel": "Sulfuric Diesel",
 	"material.gtceu.treated_sulfuric_diesel": "Treated Sulfuric Diesel",
 
+	"material.gtceu.ethanol_water_azeotrope": "Ethanol Water Azeotrope",
+
+	"material.gtceu.c5_fraction": "C5 Fraction",
+	
 // Olefin
 	"material.gtceu.shell_higher_olefin_catalyst_solution": "Shell Higher Olefin Catalyst Solution",
 
@@ -96,5 +108,7 @@
 	"material.gtceu.diethyl_ether": "Diethyl Ether",
 
 	"material.gtceu.sodium_arsenide": "Sodium Arsenide",
-	"material.gtceu.arsine": "Arsine"
+	"material.gtceu.arsine": "Arsine",
+
+	"material.gtceu.acetylacetone": "Acetylacetone"
 }
