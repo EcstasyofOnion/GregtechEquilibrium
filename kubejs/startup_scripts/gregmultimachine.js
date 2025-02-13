@@ -219,7 +219,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('M', Predicates.abilities(PartAbility.MUFFLER).setPreviewCount(1))
             .where('1', Predicates.blocks("gtceu:steel_frame"))
-            .where('2', Predicates.blocks("gtceu:solid_machine_casing")
+            .where('2', Predicates.blocks("gtceu:ulv_machine_casing")
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
@@ -228,5 +228,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setPreviewCount(1))
                 )
         .build())
-        .workableCasingRenderer('gtceu:block/casings/voltage/ulv', 'gtceu:block/multiblock/large_chemical_reactor', false);
+        .workableCasingRenderer('gtceu:block/casings/voltage/ulv_machine_casing', 'gtceu:block/multiblock/large_chemical_reactor', false);
 })

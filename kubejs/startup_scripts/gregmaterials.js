@@ -133,11 +133,23 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x141314) 
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
+    event.create('pig_iron')
+        .ingot()
+        .components('1x iron')
+        .color(0x575555) 
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
     event.create('zinc_chloride')
         .dust()
         .liquid()
         .components('1x zinc', '2x chlorine')
         .color(0x371375) 
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('mercury_ii_chloride')
+        .dust()
+        .components('1x mercury', '2x chlorine')
+        .color(0x412fc4) 
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
     event.create('phosphorus_trichloride')
@@ -631,6 +643,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x1b2429)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
+   event.create('potassium_bisulfate_solution')
+        .liquid()
+        .components('1x potassium', '3x hydrogen', '1x sulfur', '5x oxygen')
+        .color(0x59bbc9)
+
 
 
 //mixtures
@@ -816,7 +833,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('ethanol_water_azeotrope')
         .liquid()
         .components('182x carbon', '564x hydrogen', '100x oxygen')
-        .color(0x75300b)      
+        .color(0x75300b)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)       
 
     event.create('fuel_oil')
         .liquid()
@@ -868,6 +886,7 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('sodium_hydroxide_solution').setFormula('(NaOH)(H2O)')
     GTMaterials.get('sodium_hydroxide_solution').setFormula('(NaOH)(H2O)2')
     GTMaterials.get('potassium_hydroxide_solution').setFormula('(KOH)(H2O)')
+    GTMaterials.get('potassium_bisulfate_solution').setFormula('(KHSO4)(H2O)')
     GTMaterials.get('rock_salt_solution').setFormula('(KCl)(H2O)')
     GTMaterials.get('diluted_rock_salt_solution').setFormula('(KCl)(H2O)2')
     GTMaterials.get('crotonaldehyde_mixture').setFormula('(NaOH)(C4H6O)')
@@ -905,4 +924,5 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('kraminsky_catalyst').setFormula('(Zr(C5H5)2Cl2)(AlCH3O)')
     GTMaterials.get('aluminium_chloride_solution').setFormula('(AlCl3)(H2O)3')
     GTMaterials.get('calcium_hydroxide').setFormula('Ca(OH)2')
+    GTMaterials.get('pig_iron').setFormula('(Fe)(?)')
 })

@@ -5,10 +5,24 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:large_chemical_reactor/polyethylene_from_air' })
     event.remove({ id: 'gtceu:large_chemical_reactor/polyethylene_from_tetrachloride_oxygen' })
     event.remove({ id: 'gtceu:large_chemical_reactor/polyethylene_from_tetrachloride_air' })
+    event.remove({ id: 'gtceu:arc_furnace/arc_polyethylene_block' })
 })
 
 
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.arc_furnace('gtceu:polyethylene_block_arc')
+       .inputFluids(
+            Fluid.of('gtceu:oxygen', 13)
+        )
+        .itemInputs(
+            'gtceu:polyethylene_block'
+        )
+        .itemOutputs(
+            '10x gtceu:tiny_ash_dust'
+        )
+        .duration(8)
+        .EUt(30)
+
     event.recipes.gtceu.stirred_tank_reaction('gtceu:stirred_ethylene1')
         .inputFluids(
             Fluid.of('gtceu:ethanol_water_azeotrope', 100),
@@ -79,5 +93,4 @@ ServerEvents.recipes(event => {
         .circuit(4)
         .duration(30)
         .EUt(30)
-
 })

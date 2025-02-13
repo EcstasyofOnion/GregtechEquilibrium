@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
         .inputFluids(
             Fluid.of('gtceu:silicon_dioxide', 1008)
         )
-        itemOutputs(
+        .itemOutputs(
             'kubejs:quartz_crucible'
         )
         .notConsumable('kubejs:crucible_mold')

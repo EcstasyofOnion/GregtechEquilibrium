@@ -120,6 +120,12 @@
 	"material.gtceu.calcium_hydroxide": "Slaked Lime (Calcium Hydroxide)",
 
 	"material.gtceu.potassium_persulfate": "Potassium Persulfate",	
+	"material.gtceu.potassium_bisulfate": "Potassium Bisulfate",
+	"material.gtceu.potassium_bisulfate_solution": "Potassium Bisulfate Solution",
+
+	"material.gtceu.mercury_ii_chloride": "Mercury II Chloride",	
+
+	"material.gtceu.pig_iron": "Pig Iron",	
 
 	"material.gtceu.acetylacetone": "Acetylacetone"
 }

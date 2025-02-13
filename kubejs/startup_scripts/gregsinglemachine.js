@@ -132,9 +132,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
-
-
-
+//Dryer recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+  event.create('drying')
+    .category('drying')                   
+    .setEUIO('in')                     
+    .setMaxIOSize(2, 2, 2, 2)             
+    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.ELECTROLYZER)
+})
 
 
 
@@ -289,5 +296,16 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             builder
                 .langValue(`${GTValues.VLVH[tier]} Zone Refiner`)
                 .recipeType('zone_refinement')
+        )
+    })  
+
+// GT Dryer machine
+    GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('dryer', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Zone Refiner`)
+                .recipeType('drying')
         )
     })  

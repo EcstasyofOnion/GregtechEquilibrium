@@ -130,4 +130,48 @@ ServerEvents.recipes(event => {
         .circuit(4)
         .duration(100)
         .EUt(30)
+
+    //Fermentation Vat   
+    event.recipes.gtceu.fermentation('gtceu:impure_ethanol1')
+        .itemInputs(
+            '24x minecraft:sugar'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:grain_solution', 1000),
+            Fluid.of('minecraft:water', 16000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:impure_ethanol', 16000)
+        )
+        .circuit(3)
+        .duration(2400)
+        .EUt(16)
+
+    event.recipes.gtceu.fermentation('gtceu:impure_ethanol2')
+        .inputFluids(
+            Fluid.of('gtceu:grain_solution', 1000),
+            Fluid.of('gtceu:mash', 16000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:impure_ethanol', 16000)
+        )
+        .circuit(2)
+        .duration(2400)
+        .EUt(16)
+
+    //Distillation Tower
+    event.recipes.gtceu.distillation_tower('gtceu:ethanol_azeotrope_tower')
+        .inputFluids(
+            Fluid.of('gtceu:impure_ethanol', 2000)
+        )
+        .itemOutputs(
+            'gtceu:wood_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:fusel_oil', 20),
+            Fluid.of('minecraft:water', 1280)
+            Fluid.of('gtceu:ethanol_water_azeotrope', 700)
+        )
+        .duration(50)
+        .EUt(30)
 })
