@@ -54,12 +54,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
-
-
-
-
-
-
+// GT Fermentation Vat recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('large_steam_turbine')
+        .category('steam_turbine')
+        .setEUIO('in')
+        .setMaxIOSize(3, 3, 3, 3)
+        .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+})
 
 
 
@@ -164,11 +168,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE))
                 )
         .build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_solid_steel",
-            "gtceu:textures/block/machines/multiblocks/heat_exchanger",
-            false
-        )
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/machines/heat_exchanger', false);
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -229,4 +229,38 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 )
         .build())
         .workableCasingRenderer('gtceu:block/casings/voltage/ulv_machine_casing', 'gtceu:block/multiblock/large_chemical_reactor', false);
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('large_steam_turbine', 'multiblock')
+        .tooltips(Component.translatable('your.langfile.entry.here')) // 
+
+
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
+        .recipeTypes('large_steam_turbine')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('322222224', '222222224', '3   2   4 ')
+            .aisle('322222224', '3AAAABBB4', '322222224')
+            .aisle('322222224', '3C2222224', '3   2   4')
+            .where(' ', Predicates.air())
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('A', Predicates.blocks("kubejs:steel_turbine_block"))
+            .where('B', Predicates.blocks("kubejs:copper_alternator_coil"))
+            .where('2', Predicates.blocks("gtceu:steel_turbine_casing")
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                )
+            .where('3', Predicates.blocks("gtceu:steel_turbine_casing")
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                )
+            .where('4', Predicates.blocks("gtceu:steel_turbine_casing")
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                )
+        .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/machines/large_steam_turbine', false);
 })

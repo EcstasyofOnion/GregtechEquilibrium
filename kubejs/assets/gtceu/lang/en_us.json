@@ -1,4 +1,9 @@
 {
+// Machines
+	"block.gtceu.heat_exchanger": "Heat Exchanger",
+	"block.gtceu.large_steam_turbine": "Large Steam Turbine",
+	"block.gtceu.sintering_oven": "Sintering Oven",
+
 // Ores
 	"material.gtceu.smithsonite": "Smithsonite",
 
@@ -13,7 +18,7 @@
 	"material.gtceu.dense_steam": "Dense Steam",
 	"material.gtceu.wastewater_sludge": "Wastewater Sludge",
 
-//Plastic
+// Plastic
 	"material.gtceu.vinyl_chloride_suspension": "Vinyl Chloride Suspension",
 	"material.gtceu.polyvinyl_chloride_suspension": "Polyvinyl Chloride Suspension",
 
