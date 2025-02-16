@@ -48,6 +48,192 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     //Batch Reactor
+    event.recipes.gtceu.batch_reaction('gtceu:a1batch_calcite_dust')
+        .itemInputs(
+            '2x gtceu:quicklime_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:green_liquor', 1000)
+        )
+        .itemOutputs(
+            '5x gtceu:calcite_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:white_liquor', 1000)  
+        )
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a2batch_chlorided_alumina')
+        .itemInputs(
+            '5x gtceu:supported_platinum_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:hydrogen_chloride', 100)
+        )
+        .itemOutputs(
+            'gtceu:chlorided_alumina_dust'
+        )
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a3batch_sulfated_metal_oxide')
+        .itemInputs(
+            '3x gtceu:zirconium_dioxide_dust',
+            'gtceu:ammonium_hexachloroplatinate_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:aluminium_sulfate_solution', 6000)
+        )
+        .itemOutputs(
+            'gtceu:sulfated_metal_oxide_dust'
+        )
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a4batch_diluted_sodium_silicate')
+        .itemInputs(
+            '3x gtceu:silicon_dioxide_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:dense_steam', 1000),
+            Fluid.of('gtceu:sodium_hydroxide_solution', 2000)
+        )
+        .outputFluids( 
+            Fluid.of('gtceu:diluted_sodium_silicate_solution', 4000)  
+        )
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a5batch_sodium_aluminate')
+        .itemInputs(
+            '2x #forge:dusts/aluminium'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:sodium_hydroxide_solution', 2000)
+        )
+        .itemOutputs(
+            '8x gtceu:sodium_aluminate_dust'
+        )
+        .outputFluids( 
+            Fluid.of('gtceu:hydrogen', 6000)  
+        )
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a6batch_bromopropane')
+        .inputFluids(
+            Fluid.of('gtceu:propene', 1000),
+            Fluid.of('gtceu:hydrobromic_acid', 1000)
+        )
+        .outputFluids( 
+            Fluid.of('gtceu:n_bromopropane', 1000),
+            Fluid.of('minecraft:water', 1000)  
+        )
+        .notConsumable('gtceu:lv_emitter')
+        .notConsumableFluid(
+            Fluid.of('gtceu:hydrogen_peroxide_solution', 50)
+        )
+        .duration(5)
+        .EUt(120)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a7batch_tetrapropylammonium')
+        .inputFluids(
+            Fluid.of('gtceu:tripropylamine', 1000),
+            Fluid.of('gtceu:n_bromopropane', 1000)
+        )
+        .itemOutputs(
+            'gtceu:tetrapropylammonium_bromide_dust'
+        )
+        .duration(5)
+        .EUt(120)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a8batch_nickel_ii_nitrate')
+        .itemInputs(
+            '2x gtceu:nickel_ii_oxide_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:nitric_acid', 2000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:nickel_ii_nitrate_solution', 1000)  
+        )
+        .duration(20)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a9batch_nickel_ii_gigashit')
+        .itemInputs(
+            '9x gtceu:nickel_ii_nitrate_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:sodium_hydroxide_solution', 2000),
+            Fluid.of('gtceu:acetylacetone', 2000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:nickel_ii_bis_solution', 2000)  
+        )
+        .duration(120)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a10batch_bis_nickel_gigashit')
+        .itemInputs(
+            'gtceu:nickel_ii_bis_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:triethylaluminium', 2000),
+            Fluid.of('gtceu:1_5_cyclooctadiene', 2000)
+        )
+        .itemOutputs(
+            'gtceu:bis_nickel_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:ethane', 1000),
+            Fluid.of('gtceu:ethylene', 1000),  
+            Fluid.of('gtceu:diethylaluminium_acetylacetonate', 2000)
+        )
+        .duration(120)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a11batch_aluminium_chloride_solution')
+        .inputFluids(
+            Fluid.of('gtceu:hydrochloric_acid', 3000),
+            Fluid.of('gtceu:diethylaluminium_acetylacetonate', 1000)
+        )
+        .outputFluids( 
+            Fluid.of('gtceu:aluminium_chloride_solution', 3000),
+            Fluid.of('gtceu:acetylacetone', 1000), 
+            Fluid.of('gtceu:ethylene', 2000)  
+        )
+        .duration(160)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a12batch_aluminium_chloride_solution')
+        .itemInputs(
+            'gtceu:triphenylphosphine_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:phosphorus_trichloride', 500)
+        )
+        .outputFluids( 
+            Fluid.of('gtceu:chlorodiphenylphosphine', 1500)
+        )
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a13batch_bis_nickel_gigashit2')
+        .itemInputs(
+            'gtceu:bis_nickel_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:ethylene_glycol', 1000),
+            Fluid.of('gtceu:diphenylphosphinoacetic_acid', 1000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:shell_higher_olefin_catalyst_solution', 1000)
+        )
+        .duration(200)
+        .EUt(480)
+
     event.recipes.gtceu.batch_reaction('gtceu:hexafluorosilicic_acid')
         .itemInputs(
             '3x gtceu:silicon_dioxide_dust'
@@ -60,19 +246,6 @@ ServerEvents.recipes(event => {
         )
         .outputFluids( 
             Fluid.of('gtceu:diluted_hexafluorosilicic_acid', 9000)  
-        )
-        .duration(160)
-        .EUt(30)
-
-    event.recipes.gtceu.batch_reaction('gtceu:aluminium_chloride_solution')
-        .inputFluids(
-            Fluid.of('gtceu:hydrochloric_acid', 3000),
-            Fluid.of('gtceu:diethylaluminium_acetylacetonate', 1000)
-        )
-        .outputFluids( 
-            Fluid.of('gtceu:aluminium_chloride_solution', 3000),
-            Fluid.of('gtceu:acetylacetone', 1000), 
-            Fluid.of('gtceu:ethylene', 2000)  
         )
         .duration(160)
         .EUt(30)

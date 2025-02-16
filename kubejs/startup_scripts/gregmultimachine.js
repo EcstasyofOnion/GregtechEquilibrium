@@ -240,7 +240,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
         .recipeTypes('large_steam_turbine')
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('322222224', '222222224', '3   2   4 ')
+            .aisle('322222224', '222222224', '3   2   4')
             .aisle('322222224', '3AAAABBB4', '322222224')
             .aisle('322222224', '3C2222224', '3   2   4')
             .where(' ', Predicates.air())

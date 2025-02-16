@@ -267,22 +267,6 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     //Batch Reactor
-    event.recipes.gtceu.batch_reaction('gtceu:limestone_dust')
-        .itemInputs(
-            '2x gtceu:quicklime_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:green_liquor', 1000)
-        )
-        .itemOutputs(
-            '5x gtceu:limestone_dust'
-        )
-        .outputFluids(
-            Fluid.of('gtceu:white_liquor', 1000)  
-        )
-        .duration(200)
-        .EUt(30)
-
     event.recipes.gtceu.batch_reaction('gtceu:calcium_sulfate')
         .itemInputs(
             '3x gcyr:fluorite_dust'
@@ -454,66 +438,6 @@ ServerEvents.recipes(event => {
         .notConsumable('gtceu:cupronickel_spring')
         .duration(30)
         .EUt(7)
-
-    event.recipes.gtceu.batch_reaction('gtceu:nickel_ii_nitrate')
-        .itemInputs(
-            '2x gtceu:nickel_ii_oxide_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:nitric_acid', 2000)
-        )
-        .outputFluids(
-            Fluid.of('gtceu:nickel_ii_nitrate_solution', 1000)  
-        )
-        .duration(20)
-        .EUt(30)
-
-    event.recipes.gtceu.batch_reaction('gtceu:nickel_ii_gigashit')
-        .itemInputs(
-            '9x gtceu:nickel_ii_nitrate_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:sodium_hydroxide_solution', 2000),
-            Fluid.of('gtceu:acetylacetone', 2000)
-        )
-        .outputFluids(
-            Fluid.of('gtceu:nickel_ii_bis_solution', 2000)  
-        )
-        .duration(120)
-        .EUt(30)
-
-    event.recipes.gtceu.batch_reaction('gtceu:bis_nickel_gigashit')
-        .itemInputs(
-            'gtceu:nickel_ii_bis_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:triethylaluminium', 2000),
-            Fluid.of('gtceu:1_5_cyclooctadiene', 2000)
-        )
-        .itemOutputs(
-            'gtceu:bis_nickel_dust'
-        )
-        .outputFluids(
-            Fluid.of('gtceu:ethane', 1000),
-            Fluid.of('gtceu:ethylene', 1000),  
-            Fluid.of('gtceu:diethylaluminium_acetylacetonate', 2000)
-        )
-        .duration(120)
-        .EUt(30)
-
-    event.recipes.gtceu.batch_reaction('gtceu:bis_nickel_gigashit2')
-        .itemInputs(
-            'gtceu:bis_nickel_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:ethylene_glycol', 1000),
-            Fluid.of('gtceu:diphenylphosphinoacetic_acid', 1000)
-        )
-        .outputFluids(
-            Fluid.of('gtceu:shell_higher_olefin_catalyst_solution', 1000)
-        )
-        .duration(200)
-        .EUt(480)
 
     event.recipes.gtceu.batch_reaction('gtceu:carbon_bis_nickel_gigashit')
         .itemInputs(
