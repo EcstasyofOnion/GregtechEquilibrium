@@ -290,7 +290,7 @@ ServerEvents.recipes(event => {
             '5x gtceu:zinc_carbonate_dust'
         )
         .outputFluids(
-            Fluid.of('gtceu:concentrated_salt_water', 1000)
+            Fluid.of('gtceu:concentrated_saltwater', 1000)
         )
         .duration(100)
         .EUt(120)
@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
             '5x gtceu:copper_carbonate_dust'
         )
         .outputFluids(
-            Fluid.of('gtceu:concentrated_salt_water', 1000)
+            Fluid.of('gtceu:concentrated_saltwater', 1000)
         )
         .duration(100)
         .EUt(120)
@@ -456,6 +456,34 @@ ServerEvents.recipes(event => {
             Fluid.of('gtceu:hydrochloric_acid', 2000)
         )
         .duration(60)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a29batch_calcite')
+        .itemInputs(
+            '2x gtceu:quicklime_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:carbon_dioxide', 1000)
+        )
+        .itemOutputs(
+            '5x gtceu:calcite_dust'
+        )
+        .circuit(1)
+        .duration(120)
+        .EUt(7)
+
+     event.recipes.gtceu.batch_reaction('gtceu:a30batch_calcium_chloride')
+        .itemInputs(
+            '2x gtceu:quicklime_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:ammonium_chloride_solution', 2000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:ammonia', 2000),
+            Fluid.of('gtceu:calcium_chloride_solution', 2000)
+        )
+        .duration(80)
         .EUt(30)
 
     //Vacuum Chamber
