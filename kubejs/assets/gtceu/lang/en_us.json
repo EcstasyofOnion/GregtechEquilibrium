@@ -17,6 +17,7 @@
 	"material.gtceu.diluted_saltwater": "Diluted Salt Water",
 	"material.gtceu.dense_steam": "Dense Steam",
 	"material.gtceu.wastewater_sludge": "Wastewater Sludge",
+	"material.gtceu.concentrated_saltwater": "Concentrated Salt Water",
 
 // Plastic
 	"material.gtceu.vinyl_chloride_suspension": "Vinyl Chloride Suspension",
@@ -59,6 +60,11 @@
 	"material.gtceu.iron_iii_sulfate": "Iron III Sulfate",
 	"material.gtceu.iron_ii_sulfide": "Iron II Sulfide",
 	"material.gtceu.banded_iron": "Banded Iron",
+	"material.gtceu.iron_iii_nitrate_solution": "Iron III Nitrate Solution",
+	"material.gtceu.pig_iron": "Pig Iron",	
+
+// Copper Related
+	"material.gtceu.copper_ii_chloride": "Copper II Chloride",	
 
 // Aluminium Related
 	"material.gtceu.alumina": "Alumina",
@@ -130,7 +136,8 @@
 
 	"material.gtceu.mercury_ii_chloride": "Mercury II Chloride",	
 
-	"material.gtceu.pig_iron": "Pig Iron",	
+	"material.gtceu.zinc_chloride": "Zinc Chloride",
+	"material.gtceu.zinc_carbonate": "Zinc Carbonate",		
 
 	"material.gtceu.acetylacetone": "Acetylacetone"
 }

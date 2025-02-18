@@ -28,6 +28,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x calcium', '1x sulfur', '4x oxygen')
         .color(0x310e73)
 
+    event.create('calcium_sulfide')
+        .dust()
+        .components('1x calcium', '1x sulfur')
+        .color(0xa356b3)
+
     event.create('limestone')
         .dust()
         .components('5x calcium', '6x carbon', '18x oxygen', '1x magnesium')
@@ -119,6 +124,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x371375) 
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
+    event.create('zinc_carbonate')
+        .dust()
+        .liquid()
+        .components('1x zinc', '1x carbon', '3x oxygen')
+        .color(0x30253b) 
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
     event.create('mercury_ii_chloride')
         .dust()
         .components('1x mercury', '2x chlorine')
@@ -207,6 +219,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x calcium', '2x oxygen', '2x hydrogen')
         .color(0x666669)
 
+    event.create('hzsm_five')
+        .dust()
+        .color(0x2d5230)
+
 
 
 //iron
@@ -241,6 +257,27 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .components('1x iron', '1x sulfur')
         .color(0x969545)
+
+    event.create('iron_iii_nitrate_solution')
+        .liquid()
+        .components('1x iron', '3x nitrogen', '12x oxygen', '6x hydrogen')
+        .color(0x2dabc2) 
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+
+
+//copper
+    event.create('copper_ii_chloride')
+        .dust()
+        .components('1x copper', '2x chlorine')
+        .color(0x0a0909) 
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+       
+    event.create('copper_carbonate')
+        .dust()
+        .components('1x copper', '1x carbon', '3x oxygen')
+        .color(0x2b0f0f) 
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)      
 
 
 
@@ -508,6 +545,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x sodium', '1x aluminium', '2x oxygen')
         .color(0x123619) 
 
+     event.create('aluminium_sulfate')
+        .dust()
+        .components('2x aluminium', '3x sulfur', '12x oxygen')
+        .color(0x1d4721) 
+
 
 
 //nickel
@@ -627,9 +669,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('warm_saltwater')
         .liquid()
-        .components('1x salt', '1x chlorine', '2x hydrogen', '1x oxygen')
+        .components('1x sodium', '1x chlorine', '2x hydrogen', '1x oxygen')
         .color(0x0b177d)
+  
+    event.create('concentrated_saltwater')
+        .liquid()
+        .components('2x sodium', '2x chlorine', '2x hydrogen', '1x oxygen')
+        .color(0x753d3d)
    
+
 
 //brine
     event.create('chlorinated_brine')
@@ -686,6 +734,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0x47454a) 
 
+     event.create('soda_ash_solution')
+        .liquid()
+        .components('2x sodium', '1x carbon', '4x oxygen', '2x hydrogen')
+        .color(0x47454a) 
+
      event.create('diethyl_ether_solution')
         .liquid()
         .components('4x carbon', '14x hydrogen', '6x oxygen', '1x sulfur')
@@ -711,9 +764,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('4x hydrogen', '3x oxygen')
         .color(0x19235e)
 
+   event.create('cobalt_nitrate_solution')
+        .liquid()
+        .components('1x cobalt', '2x nitrogen', '7x oxygen', '2x hydrogen')
+        .color(0x0e0c7a)
 
+   event.create('low_temperature_fischer_tropsch_catalyst_solution')
+        .liquid()
+        .color(0x24110d)
 
-
+   event.create('calcium_chloride_solution')
+        .liquid()
+        .components('1x calcium', '2x chlorine', '2x hydrogen', '1x oxygen')
+        .color(0x78b56b)
 
 
 //mixtures
@@ -1005,4 +1068,10 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('diluted_sodium_silicate_solution').setFormula('(Na2SiO3)(H2O)4')
     GTMaterials.get('hydrogen_peroxide_solution').setFormula('(H2O2)(H2O)')
     GTMaterials.get('hydrobromic_acid').setFormula('(HBr)(H2O)')
+    GTMaterials.get('cobalt_nitrate_solution').setFormula('(Co(NO3)2)(H2O)')
+    GTMaterials.get('aluminium_sulfate').setFormula('Al2(SO4)3')
+    GTMaterials.get('iron_iii_nitrate_solution').setFormula('Fe(NO3)3(H2O)3')
+    GTMaterials.get('soda_ash_solution').setFormula('(Na2CO3)(H2O)')
+    GTMaterials.get('concentrated_saltwater').setFormula('(NaCl)2(H2O)')
+    GTMaterials.get('calcium_chloride_solution').setFormula('(CaCl2)(H2O)')
 })

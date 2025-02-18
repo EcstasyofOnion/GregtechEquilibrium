@@ -234,20 +234,228 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(480)
 
-    event.recipes.gtceu.batch_reaction('gtceu:hexafluorosilicic_acid')
+    event.recipes.gtceu.batch_reaction('gtceu:a14batch_cobalt_nitrate_solution')
+        .itemInputs(
+            '2x gtceu:cobalt_oxide_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:nitric_acid', 2000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:cobalt_nitrate_solution', 1000)
+        )
+        .duration(60)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a15batch_hzsm_five')
+        .itemInputs(
+            '6x gtceu:silicon_dioxide_dust',
+            '51x gtceu:aluminium_sulfate_dust',
+            'gtceu:sodium_hydroxide_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:n_butylamine', 100),
+            Fluid.of('gtceu:demineralized_water', 1800),
+            Fluid.of('gtceu:ethanol', 100)
+        )
+        .itemOutputs(
+            'gtceu:hzsm_five_dust'
+        )
+        .duration(500)
+        .EUt(480)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a16batch_fischer_tropsch_catalyst_solution')
+        .itemInputs(
+            '3x gtceu:silicon_dioxide_dust',
+            '2x gtceu:potassium_carbonate_dust',
+            'gtceu:alumina_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:iron_iii_nitrate_solution', 1000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:low_temperature_fischer_tropsch_catalyst_solution', 1000)
+        )
+        .duration(100)
+        .EUt(120)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a17batch_zinc_carbonate')
+        .itemInputs(
+            '3x gtceu:zinc_chloride_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:soda_ash_solution', 1000)
+        )
+        .itemOutputs(
+            '5x gtceu:zinc_carbonate_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:concentrated_salt_water', 1000)
+        )
+        .duration(100)
+        .EUt(120)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a18batch_copper_carbonate')
+        .itemInputs(
+            '3x gtceu:copper_ii_chloride_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:soda_ash_solution', 1000)
+        )
+        .itemOutputs(
+            '5x gtceu:copper_carbonate_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:concentrated_salt_water', 1000)
+        )
+        .duration(100)
+        .EUt(120)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a19batch_hexafluorosilicic_acid')
         .itemInputs(
             '3x gtceu:silicon_dioxide_dust'
         )
         .inputFluids(
             Fluid.of('gtceu:hydrofluoric_acid', 6000)
         )
-        .itemOutputs(
-            '5x gtceu:limestone_dust'
-        )
         .outputFluids( 
             Fluid.of('gtceu:diluted_hexafluorosilicic_acid', 9000)  
         )
         .duration(160)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a20batch_hydrogen_fluoride')
+        .itemInputs(
+            '3x gcyr:fluorite_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:sulfuric_acid', 1000)
+        )
+        .itemOutputs(
+            '6x gtceu:calcium_sulfate_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:hydrogen_fluoride', 2000)  
+        )
+        .duration(30)
+        .EUt(7)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a21batch_iron_sulfate')
+        .itemInputs(
+            '2x gtceu:iron_ii_sulfide_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:sulfuric_acid', 1000)
+        )
+        .itemOutputs(
+            '6x gtceu:iron_sulfate_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:hydrogen_sulfide', 1000)  
+        )
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a22batch_iron_sulfate_2')
+        .itemInputs(
+            '#forge:dusts/iron'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:sulfuric_acid', 1000)
+        )
+        .itemOutputs(
+            '6x gtceu:iron_sulfate_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:hydrogen', 2000)  
+        )
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a23batch_iron_ii_chloride')
+        .itemInputs(
+            '2x gtceu:iron_ii_sulfide_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:hydrochloric_acid', 2000)
+        )
+        .itemOutputs(
+            '3x gtceu:iron_ii_chloride'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:hydrogen_sulfide', 1000)  
+        )
+        .duration(30)
+        .EUt(7)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a24batch_sodium_bisulfate')
+        .itemInputs(
+            '7x gtceu:sodium_sulfate_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:sulfuric_acid', 1000)
+        )
+        .itemOutputs(
+            '14x gtceu:sodium_bisulfate_dust'
+        )
+        .duration(120)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a25batch_potassium_bisulfate')
+        .itemInputs(
+            '5x gtceu:saltpeter_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:sulfuric_acid', 1000)
+        )
+        .itemOutputs(
+            '7x gtceu:potassium_bisulfate_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:nitric_acid', 1000)  
+        )
+        .duration(60)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a26batch_wet_antimony_trifluoride')
+        .itemInputs(
+            '5x gtceu:antimony_trioxide_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:hydrofluoric_acid', 6000)
+        )
+        .itemOutputs(
+            '8x gtceu:wet_antimony_trifluoride_dust'
+        )
+        .duration(60)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a27batch_calcium_chloride_solution')
+        .itemInputs(
+            '2x gtceu:calcium_sulfide_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:hydrochloric_acid', 2000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:calcium_chloride_solution', 1000),
+            Fluid.of('gtceu:hydrogen_sulfide', 1000)  
+        )
+        .duration(80)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('gtceu:a28batch_calcium_chloride_solution')
+        .inputFluids(
+            Fluid.of('gtceu:diluted_sulfuric_acid', 2000),
+            Fluid.of('gtceu:calcium_chloride_solution', 1000)
+        )
+        .itemOutputs(
+            '6x gtceu:calcium_sulfate_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:hydrochloric_acid', 2000)
+        )
+        .duration(60)
         .EUt(30)
 
     //Vacuum Chamber
