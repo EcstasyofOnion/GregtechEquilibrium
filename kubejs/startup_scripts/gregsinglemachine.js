@@ -143,6 +143,17 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
+//Electrostatic Seperator recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+  event.create('electrostatic_seperation')
+    .category('electrostatic_seperator')                   
+    .setEUIO('in')                     
+    .setMaxIOSize(3, 6, 3, 3)             
+    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
 
 
 // GT Vacuum Chamber machine
@@ -307,5 +318,16 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             builder
                 .langValue(`${GTValues.VLVH[tier]} Zone Refiner`)
                 .recipeType('drying')
+        )
+    })  
+
+// GT Electrostatic Seperator machine
+    GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('electrostatic_seperator', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Electrostatic Seperator`)
+                .recipeType('electrostatic_seperation')
         )
     })  

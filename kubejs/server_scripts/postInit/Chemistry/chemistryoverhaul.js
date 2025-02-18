@@ -13,6 +13,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:mixer/sulfuric_acid' })
     event.remove({ id: 'gtceu:large_chemical_reactor/ethylene_from_glycerol' })
     event.remove({ id: 'gtceu:large_chemical_reactor/ethylene_from_ethanol' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/polyvinyl_butyral' })
+    event.remove({ id: 'gtceu:chemical_reactor/polyvinyl_butyral' })
 })
 
 
@@ -484,6 +486,57 @@ ServerEvents.recipes(event => {
             Fluid.of('gtceu:calcium_chloride_solution', 2000)
         )
         .duration(80)
+        .EUt(30)
+
+     event.recipes.gtceu.batch_reaction('gtceu:a31batch_sodium_bicarbonate_decomposition')
+        .itemInputs(
+            '6x gtceu:sodium_bicarbonate_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:hydrochloric_acid', 1000)
+        )
+        .outputFluids(
+            Fluid.of('gtceu:carbon_dioxide', 1000),
+            Fluid.of('gtceu:diluted_saltwater', 2000)
+        )
+        .duration(80)
+        .EUt(30)
+
+     event.recipes.gtceu.batch_reaction('gtceu:a32batch_polyvinyl_alcohol')
+        .inputFluids(
+            Fluid.of('gtceu:ethanol', 1000),
+            Fluid.of('gtceu:polyvinyl_acetate', 144)
+        )
+        .itemOutputs(
+            'gtceu:polyvinyl_alcohol_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:ethyl_acetate', 1000) 
+        )
+        .duration(400)
+        .EUt(30)
+     event.recipes.gtceu.batch_reaction('gtceu:a32batch_polyvinyl_butyral')
+        .itemInputs(
+            'gtceu:polyvinyl_alcohol_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:butyraldehyde', 1000)
+        )
+        .itemOutputs(
+            'gtceu:polyvinyl_butyral_dust'
+        )
+        .duration(400)
+        .EUt(480)
+
+     event.recipes.gtceu.batch_reaction('gtceu:batch_mercury_ii_chloride')
+        .inputFluids(
+            Fluid.of('gtceu:chlorine', 2000),
+            Fluid.of('gtceu:mercury', 1000)
+        )
+        .itemOutputs(
+            '3x gtceu:mercury_ii_chloride_dust'
+        )
+        .duration(200)
         .EUt(30)
 
     //Vacuum Chamber

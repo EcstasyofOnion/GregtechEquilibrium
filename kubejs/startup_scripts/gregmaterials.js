@@ -185,11 +185,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('12x carbon', '8x hydrogen', '2x chlorine')
         .color(0xa39d21)
 
-    event.create('hydrogen_chloride')
-        .gas()
-        .components('1x hydrogen', '1x chlorine')
-        .color(0x269e7e)
-
     event.create('acetylene')
         .gas()
         .components('2x carbon', '2x hydrogen')
@@ -292,7 +287,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('2x carbon', '5x hydrogen', '1x chlorine', '1x oxygen')
         .color(0xbcfc3)
 
-
+    event.create('polyvinyl_alcohol')
+        .dust()
+        .components('2x carbon', '4x hydrogen', '1x oxygen')
+        .color(0x804c2d)
 
 //catalyst
     event.create('philips_catalyst')
@@ -778,6 +776,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x calcium', '2x chlorine', '2x hydrogen', '1x oxygen')
         .color(0x78b56b)
 
+   event.create('ammonium_chloride_solution')
+        .liquid()
+        .components('1x nitrogen', '6x hydrogen', '1x chlorine', '1x oxygen')
+        .color(0x78b56b)
+
 
 //mixtures
         event.create('crotonaldehyde_mixture')
@@ -792,7 +795,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create('chlorinated_methane_mixture')
         .liquid()   
         .color(0x3c1970) 
-   
+
+        event.create('butyraldehyde_mixture')
+        .liquid()   
+        .color(0xada63b)    
 
 
 //impure
@@ -859,6 +865,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('3x hydrogen', '1x bromine', '1x oxygen')
         .color(0x288a71)
+
+    event.create('hydrogen_chloride')
+        .gas()
+        .components('1x hydrogen', '1x chlorine')
+        .color(0x269e7e)
 
 
 
@@ -994,6 +1005,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('12x carbon', '28x hydrogen', '1x bromine', '1x nitrogen')
         .color(0x382416)  
 
+    event.create('ethyl_acetate')
+        .liquid()
+        .components('4x carbon', '8x hydrogen', '2x oxygen')
+        .color(0x82a360)  
 
 
 
@@ -1074,4 +1089,5 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('soda_ash_solution').setFormula('(Na2CO3)(H2O)')
     GTMaterials.get('concentrated_saltwater').setFormula('(NaCl)2(H2O)')
     GTMaterials.get('calcium_chloride_solution').setFormula('(CaCl2)(H2O)')
+    GTMaterials.get('ammonium_chloride_solution').setFormula('(NH4Cl)(H2O)')
 })

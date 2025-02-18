@@ -18,6 +18,9 @@
 	"material.gtceu.dense_steam": "Dense Steam",
 	"material.gtceu.wastewater_sludge": "Wastewater Sludge",
 	"material.gtceu.concentrated_saltwater": "Concentrated Saltwater",
+	"material.gtceu.warm_saltwater": "Warm Saltwater",
+	"material.gtceu.saltwater": "Saltwater",
+	"material.gtceu.diluted_saltwater": "Diluted Saltwater",
 
 // Plastic
 	"material.gtceu.vinyl_chloride_suspension": "Vinyl Chloride Suspension",
@@ -39,6 +42,7 @@
 	"material.gtceu.water_treatment_acid": "Water Treatment Acid",
 	"material.gtceu.acidic_wastewater": "Acidic Wastewater",
 	"material.gtceu.hot_sulfuric_acid": "Hot Sulfuric Acid",
+	"material.gtceu.hydrogen_chloride": "Hydrogen Chloride",
 
 // Oxygen
 	"material.gtceu.high_pressure_oxygen": "High Pressure Oxygen",
