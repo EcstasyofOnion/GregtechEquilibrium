@@ -724,6 +724,49 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped(
+        Item.of('gtceu:large_steam_turbine'), [
+        'ABA',
+        'CDC',
+        'BCB'
+    ],
+    {
+      A: 'gtceu:steel_plate',
+      B: 'gtceu:tin_single_cable',
+      C: '#gtceu:circuits/lv',
+      D: 'gtceu:lv_machine_hull'
+    })
+
+    event.shaped(
+        Item.of('kubejs:copper_alternator_coil'), [
+        'EAF',
+        'ABA',
+        'CDC'
+    ],
+    {
+      A: 'gtceu:lv_electric_motor',
+      B: 'gtceu:steel_plate',
+      C: '#gtceu:circuits/lv',
+      D: 'gtceu:tin_single_cable',
+      E: '#forge:tools/hammers',
+      F: '#forge:tools/screwdrivers'
+    }).damageIngredient('#forge:tools/hammers').damageIngredient('#forge:tools/screwdrivers')
+
+    event.shaped(
+        Item.of('kubejs:steel_turbine_block'), [
+        'ABA',
+        'ECF',
+        'ADA'
+    ],
+    {
+      A: 'gtceu:steel_plate',
+      B: 'gtceu:steel_screw',
+      C: 'gtceu:long_steel_rod',
+      D: 'gtceu:steel_rotor',
+      E: '#forge:tools/hammers',
+      F: '#forge:tools/screwdrivers'
+    }).damageIngredient('#forge:tools/hammers').damageIngredient('#forge:tools/screwdrivers')
+
+    event.shaped(
         Item.of('gtceu:wood_wall'), [
         'A A',
         'BCD',
@@ -875,7 +918,7 @@ ServerEvents.recipes(event => {
 
     
 	event.shaped(
- 		Item.of('gtceu:small_lead_battery'), [
+ 		Item.of('gtecore:battery_lead_acid'), [
  		'ABA',
  		'CDE',
  		'AAA'

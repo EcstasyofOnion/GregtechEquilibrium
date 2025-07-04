@@ -11,6 +11,7 @@ WorldgenEvents.remove(event => {
       'blocksyouneed_luna:aquatrine_sand_ore', 'blocksyouneed_luna:aquatrine_sandstone_ore',
       'blocksyouneed_luna:sodalite',
       'blocksyouneed_luna:achoria',
+      'blocksyouneed_luna:shale',
       'blocksyouneed_luna:slime_achoria',
       'blocksyouneed_luna:moonstone_uc',
       'twigs:rhyolite',

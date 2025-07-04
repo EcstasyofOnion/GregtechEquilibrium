@@ -26,17 +26,6 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.mixer('gtceu:mixer_diluted_oil')
-        .inputFluids(
-            Fluid.of('minecraft:water', 1000)
-            Fluid.of('gtceu:oil', 1000)
-        )
-        .outputFluids(
-            Fluid.of('gtceu:diluted_oil', 1100)
-        )
-        .duration(20)
-        .EUt(30)
-
     event.recipes.gtceu.distillation_tower('gtceu:fuel_oil_tower_distillation')
         .inputFluids(
             Fluid.of('gtceu:fuel_oil', 1000)

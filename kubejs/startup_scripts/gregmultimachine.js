@@ -101,11 +101,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .where('2', Predicates.blocks("gtceu:steel_frame"))
         .build())
-        .workableCasingRenderer(
-            "kubejs:block/structural_casing",
-            "gtceu:block/multiblock/large_chemical_reactor",
-            false
-        )
+        .workableCasingRenderer('kubejs:block/structural_casing', 'gtceu:block/machines/sintering_oven', false);
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {

@@ -97,7 +97,10 @@ ServerEvents.recipes(event => {
         .duration(60)
         .EUt(30)
 
-    event.recipes.gtceu.electrolyzer('gtceu:potassium_persulfate_dust')
+    event.recipes.gtceu.advanced_electrolyzation('gtceu:potassium_persulfate_dust')
+        .itemInputs(
+            'gtceu:tiny_potassium_persulfate_dust'
+        )
         .inputFluids(
             Fluid.of('gtceu:potassium_bisulfate', 2016)
         )

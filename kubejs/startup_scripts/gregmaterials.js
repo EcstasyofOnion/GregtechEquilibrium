@@ -185,6 +185,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('12x carbon', '8x hydrogen', '2x chlorine')
         .color(0xa39d21)
 
+    event.create('hydrogen_chloride')
+        .gas()
+        .components('1x hydrogen', '1x chlorine')
+        .color(0x269e7e)
+
     event.create('acetylene')
         .gas()
         .components('2x carbon', '2x hydrogen')
@@ -217,6 +222,89 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hzsm_five')
         .dust()
         .color(0x2d5230)
+
+    event.create('high_purity_gallium')
+        .dust()
+        .components('1x gallium')
+        .color(0x8888ba)
+
+     event.create('high_purity_indium')
+        .dust()
+        .components('1x indium')
+        .color(0x5a37a3) 
+
+     event.create('chilled_lava')
+        .liquid()
+        .color(0x5c151a) 
+
+
+
+//boron
+    event.create('high_purity_boron')
+        .dust()
+        .components('1x boron')
+        .color(0xa4eba4)
+
+    event.create('boron_trichloride')
+        .liquid()
+        .components('1x boron', '3x chlorine')
+        .color(0x4ebd42)
+
+    event.create('boron_trioxide')
+        .dust()
+        .liquid()
+        .components('1x boron', '3x oxygen')
+        .color(0xd9c7a0)
+
+    event.create('boric_acid')
+        .dust()
+        .components('3x hydrogen', '1x boron', '3x oxygen')
+        .color(0xd1cec9)
+
+    event.create('borate_liquor')
+        .liquid()
+        .color(0xa5ab9f)
+
+    event.create('sodiumtetraborate')
+        .dust()
+        .components('2x sodium', '4x boron', '7x oxygen')
+        .color(0xa2a3a2)
+
+
+
+//catalyst
+    event.create('philips_catalyst')
+        .dust()
+        .components('1x silicon', '5x oxygen', '1x chromium')
+        .color(0x9f1da8)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('ziegler_natta_catalyst')
+        .dust()
+        .components('2x aluminium', '12x carbon', '30x hydrogen', '1x titanium', '4x chlorine')
+        .color(0x0c6106)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('kraminsky_catalyst')
+        .dust()
+        .components('1x zirconium', '11x carbon', '13x hydrogen', '2x chlorine', '1x aluminium', '1x oxygen')
+        .color(0x1a0e09)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+
+
+//copper
+    event.create('copper_ii_chloride')
+        .dust()
+        .components('1x copper', '2x chlorine')
+        .color(0x0a0909) 
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+       
+    event.create('copper_carbonate')
+        .dust()
+        .components('1x copper', '1x carbon', '3x oxygen')
+        .color(0x2b0f0f) 
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)      
 
 
 
@@ -261,18 +349,42 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
 
-//copper
-    event.create('copper_ii_chloride')
+//lithium
+    event.create('lithium_carbonate')
         .dust()
-        .components('1x copper', '2x chlorine')
-        .color(0x0a0909) 
+        .components('2x lithium', '1x carbon', '3x oxygen')
+        .color(0x7791b8)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-       
-    event.create('copper_carbonate')
+
+    event.create('lithium_oxide')
         .dust()
-        .components('1x copper', '1x carbon', '3x oxygen')
-        .color(0x2b0f0f) 
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)      
+        .components('2x lithium', '1x oxygen')
+        .color(0x591896)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('lithium_fluoride')
+        .dust()
+        .components('1x lithium', '1x fluorine')
+        .color(0x7da7d4)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('lithium_hexafluorophosphate')
+        .dust()
+        .components('1x lithium', '1x phosphorus', '6x fluorine')
+        .color(0x2a5657)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('lithium_hexafluorophosphate_electrolyte')
+        .liquid()
+        .components('1x lithium', '1x phosphorus', '6x fluorine', '3x carbon', '4x hydrogen', '3x oxygen')
+        .color(0x2e4e4f)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+
+    event.create('lithium__cobalt_oxide')
+        .dust()
+        .components('1x lithium', '1x cobalt', '2x oxygen')
+        .color(0x076916)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
 
 
@@ -286,31 +398,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('2x carbon', '5x hydrogen', '1x chlorine', '1x oxygen')
         .color(0xbcfc3)
-
-    event.create('polyvinyl_alcohol')
-        .dust()
-        .components('2x carbon', '4x hydrogen', '1x oxygen')
-        .color(0x804c2d)
-
-//catalyst
-    event.create('philips_catalyst')
-        .dust()
-        .components('1x silicon', '5x oxygen', '1x chromium')
-        .color(0x9f1da8)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
-    event.create('ziegler_natta_catalyst')
-        .dust()
-        .components('2x aluminium', '12x carbon', '30x hydrogen', '1x titanium', '4x chlorine')
-        .color(0x0c6106)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
-    event.create('kraminsky_catalyst')
-        .dust()
-        .components('1x zirconium', '11x carbon', '13x hydrogen', '2x chlorine', '1x aluminium', '1x oxygen')
-        .color(0x1a0e09)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
 
 
 
@@ -363,45 +450,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('2x carbon', '6x hydrogen', '2x oxygen')
         .color(0x104c9c)   
-
-
-
-//lithium
-    event.create('lithium_carbonate')
-        .dust()
-        .components('2x lithium', '1x carbon', '3x oxygen')
-        .color(0x7791b8)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
-    event.create('lithium_oxide')
-        .dust()
-        .components('2x lithium', '1x oxygen')
-        .color(0x591896)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
-    event.create('lithium_fluoride')
-        .dust()
-        .components('1x lithium', '1x fluorine')
-        .color(0x7da7d4)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
-    event.create('lithium_hexafluorophosphate')
-        .dust()
-        .components('1x lithium', '1x phosphorus', '6x fluorine')
-        .color(0x2a5657)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
-    event.create('lithium_hexafluorophosphate_electrolyte')
-        .liquid()
-        .components('1x lithium', '1x phosphorus', '6x fluorine', '3x carbon', '4x hydrogen', '3x oxygen')
-        .color(0x2e4e4f)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
-
-    event.create('lithium__cobalt_oxide')
-        .dust()
-        .components('1x lithium', '1x cobalt', '2x oxygen')
-        .color(0x076916)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
 
 
 
@@ -548,7 +596,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('2x aluminium', '3x sulfur', '12x oxygen')
         .color(0x1d4721) 
 
-
+     event.create('high_purity_aluminium')
+        .dust()
+        .components('1x aluminium')
+        .color(0x70b0db) 
 
 //nickel
     event.create('nickel_ii_oxide')
@@ -776,11 +827,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x calcium', '2x chlorine', '2x hydrogen', '1x oxygen')
         .color(0x78b56b)
 
-   event.create('ammonium_chloride_solution')
-        .liquid()
-        .components('1x nitrogen', '6x hydrogen', '1x chlorine', '1x oxygen')
-        .color(0x78b56b)
-
 
 //mixtures
         event.create('crotonaldehyde_mixture')
@@ -795,10 +841,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create('chlorinated_methane_mixture')
         .liquid()   
         .color(0x3c1970) 
-
-        event.create('butyraldehyde_mixture')
-        .liquid()   
-        .color(0xada63b)    
+   
 
 
 //impure
@@ -865,11 +908,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .components('3x hydrogen', '1x bromine', '1x oxygen')
         .color(0x288a71)
-
-    event.create('hydrogen_chloride')
-        .gas()
-        .components('1x hydrogen', '1x chlorine')
-        .color(0x269e7e)
 
 
 
@@ -1005,10 +1043,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('12x carbon', '28x hydrogen', '1x bromine', '1x nitrogen')
         .color(0x382416)  
 
-    event.create('ethyl_acetate')
-        .liquid()
-        .components('4x carbon', '8x hydrogen', '2x oxygen')
-        .color(0x82a360)  
 
 
 
@@ -1089,5 +1123,4 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('soda_ash_solution').setFormula('(Na2CO3)(H2O)')
     GTMaterials.get('concentrated_saltwater').setFormula('(NaCl)2(H2O)')
     GTMaterials.get('calcium_chloride_solution').setFormula('(CaCl2)(H2O)')
-    GTMaterials.get('ammonium_chloride_solution').setFormula('(NH4Cl)(H2O)')
 })

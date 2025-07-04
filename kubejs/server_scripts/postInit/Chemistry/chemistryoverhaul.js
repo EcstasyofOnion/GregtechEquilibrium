@@ -13,8 +13,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:mixer/sulfuric_acid' })
     event.remove({ id: 'gtceu:large_chemical_reactor/ethylene_from_glycerol' })
     event.remove({ id: 'gtceu:large_chemical_reactor/ethylene_from_ethanol' })
-    event.remove({ id: 'gtceu:large_chemical_reactor/polyvinyl_butyral' })
-    event.remove({ id: 'gtceu:chemical_reactor/polyvinyl_butyral' })
 })
 
 
@@ -50,7 +48,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     //Batch Reactor
-    event.recipes.gtceu.batch_reaction('gtceu:a1batch_calcite_dust')
+    event.recipes.gtceu.batch_reaction('a1batch_calcite_dust')
         .itemInputs(
             '2x gtceu:quicklime_dust'
         )
@@ -66,7 +64,21 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
 
-    event.recipes.gtceu.batch_reaction('gtceu:a2batch_chlorided_alumina')
+    event.recipes.gtceu.batch_reaction('batch_high_purity_boron')
+        .inputFluids(
+            Fluid.of('gtceu:hydrogen', 3000),
+            Fluid.of('gtceu:boron_trichloride', 1000)
+        )
+        .itemOutputs(
+            'gtceu:high_purity_boron_dust'
+        )
+        .outputFluids(
+            Fluid.of('gtceu:hydrogen_chloride', 3000)  
+        )
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.batch_reaction('a2batch_chlorided_alumina')
         .itemInputs(
             '5x gtceu:supported_platinum_dust'
         )
@@ -79,7 +91,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
-    event.recipes.gtceu.batch_reaction('gtceu:a3batch_sulfated_metal_oxide')
+    event.recipes.gtceu.batch_reaction('a3batch_sulfated_metal_oxide')
         .itemInputs(
             '3x gtceu:zirconium_dioxide_dust',
             'gtceu:ammonium_hexachloroplatinate_dust'
@@ -93,7 +105,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
-    event.recipes.gtceu.batch_reaction('gtceu:a4batch_diluted_sodium_silicate')
+    event.recipes.gtceu.batch_reaction('a4batch_diluted_sodium_silicate')
         .itemInputs(
             '3x gtceu:silicon_dioxide_dust'
         )
@@ -107,7 +119,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
 
-    event.recipes.gtceu.batch_reaction('gtceu:a5batch_sodium_aluminate')
+    event.recipes.gtceu.batch_reaction('a5batch_sodium_aluminate')
         .itemInputs(
             '2x #forge:dusts/aluminium'
         )
@@ -123,7 +135,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
 
-    event.recipes.gtceu.batch_reaction('gtceu:a6batch_bromopropane')
+    event.recipes.gtceu.batch_reaction('a6batch_bromopropane')
         .inputFluids(
             Fluid.of('gtceu:propene', 1000),
             Fluid.of('gtceu:hydrobromic_acid', 1000)
@@ -139,7 +151,7 @@ ServerEvents.recipes(event => {
         .duration(5)
         .EUt(120)
 
-    event.recipes.gtceu.batch_reaction('gtceu:a7batch_tetrapropylammonium')
+    event.recipes.gtceu.batch_reaction('a7batch_tetrapropylammonium')
         .inputFluids(
             Fluid.of('gtceu:tripropylamine', 1000),
             Fluid.of('gtceu:n_bromopropane', 1000)
@@ -150,7 +162,7 @@ ServerEvents.recipes(event => {
         .duration(5)
         .EUt(120)
 
-    event.recipes.gtceu.batch_reaction('gtceu:a8batch_nickel_ii_nitrate')
+    event.recipes.gtceu.batch_reaction('a8batch_nickel_ii_nitrate')
         .itemInputs(
             '2x gtceu:nickel_ii_oxide_dust'
         )
@@ -292,7 +304,7 @@ ServerEvents.recipes(event => {
             '5x gtceu:zinc_carbonate_dust'
         )
         .outputFluids(
-            Fluid.of('gtceu:concentrated_saltwater', 1000)
+            Fluid.of('gtceu:concentrated_salt_water', 1000)
         )
         .duration(100)
         .EUt(120)
@@ -308,7 +320,7 @@ ServerEvents.recipes(event => {
             '5x gtceu:copper_carbonate_dust'
         )
         .outputFluids(
-            Fluid.of('gtceu:concentrated_saltwater', 1000)
+            Fluid.of('gtceu:concentrated_salt_water', 1000)
         )
         .duration(100)
         .EUt(120)
@@ -458,85 +470,6 @@ ServerEvents.recipes(event => {
             Fluid.of('gtceu:hydrochloric_acid', 2000)
         )
         .duration(60)
-        .EUt(30)
-
-    event.recipes.gtceu.batch_reaction('gtceu:a29batch_calcite')
-        .itemInputs(
-            '2x gtceu:quicklime_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:carbon_dioxide', 1000)
-        )
-        .itemOutputs(
-            '5x gtceu:calcite_dust'
-        )
-        .circuit(1)
-        .duration(120)
-        .EUt(7)
-
-     event.recipes.gtceu.batch_reaction('gtceu:a30batch_calcium_chloride')
-        .itemInputs(
-            '2x gtceu:quicklime_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:ammonium_chloride_solution', 2000)
-        )
-        .outputFluids(
-            Fluid.of('gtceu:ammonia', 2000),
-            Fluid.of('gtceu:calcium_chloride_solution', 2000)
-        )
-        .duration(80)
-        .EUt(30)
-
-     event.recipes.gtceu.batch_reaction('gtceu:a31batch_sodium_bicarbonate_decomposition')
-        .itemInputs(
-            '6x gtceu:sodium_bicarbonate_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:hydrochloric_acid', 1000)
-        )
-        .outputFluids(
-            Fluid.of('gtceu:carbon_dioxide', 1000),
-            Fluid.of('gtceu:diluted_saltwater', 2000)
-        )
-        .duration(80)
-        .EUt(30)
-
-     event.recipes.gtceu.batch_reaction('gtceu:a32batch_polyvinyl_alcohol')
-        .inputFluids(
-            Fluid.of('gtceu:ethanol', 1000),
-            Fluid.of('gtceu:polyvinyl_acetate', 144)
-        )
-        .itemOutputs(
-            'gtceu:polyvinyl_alcohol_dust'
-        )
-        .outputFluids(
-            Fluid.of('gtceu:ethyl_acetate', 1000) 
-        )
-        .duration(400)
-        .EUt(30)
-     event.recipes.gtceu.batch_reaction('gtceu:a32batch_polyvinyl_butyral')
-        .itemInputs(
-            'gtceu:polyvinyl_alcohol_dust'
-        )
-        .inputFluids(
-            Fluid.of('gtceu:butyraldehyde', 1000)
-        )
-        .itemOutputs(
-            'gtceu:polyvinyl_butyral_dust'
-        )
-        .duration(400)
-        .EUt(480)
-
-     event.recipes.gtceu.batch_reaction('gtceu:batch_mercury_ii_chloride')
-        .inputFluids(
-            Fluid.of('gtceu:chlorine', 2000),
-            Fluid.of('gtceu:mercury', 1000)
-        )
-        .itemOutputs(
-            '3x gtceu:mercury_ii_chloride_dust'
-        )
-        .duration(200)
         .EUt(30)
 
     //Vacuum Chamber
