@@ -1,10 +1,20 @@
+//{
+// Ores
+    "tagprefix.limestone": "Limestone %s Ore"
+    "tagprefix.gabbro": "Gabbro %s Ore"
+    "tagprefix.phyllite": "Phyllite %s Ore"
+    "tagprefix.siltstone": "Siltstone %s Ore"
+    "tagprefix.beige_limestone": "Beige Limestone %s Ore"
+    "tagprefix.grey_limestone": "Grey Limestone %s Ore"
+//}
+
 {
 // Machines
 	"block.gtceu.heat_exchanger": "Heat Exchanger",
 	"block.gtceu.large_steam_turbine": "Large Steam Turbine",
 	"block.gtceu.sintering_oven": "Sintering Oven",
 
-// Ores
+// GTE Ores
 	"material.gtceu.smithsonite": "Smithsonite",
 
 // Water Related
