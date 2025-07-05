@@ -23,6 +23,24 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .color(0x377b82)
 
+    event.create('acanthite')
+        .dust()
+        .components('2x silver', '1x sulfur')
+        .ore()
+        .color(0x0d0c0c)
+
+    event.create('proustite')
+        .dust()
+        .components('3x silver', '1x arsenic', '3x sulfur')
+        .ore()
+        .color(0x661016)
+
+    event.create('pyrargyrite')
+        .dust()
+        .components('3x silver', '1x antimony', '3x sulfur')
+        .ore()
+        .color(0x140f05)
+
     event.create('calcium_sulfate')
         .dust()
         .components('1x calcium', '1x sulfur', '4x oxygen')
@@ -236,6 +254,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
      event.create('chilled_lava')
         .liquid()
         .color(0x5c151a) 
+
+     event.create('silver_oxide')
+        .dust()
+        .components('2x silver', '1x oxygen')
+        .color(0x5c7048) 
 
 
 

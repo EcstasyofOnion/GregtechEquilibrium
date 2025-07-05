@@ -47,6 +47,40 @@ ServerEvents.recipes(event => {
         .duration(60)
         .EUt(30)
 
+    event.recipes.gtceu.roasting('gtceu:silver_oxide_roasting1')
+        .itemInputs(
+            'gtceu:acanthite_dust',
+            'gtceu:tiny_calcite_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:oxygen', 3000)
+        )
+        .chancedOutput(
+            '3x gtceu:silver_oxide_dust', 1000, 500
+        )
+        .outputFluids(
+            Fluid.of('gtceu:suflur_dioxide', 1000)
+        )
+        .duration(60)
+        .EUt(30)
+
+    event.recipes.gtceu.roasting('gtceu:silver_oxide_roasting2')
+        .itemInputs(
+            'gtceu:acanthite_dust',
+            'gtceu:tiny_calcite_dust'
+        )
+        .inputFluids(
+            Fluid.of('gtceu:air', 4500)
+        )
+        .chancedOutput(
+            '3x gtceu:silver_oxide_dust', 1000, 500
+        )
+        .outputFluids(
+            Fluid.of('gtceu:suflur_dioxide', 1000)
+        )
+        .duration(60)
+        .EUt(30)
+
     //Batch Reactor
     event.recipes.gtceu.batch_reaction('a1batch_calcite_dust')
         .itemInputs(

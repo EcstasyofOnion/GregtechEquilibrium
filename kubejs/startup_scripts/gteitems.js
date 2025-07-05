@@ -20,4 +20,8 @@ StartupEvents.registry('item', e => {
   e.create('crucible_mold')
   e.create('zener_diode')
   e.create('high_voltage_regulator')
+  e.create('medium_voltage_regulator')
+  e.create('hot_iron_rod')
+  e.create('voltaic_pile')
+  e.create('electrolyte_paper')
 })

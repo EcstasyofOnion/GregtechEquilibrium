@@ -5,9 +5,9 @@
 
 {
 // Machines
-	"gtceu.heat_exchanger": "Heat Exchanger",
-	"gtceu.large_steam_turbine": "Large Steam Turbine",
-	"gtceu.sintering_oven": "Sintering Oven",
+	"gtceu_heat_exchanger": "Heat Exchanger",
+	"gtceu_large_steam_turbine": "Large Steam Turbine",
+	"gtceu_sintering_oven": "Sintering Oven",
 
 // GTE Ores
 	"material.gtceu.smithsonite": "Smithsonite",

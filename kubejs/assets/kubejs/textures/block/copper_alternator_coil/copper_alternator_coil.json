@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "kubejs:textures/block/copper_alternator_coil/copper_alternator_coil_top",
+    "front": "kubejs:textures/block/copper_alternator_coil/copper_alternator_coil_front",
+    "side": "kubejs:textures/block/copper_alternator_coil/copper_alternator_coil_side",
+    "south": "kubejs:textures/block/copper_alternator_coil/copper_alternator_coil_front",
+  }
+}

@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.centrifuge('mineral_wool')
+    event.recipes.gtceu.centrifuge('mineral_wool1')
         .inputFluids(
             Fluid.of('minecraft:lava', 1000)
         )
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(30)
 
-    event.recipes.gtceu.centrifuge('mineral_wool')
+    event.recipes.gtceu.centrifuge('mineral_wool2')
         .inputFluids(
             Fluid.of('gtceu:chilled_lava', 1000)
         )
@@ -28,14 +28,14 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(30)
 
-    event.recipes.gtceu.extruder('raw_electrode')
+    event.recipes.gtceu.extruder('kjs:raw_electrode')
         .itemInputs(
             'kubejs:pitch_binder'
         )
         .itemOutputs(
-            'gtceu:rod_extruder_mold'
+            'kubejs:raw_electrode'
         )
-        .notConsumable('gtceu:steel_rod')
+        .notConsumable('gtceu:rod_extruder_mold')
         .duration(200)
         .EUt(30)
 

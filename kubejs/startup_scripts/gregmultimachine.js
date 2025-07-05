@@ -65,6 +65,17 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
+// GT Pressure Swing Absorber recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('pressure_swing_absorber')
+        .category('pressure_swing_absorbtion')
+        .setEUIO('in')
+        .setMaxIOSize(1, 1, 2, 2)
+        .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
 
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -129,11 +140,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
                 )
         .build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_solid_steel",
-            "gtceu:block/multiblock/large_chemical_reactor",
-            false
-        )
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/machines/electrolytic_cell', false);
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -259,4 +266,29 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 )
         .build())
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/machines/large_steam_turbine', false);
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('pressure_swing_absorber', 'multiblock')
+        .tooltips(Component.translatable('your.langfile.entry.here')) // 
+
+
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(() => Block.getBlock('gtceu:frostproof_machine_casing'))
+        .recipeTypes('pressure_swing_absorber')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('AAA', 'AAA', 'AAA', 'AAA')
+            .aisle('AAA', 'ABA', 'ABA', 'AAA')
+            .aisle('AAA', 'ACA', 'AAA', 'AAA')
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('A', Predicates.blocks("gtceu:frostproof_machine_casing"))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+            .where('B', Predicates.blocks("gtceu:steel_pipe_casing"))
+        .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_frostproof', 'gtceu:block/machines/pressure_swing_absorber', false);
 })
