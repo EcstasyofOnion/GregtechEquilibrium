@@ -143,6 +143,29 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
+//Vulcanizing Press recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+  event.create('vulcanizing')
+    .category('vulcanizing_press')                   
+    .setEUIO('in')                     
+    .setMaxIOSize(4, 2, 2, 1)             
+    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
+//Electron Beam Lithographer recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+  event.create('electron_beam_lithographer')
+    .category('electron_beam_lithographer')                   
+    .setEUIO('in')                     
+    .setMaxIOSize(2, 1, 1, 0)             
+    .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
+
 
 
 // GT Vacuum Chamber machine
@@ -309,3 +332,37 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .recipeType('drying')
         )
     })  
+
+
+// GT Vulcanizng Press machine
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('vulcanizing_press', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Vulcanizing Press`)
+                .recipeType('vulcanizing')
+        )
+    })  
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('steam_vulcanizing_press', 'steam')
+        .hasHighPressure(true)
+        .definition((hp, builder) => 
+            builder
+                .recipeType("vulcanizing")
+        )
+    })
+
+// GT Electron Beam Lithographer machine
+    GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('electron_beam_lithographer', 'simple')
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Electron Beam Lithographer`)
+                .recipeType('electron_beam_lithographer')
+        )
+    })  
+
+

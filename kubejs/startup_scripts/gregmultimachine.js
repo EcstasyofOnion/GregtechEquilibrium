@@ -70,7 +70,29 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('pressure_swing_absorber')
         .category('pressure_swing_absorbtion')
         .setEUIO('in')
+        .setMaxIOSize(2, 1, 2, 0)
+        .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
+// GT Coagulation Tank recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('coagulation')
+        .category('coagulation_tank')
+        .setEUIO('in')
         .setMaxIOSize(1, 1, 2, 2)
+        .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
+// GT Advanced Arc Furnace recipe type
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('advanced_arc_furnace')
+        .category('advanced_arc_furnace')
+        .setEUIO('in')
+        .setMaxIOSize(4, 2, 3, 1)
         .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
@@ -281,14 +303,68 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('AAA', 'ABA', 'ABA', 'AAA')
             .aisle('AAA', 'ACA', 'AAA', 'AAA')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('A', Predicates.blocks("gtceu:frostproof_machine_casing"))
+            .where('A', Predicates.blocks("gtceu:frostproof_machine_casing")
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                )
             .where('B', Predicates.blocks("gtceu:steel_pipe_casing"))
         .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_frostproof', 'gtceu:block/machines/pressure_swing_absorber', false);
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_frost_proof', 'gtceu:block/machines/pressure_swing_absorber', false);
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('coagulation_tank', 'multiblock')
+        .tooltips(Component.translatable('your.langfile.entry.here')) // 
+
+
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(() => Block.getBlock('kubejs:wooden_coagulation_tank_wall'))
+        .recipeTypes('coagulation')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('AAA', 'AAA', 'AAA',)
+            .aisle('AAA', 'A A', 'A A',)
+            .aisle('AAA', 'ACA', 'AAA',)
+            .where(' ', Predicates.air())
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('A', Predicates.blocks("kubejs:wooden_coagulation_tank_wall")
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                )
+        .build())
+        .workableCasingRenderer('kubejs:block/wooden_coagulation_tank_wall', 'gtceu:block/machines/pressure_swing_absorber', false);
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('advanced_arc_furnace', 'multiblock')
+        .tooltips(Component.translatable('your.langfile.entry.here')) // 
+
+
+        .rotationState(RotationState.NON_Y_AXIS)
+        .appearanceBlock(() => Block.getBlock('gtceu:solid_machine_casing'))
+        .recipeTypes('advanced_arc_furnace')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('BBB', 'BBB', 'DDD',)
+            .aisle('BBBBB', 'B A B', 'D A D', 'BAB',)
+            .aisle('ABBBA', 'A   A', 'A   A', 'ABBBA',)
+            .aisle('BBBBB', 'B   B', 'D   D', 'AAA',)
+            .aisle('BBB', 'BCB', 'DDD',)
+            .where(' ', Predicates.air())
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('A', Predicates.blocks("kubejs:carbon_electrode_assembly"))
+            .where('D', Predicates.blocks("gtceu:steel_firebox_casing"))
+            .where('B', Predicates.blocks("gtceu:solid_machine_casing")
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                )
+        .build())
+        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/machines/advanced_arc_furnace', false);
 })

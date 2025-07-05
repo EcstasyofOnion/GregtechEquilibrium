@@ -4,11 +4,6 @@
 }
 
 {
-// Machines
-	"gtceu_heat_exchanger": "Heat Exchanger",
-	"gtceu_large_steam_turbine": "Large Steam Turbine",
-	"gtceu_sintering_oven": "Sintering Oven",
-
 // GTE Ores
 	"material.gtceu.smithsonite": "Smithsonite",
 
@@ -26,6 +21,7 @@
 	"material.gtceu.warm_saltwater": "Warm Saltwater",
 	"material.gtceu.saltwater": "Saltwater",
 	"material.gtceu.diluted_saltwater": "Diluted Saltwater",
+	"material.gtceu.hypersaline_water": "Hypersaline Water",
 
 // Acid
 	"material.gtceu.water_treatment_acid": "Water Treatment Acid",

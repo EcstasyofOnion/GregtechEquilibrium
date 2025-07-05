@@ -40,3 +40,22 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:mineable/pickaxe') // or a pickaxe
     .tagBlock('minecraft:needs_iron_tool') // the tool tier must be at least iron
 })
+StartupEvents.registry('block', event => {
+  event.create('wooden_coagulation_tank_wall') // Create a new block
+    .displayName('Wooden Coagulation Tank Wall') // Set a custom name
+    .soundType('wood') // Set a material (affects the sounds and some properties)
+    .hardness(1.0) // Set hardness (affects mining time)
+    .resistance(1.0) // Set resistance (to explosions, etc)
+    .requiresTool(false) // Requires a tool or it won't drop (see tags below)
+    .tagBlock('minecraft:mineable/axe') // or a pickaxe
+})
+StartupEvents.registry('block', event => {
+  event.create('carbon_electrode_assembly') // Create a new block
+    .displayName('Carbon Electrode Assembly') // Set a custom name
+    .soundType('metal') // Set a material (affects the sounds and some properties)
+    .hardness(1.0) // Set hardness (affects mining time)
+    .resistance(1.0) // Set resistance (to explosions, etc)
+    .requiresTool(false) // Requires a tool or it won't drop (see tags below)
+    .tagBlock('minecraft:mineable/pickaxe') // or a pickaxe
+    .tagBlock('minecraft:needs_iron_tool') // the tool tier must be at least iron
+})

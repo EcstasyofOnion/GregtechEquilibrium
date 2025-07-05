@@ -260,6 +260,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('2x silver', '1x oxygen')
         .color(0x5c7048) 
 
+     event.create('molecular_sieve')
+        .dust()
+        .color(0x5c7048) 
+
+     event.create('acidic_hydrogen_vapor')
+        .gas()
+        .components('8x hydrogen', '2x carbon', '2x oxygen')
+        .color(0x5c7048) 
+
+    event.create('latex')
+        .dust()
+        .liquid()
+        .color(0xa2a3a2)
+
 
 
 //boron
@@ -749,7 +763,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('2x sodium', '2x chlorine', '2x hydrogen', '1x oxygen')
         .color(0x753d3d)
    
-
+    event.create('hypersaline_water')
+        .liquid()
+        .components('4x sodium', '4x chlorine', '2x hydrogen', '1x oxygen')
+        .color(0x753d3d)
+   
 
 //brine
     event.create('chlorinated_brine')
@@ -1145,5 +1163,7 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('iron_iii_nitrate_solution').setFormula('Fe(NO3)3(H2O)3')
     GTMaterials.get('soda_ash_solution').setFormula('(Na2CO3)(H2O)')
     GTMaterials.get('concentrated_saltwater').setFormula('(NaCl)2(H2O)')
+    GTMaterials.get('hypersaline_water').setFormula('(NaCl)4(H2O)')
     GTMaterials.get('calcium_chloride_solution').setFormula('(CaCl2)(H2O)')
+    GTMaterials.get('acidic_hydrogen_vapor').setFormula('(H)8(CO2)')
 })

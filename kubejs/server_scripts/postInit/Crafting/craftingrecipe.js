@@ -3,6 +3,16 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:shaped/electric_blast_furnace' })
     event.remove({ id: 'gtceu:shaped/pyrolyse_oven' })
     event.remove({ id: 'gtceu:shaped/wood_tank_valve' })
+    event.remove({ id: 'gtceu:shaped/lv_arc_furnace' })
+    event.remove({ id: 'gtceu:shaped/mv_arc_furnace' })
+    event.remove({ id: 'gtceu:shaped/hv_arc_furnace' })
+    event.remove({ id: 'gtceu:shaped/ev_arc_furnace' })
+    event.remove({ id: 'gtceu:shaped/iv_arc_furnace' })
+    event.remove({ id: 'gtceu:shaped/luv_arc_furnace' })
+    event.remove({ id: 'gtceu:shaped/zpm_arc_furnace' })
+    event.remove({ id: 'gtceu:shaped/uv_arc_furnace' })
+    event.remove({ id: 'gtceu:shaped/uhv_arc_furnace' })
+    event.remove({ id: 'aether:skyroot_chest' })
 })
 
 ServerEvents.recipes(event => {
@@ -709,6 +719,146 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped(
+        Item.of('gtceu:lv_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:tin_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/lv',
+      D: 'gtceu:lv_machine_hull',
+      E: 'gtceu:steel_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:mv_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:copper_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/mv',
+      D: 'gtceu:mv_machine_hull',
+      E: 'gtceu:aluminium_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:hv_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:gold_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/hv',
+      D: 'gtceu:hv_machine_hull',
+      E: 'gtceu:stainless_steel_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:ev_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:aluminium_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/ev',
+      D: 'gtceu:ev_machine_hull',
+      E: 'gtceu:titanium_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:iv_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:platinum_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/iv',
+      D: 'gtceu:iv_machine_hull',
+      E: 'gtceu:tungstensteel_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:luv_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:niobium_titanium_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/luv',
+      D: 'gtceu:luv_machine_hull',
+      E: 'gtceu:rhodium_plated_palladium_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:zpm_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:vanadium_gallium_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/zpm',
+      D: 'gtceu:zpm_machine_hull',
+      E: 'gtceu:naquadah_alloy_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:uv_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:yttrium_barium_cuprate_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/uv',
+      D: 'gtceu:uv_machine_hull',
+      E: 'gtceu:darmstadtium_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:uhv_arc_furnace'), [
+        'ABA',
+        'CDC',
+        'EEE'
+    ],
+    {
+      A: 'gtceu:europium_quadruple_cable',
+      B: 'kubejs:graphite_electrode',
+      C: '#gtceu:circuits/uhv',
+      D: 'gtceu:uhv_machine_hull',
+      E: 'gtceu:neutronium_plate'
+    })
+
+    event.shaped(
+        Item.of('gtceu:pressure_swing_absorber'), [
+        'ABA',
+        'CDC',
+        'EAE'
+    ],
+    {
+      A: 'gtceu:aluminium_large_fluid_pipe',
+      B: 'gtceu:mv_electric_motor',
+      C: 'gtceu:mv_electric_pump',
+      D: 'gtceu:mv_machine_hull',
+      E: '#gtceu:circuits/mv'
+    })
+
+    event.shaped(
         Item.of('gtceu:sintering_oven'), [
         'ABC',
         'DED',
@@ -930,4 +1080,22 @@ ServerEvents.recipes(event => {
   	  D: 'gtceu:sulfuric_acid_bucket',
   	  E: 'kubejs:lead_anode'
  	})
+
+    event.shaped(
+        Item.of('ytech:pebble'), [
+        'A ',
+        '  '
+    ],
+    {
+      A: 'twigs:pebble'
+    })
+
+    event.shaped(
+        Item.of('ytech:pebble'), [
+        'A ',
+        '  '
+    ],
+    {
+      A: 'luminous:pebbles'
+    })
 })

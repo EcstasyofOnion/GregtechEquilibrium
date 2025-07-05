@@ -2,7 +2,6 @@ StartupEvents.registry('item', e => {
   e.create('vacuum_tube_components')
   e.create('lead_anode')
   e.create('lead_cathode')
-  e.create('latex_dust')
   e.create('cellulose_acetate_mesh')
   e.create('high_purity_carbon_dust')
   e.create('sugar_cane_dust')
@@ -24,4 +23,5 @@ StartupEvents.registry('item', e => {
   e.create('hot_iron_rod')
   e.create('voltaic_pile')
   e.create('electrolyte_paper')
+  e.create('zeolite_membrane')
 })
